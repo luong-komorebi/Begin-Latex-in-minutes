@@ -1,8 +1,8 @@
-# Intro to LATEX
+# Master LATEX in minutes
 ![](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg) ![](https://jaywcjlove.github.io/sb/lang/english.svg) ![](https://cdn1.iconfinder.com/data/icons/business-237/65/icons-12-32.png) ![](http://i.imgur.com/dwKyG5w.png) ![](https://jaywcjlove.github.io/sb/star/red5.svg)
 ![](https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg)  
 
-*Inspried by my professor Nghiem Quoc Minh*
+*Inspired by my professor Nghiem Quoc Minh*
 
 ### Table of content
 * [What is Latex](#what-is-latex)
