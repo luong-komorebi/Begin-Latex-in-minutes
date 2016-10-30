@@ -30,7 +30,7 @@ LaTeX, which is pronounced «Lah-tech» or «Lay-tech» (to rhyme with «blech»
 * The workflow is faster compared to MS Word.
 * Latex is widely used for scientific topics.
 
-> It doesnt come without drawbacks, but is still worthy to learn.
+> It doesnt come without drawbacks, but is still worth learning.
 
 ## Set up for Latex
 
@@ -40,8 +40,10 @@ You will need two things :
 I suggest [Miktex](https://miktex.org/about) for Windows. [TeXLive](https://www.tug.org/texlive/) for Linux and Unix-based. [MacTeX](https://tug.org/mactex/) for Mac
 2. *Latex Editor.*  
 I highly suggest [TexMaker](http://www.xm1math.net/texmaker/) for easy going, although any text editor can create or change a latex file.
-3. *PDF viewer.*  
-Any PDF viewer out there is fine. This is for viewing your result.
+3. *PDF viewer.* (optional)   
+Any PDF viewer out there is fine. This is for viewing your result.  
+
+Or you can choose a simple online solution : [ShareLatex](https://www.sharelatex.com/).  
 
 ## First Latex file
 
