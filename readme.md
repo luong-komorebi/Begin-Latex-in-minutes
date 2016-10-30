@@ -4,7 +4,7 @@
 
 *Inspired by my professor Nghiem Quoc Minh*
 
-### Table of content
+### Table of Contents
 * [What is LaTeX](#what-is-latex)
 * [Why use LaTeX](#why-use-latex)
 * [Set up for LaTeX](#set-up-for-latex)
@@ -18,19 +18,19 @@
 * [Adding images](#adding-images)
 * [Insert code into LaTeX](#insert-code-into-latex)
 
-## What is LaTeX
+## What is LaTeX ?
 
 LaTeX, which is pronounced «Lah-tech» or «Lay-tech» (to rhyme with «blech» or «Bertolt Brecht»), is a document preparation system for high-quality typesetting. It is most often used for medium-to-large technical or scientific documents but it can be used for almost any form of publishing.
 
-## Why use LaTeX
+## Why use LaTeX ? 
 
-* LaTeX is free, mutiplatform.
+* LaTeX is free, multiplatform.
 * LaTeX is just a text document (which can be opened by any text editor), readily converted to PDF.
 * LaTeX separates content and style. Style once, then focus on content.
 * The workflow is faster compared to MS Word.
 * LaTeX is widely used for scientific topics.
 
-> It doesn't come without drawbacks, but is still worth learning.
+> LaTeX doesn't come without drawbacks, but is still worth learning.
 
 ## Set up for LaTeX
 
@@ -40,7 +40,7 @@ You will need two things:
 1. *LaTeX Interpreter/Compiler.*   
 I suggest [MiKTeX](https://miktex.org/about) for Windows. [TeX Live](https://www.tug.org/texlive/) for Linux and Unix-based. [MacTeX](https://tug.org/mactex/) for Mac
 2. *LaTeX Editor.*  
-I highly suggest [TexMaker](http://www.xm1math.net/texmaker/) for easy going, although any text editor can create or change a LaTeX file.
+I highly suggest [TexMaker](http://www.xm1math.net/texmaker/) for easy editing, although any text editor can create or change a LaTeX file.
 3. *PDF viewer.* (optional)   
 Any PDF viewer out there is fine. This is for viewing your result.  
 
@@ -66,8 +66,8 @@ It should look like this in TexMaker:
 
 ## A deeper look
 
-:eyes: A deeper look into your first LaTeX file easily show that :
-* The first line tells the Interpreter that you are working on an **article** with the size of the a4. Other types of document you might be working with in the future is **report**, **book**...
+:eyes: A deeper look into your first LaTeX file easily shows that :
+* The first line tells the Interpreter that you are working on an **article** with the size of the a4. Other types of document you might be working with in the future are **report**, **book**... and so on.
 * A document is wrapped by the **\begin{document}** and **\end{document}** . Think of this as the heart of the document, as the `main()` in *java* or *C++* ... without which the document can't be rendered.
 * The part between begin and end ( which, in this case, is `Hello World` ) is simply your own content.
 
@@ -87,7 +87,7 @@ Xin chào thế giới. This is Hellow World in Vietnamese.
 \end{document}
 ```
 
-Here we use two package `usepackage[T5]{fontenc}` and `usepackage[utf8]{inputenc}` . This is really simple to understand as the package will import font encoders to display your content correctly. If you are using TexMaker this is what the above code display :
+Here we use two packages `usepackage[T5]{fontenc}` and `usepackage[utf8]{inputenc}` . This is really simple to understand as the package will import font encoders to display your content correctly. If you are using TexMaker this is what the above code display :
 
 ![](http://i.imgur.com/OUSPekM.png)
 
@@ -241,7 +241,7 @@ As you can see, with the **{verbatim}** wrapper you can easily insert code witho
 
 #### :white_check_mark: :white_check_mark: Second Method :white_check_mark: :white_check_mark:
 
-This method gives you more options, including insert code **inline**, make **custom styled** code, choose a **specific language** for code, **import code** **from** another **file** within the same directory.... With this method, you dont use **{verbatim}** , but include a package :package: named **listings**.    
+This method gives you more options, including insert code **inline**, make **custom styles** code, choose a **specific language** for code, **import code** **from** another **file** within the same directory.... With this method, you dont use **{verbatim}** , but include a package :package: named **listings**.    
 
 Consider the following example :
 ```tex
