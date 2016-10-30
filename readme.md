@@ -62,7 +62,7 @@ Hello World
 ```
 
 It should look like this in TexMaker:   
-![](http://i.imgur.com/XJxoXyI.jpg)  
+![](http://i.imgur.com/llzrDM9.png)  
 
 ## A deeper look
 
