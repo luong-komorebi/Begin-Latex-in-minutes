@@ -69,7 +69,7 @@ It should look like this in TexMaker
 * The part between begin and end ( which, in this case, is ```Hello World``` ) is simply your own content.
 
 :warning: **Important** :warning:   
-**Some language won't work right out of the box. You will need to include some package for the font to the render.** For example :  
+**Some language won't work right out of the box. You will need to include some packages for the font to render. Also, you will learn about "package" later.** For example :  
 
 ```tex
 \documentclass[a4paper]{article}
@@ -131,7 +131,7 @@ Here is an example of using a package for math display :
 
 ![](http://i.imgur.com/DvOtUXa.png)  
 
-:construction: You should google search more if you want a package that meets your requirements.
+:construction: You should google search more if you want a package that meets your requirements. For example, amsmath is widely used for math and has a lot of extension typeset for math. Cover them all would be impossible for this general guide. 
 
 ## Table
 
