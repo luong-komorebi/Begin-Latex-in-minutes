@@ -26,7 +26,7 @@ LaTeX, which is pronounced «Lah-tech» or «Lay-tech» (to rhyme with «blech»
 
 * Latex is free, mutiplatform.
 * Latex is just a text document (which can be opened by any text editor), readily converted to PDF.
-* Latex separate content and style. Style once, then focus on content.
+* Latex separates content and style. Style once, then focus on content.
 * The workflow is faster compared to MS Word.
 * Latex is widely used for scientific topics.
 
@@ -36,12 +36,12 @@ LaTeX, which is pronounced «Lah-tech» or «Lay-tech» (to rhyme with «blech»
 
 You will need two things :  
 
-1. *Latex Interpreter.*   
-I highly suggest [Miktex](https://miktex.org/about).
+1. *Latex Interpreter/Compiler.*   
+I suggest [Miktex](https://miktex.org/about) for Windows. [TeXLive](https://www.tug.org/texlive/) for Linux and Unix-based. [MacTeX](https://tug.org/mactex/) for Mac
 2. *Latex Editor.*  
 I highly suggest [TexMaker](http://www.xm1math.net/texmaker/) for easy going, although any text editor can create or change a latex file.
 3. *PDF viewer.*  
-Any PDF viewer out there is fine.
+Any PDF viewer out there is fine. This is for viewing your result.
 
 ## First Latex file
 
@@ -131,7 +131,7 @@ Here is an example of using a package for math display :
 
 ![](http://i.imgur.com/DvOtUXa.png)  
 
-:construction: You should google search more if you want a package that meets your requirements. For example, amsmath is widely used for math and has a lot of extension typeset for math. Cover them all would be impossible for this general guide. 
+:construction: You should google search more if you want a package that meets your requirements. For example, amsmath is widely used for math and has a lot of extension typeset for math. Cover them all would be impossible for this general guide.
 
 ## Table
 
