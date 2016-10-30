@@ -1,4 +1,4 @@
-# Master LATEX in minutes
+# Begin LATEX in minutes
 ![](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg) ![](https://jaywcjlove.github.io/sb/lang/english.svg) ![](https://cdn1.iconfinder.com/data/icons/business-237/65/icons-12-32.png) ![](http://i.imgur.com/dwKyG5w.png) ![](https://jaywcjlove.github.io/sb/star/red5.svg)
 ![](https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg)  
 
@@ -295,6 +295,7 @@ Here is how the code above compile in TexMaker :
 ## HOORAY !!
 
 :tada: Thank you for finishing the guide. That's basically all you need to know about LaTex. :hammer:  
+
 
 ## License
 
