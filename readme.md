@@ -5,10 +5,10 @@
 *Inspired by my professor Nghiem Quoc Minh*
 
 ### Table of content
-* [What is Latex](#what-is-latex)
-* [Why use Latex](#why-use-latex)
-* [Set up for Latex](#set-up-for-latex)
-* [First Latex file](#first-latex-file)
+* [What is LaTeX](#what-is-latex)
+* [Why use LaTeX](#why-use-latex)
+* [Set up for LaTeX](#set-up-for-latex)
+* [First LaTeX file](#first-latex-file)
 * [A deeper look](#a-deeper-look)
 * [Paragraph and section](#paragraph-and-section)
 * [Making a table of content](#making-a-table-of-content)
@@ -16,38 +16,38 @@
 * [What is package](#what-is-package)
 * [Table](#table)
 * [Adding images](#adding-images)
-* [Insert code into Latex](#insert-code-into-latex)
+* [Insert code into LaTeX](#insert-code-into-latex)
 
-## What is Latex
+## What is LaTeX
 
 LaTeX, which is pronounced «Lah-tech» or «Lay-tech» (to rhyme with «blech» or «Bertolt Brecht»), is a document preparation system for high-quality typesetting. It is most often used for medium-to-large technical or scientific documents but it can be used for almost any form of publishing.
 
-## Why use Latex
+## Why use LaTeX
 
-* Latex is free, mutiplatform.
-* Latex is just a text document (which can be opened by any text editor), readily converted to PDF.
-* Latex separates content and style. Style once, then focus on content.
+* LaTeX is free, mutiplatform.
+* LaTeX is just a text document (which can be opened by any text editor), readily converted to PDF.
+* LaTeX separates content and style. Style once, then focus on content.
 * The workflow is faster compared to MS Word.
-* Latex is widely used for scientific topics.
+* LaTeX is widely used for scientific topics.
 
 > It doesnt come without drawbacks, but is still worth learning.
 
-## Set up for Latex
+## Set up for LaTeX
 
 You will need two things :  
 
-1. *Latex Interpreter/Compiler.*   
-I suggest [Miktex](https://miktex.org/about) for Windows. [TeXLive](https://www.tug.org/texlive/) for Linux and Unix-based. [MacTeX](https://tug.org/mactex/) for Mac
-2. *Latex Editor.*  
-I highly suggest [TexMaker](http://www.xm1math.net/texmaker/) for easy going, although any text editor can create or change a latex file.
+1. *LaTeX Interpreter/Compiler.*   
+I suggest [MiKTeX](https://miktex.org/about) for Windows. [TeX Live](https://www.tug.org/texlive/) for Linux and Unix-based. [MacTeX](https://tug.org/mactex/) for Mac
+2. *LaTeX Editor.*  
+I highly suggest [TexMaker](http://www.xm1math.net/texmaker/) for easy going, although any text editor can create or change a LaTeX file.
 3. *PDF viewer.* (optional)   
 Any PDF viewer out there is fine. This is for viewing your result.  
 
-Or you can choose a simple online solution : [ShareLatex](https://www.sharelatex.com/).  
+Or you can choose a simple online solution : [ShareLaTeX](https://www.sharelatex.com/).  
 
-## First Latex file
+## First LaTeX file
 
-Let's do the traditional **Hello World** in **Latex**.
+Let's do the traditional **Hello World** in **LaTeX**.
 If you have installed **TexMaker**, first create a new file with ending ```.tex```. Then type in the following code below to render "Hello World!" and run "quick build"
 
 ```tex
@@ -65,7 +65,7 @@ It should look like this in TexMaker
 
 ## A deeper look
 
-:eyes: A deeper look into your first latex file easily show that :
+:eyes: A deeper look into your first LaTeX file easily show that :
 * The first line tells the Interpreter that you are working on an **article** with the size of the a4. Other types of document you might be working with in the future is **report**, **book**...
 * A document is wrapped by the **\begin{document}** and **\end{document}** . Think of this as the heart of the document, as the ```main()``` in *java* or *C++* ... without which the document can't be rendered.
 * The part between begin and end ( which, in this case, is ```Hello World``` ) is simply your own content.
@@ -173,7 +173,7 @@ Now let's take a closer look :eyes: :
 
 ## Adding images
 
-To add an image to the latex file , you need to use figure environment and the graphicx package. In details, it's ```\usepackage{graphicx}``` and
+To add an image to the LaTeX file , you need to use figure environment and the graphicx package. In details, it's ```\usepackage{graphicx}``` and
 
 ```tex
 \begin{figure}
@@ -201,13 +201,13 @@ Here's how the image is rendered :
 
 ![](http://i.imgur.com/ysY9MOb.png)
 
-## Insert code into Latex  
+## Insert code into LaTeX  
 
 #### :white_check_mark: First method :white_check_mark:
 
 One aspect of text compiling, which is of top important to programmers and developers, is how to professionally insert the codes into the document.
 
-For Latex, the process is simple and very professional. We just wrap the code with the some predefined content, then we are good to go.  
+For LaTeX, the process is simple and very professional. We just wrap the code with the some predefined content, then we are good to go.  
 
 Example :  
 
@@ -231,7 +231,7 @@ int main()
 \end{document}
 ```
 
-:speech_balloon: **Latex supports syntax for these languages** :speech_balloon:    
+:speech_balloon: **LaTeX supports syntax for these languages** :speech_balloon:    
 
 ![](http://i.imgur.com/FJfj8Er.png)    
 
@@ -294,7 +294,7 @@ Here is how the code above compile in TexMaker :
 
 ## HOORAY !!
 
-:tada: Thank you for finishing the guide. That's basically all you need to know about LaTex. :hammer:  
+:tada: Thank you for finishing the guide. That's basically all you need to know about LaTeX. :hammer:  
 
 
 ## License
