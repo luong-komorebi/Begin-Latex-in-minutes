@@ -12,7 +12,9 @@
 * [A deeper look](#a-deeper-look)
 * [Paragraph and section](#paragraph-and-section)
 * [Making a table of content](#making-a-table-of-content)
+* [Footnotes](#footnotes)
 * [What is package](#what-is-package)
+* [Table](#table)
 * [Adding images](#adding-images)
 * [Insert code into Latex](#insert-code-into-latex)
 
@@ -105,7 +107,21 @@ Example :
 
 ![](http://i.imgur.com/TBUOTRj.png)
 
-:bangbang: **Tips** : you can use ```\newpage``` if you want to make a new page
+:bangbang: **Tips** : you can use ```\newpage``` if you want to make a new page.
+
+## Footnotes
+
+As easy as eating a cake, use footnote+label+ref to make all kinds of footnotes you want. For example:
+```tex
+Hi let me introduce myself\footnote{\label{myfootnote}Hello footnote}.
+... (later on)
+I'm referring to myself \ref{myfootnote}.
+```
+:point_down: :point_down: Can you see it ?  :point_down: :point_down:
+
+![](http://i.imgur.com/BSYPX4C.png)
+
+:bangbang: **Tips** : you can use ```\newline``` to make a new line.  
 
 ## What is package
 
@@ -116,6 +132,42 @@ Here is an example of using a package for math display :
 ![](http://i.imgur.com/DvOtUXa.png)  
 
 :construction: You should google search more if you want a package that meets your requirements.
+
+## Table
+
+A practical example :thought_balloon: :   
+
+```tex
+\begin{table}[h!]
+  \centering
+  \caption{Caption for the table.}
+  \label{tab:table1}
+  \begin{tabular}{l|c||r}
+    1 & 2 & 3\\
+    \hline
+    a & b & c\\
+  \end{tabular}
+\end{table}
+```
+
+:star2: This is what it renders :star2: :
+
+![](http://i.imgur.com/3Wxn9oB.png)  
+
+
+Now let's take a closer look :eyes: :
+
+* For table, first we need a table environment, which is why we have ```\begin{table}``` and ```\end{table}``` .
+* You will learn about h! later in the image section. It goes with ```\centering``` to keep the table at the center of the page.
+* Caption is for describing. Label is for tagging. You will see these more in image section.
+* Tabular is the most important part. A table environment always need a tabular environment inside.
+  - the part ```{l|c||r}``` is where we format the content inside the table. Here we can see :
+    * l or c or r means that the content inside each cell will be left-aligned or center-aligned or right-aligned, respectively.
+    * the vertical slash | or || is actually the format of the vertical lines/borders inside the table's columns.
+  - 1 & 2 & 3 => 1 2 3 are the contents of each cells. the ampersand & is used to separate the content of each cell in a row.
+  - a ```\hline``` actually adds a horizontal line to separate each row.
+
+:bangbang: **Tips** You can use a package :package: called booktabs ```\usepackage{booktabs}``` for a visually better table.
 
 ## Adding images
 
@@ -129,7 +181,8 @@ To add an image to the latex file , you need to use figure environment and the g
 \end{figure}
 ```
 
-:bangbang: **Tips** : putting [width=\linewidth] to scale the image to the width of the document.  If you want to float the image, then you need to attribute the begin with a certain value. Also, the fig is for later reference so name it with care.
+:bangbang: **Tips** : putting [width=\linewidth] to scale the image to the width of the document.  If you want to float the image, then you need to attribute the begin with a certain value. Also, the fig is for later reference so name it with care.  
+
 ```tex
 \begin{figure}[h!]
 ```
@@ -235,6 +288,11 @@ Here is how the code above compile in TexMaker :
 
 ![](http://i.imgur.com/XwwDJNo.png)
 
+
+
+## HOORAY !!
+
+:tada: Thank you for finishing the guide. That's basically all you need to know about LaTex. :hammer:  
 
 ## License
 
