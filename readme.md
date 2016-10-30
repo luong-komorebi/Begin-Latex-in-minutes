@@ -30,7 +30,7 @@ LaTeX, which is pronounced «Lah-tech» or «Lay-tech» (to rhyme with «blech»
 * The workflow is faster compared to MS Word.
 * Latex is widely used for scientific topics.
 
-> It doesnt come without drawbacks, but is still worth learning.
+> It doesn't come without drawbacks, but is still worth learning.
 
 ## Set up for Latex
 
