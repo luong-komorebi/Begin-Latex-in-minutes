@@ -10,6 +10,10 @@
 * [Set up for Latex](#set-up-for-latex)
 * [First Latex file](#first-latex-file)
 * [A deeper look](#a-deeper-look)
+* [Paragraph and section](#paragraph-and-section)
+* [Making a table of content](#making-a-table-of-content)
+* [What is package](#what-is-package)
+* [Adding images](#adding-images)
 * [Insert code into Latex](#insert-code-into-latex)
 
 ## What is Latex
@@ -57,7 +61,7 @@ It should look like this in TexMaker
 
 ## A deeper look
 
-A deeper look into your first latex file easily show that :
+:eyes: A deeper look into your first latex file easily show that :
 * The first line tells the Interpreter that you are working on an **article** with the size of the a4. Other types of document you might be working with in the future is **report**, **book**...
 * A document is wrapped by the **\begin{document}** and **\end{document}** . Think of this as the heart of the document, as the ```main()``` in *java* or *C++* ... without which the document can't be rendered.
 * The part between begin and end ( which, in this case, is ```Hello World``` ) is simply your own content.
@@ -86,9 +90,65 @@ vs without the packages :package: :
 
 ![](http://i.imgur.com/Upd47xH.png)  
 
+## Paragraph and section
+
+:blue_book: We begin a section with ```\section``` and a paragraph with ```\paragraph``` .   
+:orange_book: You can also add subsection with ```\subsection``` and subparagraph with ```\subparagraph```  
+
+![](http://i.imgur.com/qKbZYnG.png)
+
+## Making a table of content
+
+:metal: Wisely use sections and subsections with an opening ```\tableofcontents```
+
+Example :
+
+![](http://i.imgur.com/TBUOTRj.png)
+
+:bangbang: **Tips** : you can use ```\newpage``` if you want to make a new page
+
+## What is package
+
+LaTeX offers a lot of functions by default, but in some situations it can become in handy to use so called packages. To import a package in LaTeX, you simply add the ```\usepackage``` :package:  
+
+Here is an example of using a package for math display :  
+
+![](http://i.imgur.com/DvOtUXa.png)  
+
+:construction: You should google search more if you want a package that meets your requirements.
+
+## Adding images
+
+To add an image to the latex file , you need to use figure environment and the graphicx package. In details, it's ```\usepackage{graphicx}``` and
+
+```tex
+\begin{figure}
+  \includegraphics[width=\linewidth]{filename.jpg}
+  \caption{What is it about?}
+  \label{fig:whateverlabel}
+\end{figure}
+```
+
+:bangbang: **Tips** : putting [width=\linewidth] to scale the image to the width of the document.  If you want to float the image, then you need to attribute the begin with a certain value. Also, the fig is for later reference so name it with care.
+```tex
+\begin{figure}[h!]
+```
+
+:passport_control: Legit values are :   
+
+* h (here) - same location
+* t (top) - top of page
+* b (bottom) - bottom of page
+* p (page) - on an extra page
+* ! (override) - will force the specified location
+
+Here's how the image is rendered :  
+
+![](http://i.imgur.com/ysY9MOb.png)
+
 ## Insert code into Latex  
 
-#### First method :
+#### :white_check_mark: First method :white_check_mark:
 
 One aspect of text compiling, which is of top important to programmers and developers, is how to professionally insert the codes into the document.
 
@@ -124,7 +184,7 @@ As you can see, with the **{verbatim}** wrapper you can easily insert code witho
 
 ![](http://i.imgur.com/tpercup.png)
 
-#### Second Method :
+#### :white_check_mark: :white_check_mark: Second Method :white_check_mark: :white_check_mark:
 
 This method gives you more options, including insert code **inline**, make **custom styled** code, choose a **specific language** for code, **import code** **from** another **file** within the same directory.... With this method, you dont use **{verbatim}** , but include a package :package: named **listings**.    
 
@@ -178,10 +238,9 @@ Here is how the code above compile in TexMaker :
 
 ## License
 
-[![](http://www.wtfpl.net/wp-content/uploads/2012/12/logo-220x1601.png)](http://www.wtfpl.net/)
+ [![](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png)](http://www.wtfpl.net/)
 
 **DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE**
 Copyright (C) 2016 Luong Vo  
 Everyone is permitted to copy and distribute verbatim or modified copies of this license document, and changing it is allowed as long as the name is changed.
-TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
-* You just DO WHAT THE FUCK YOU WANT TO.
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION : You just DO WHAT THE FUCK YOU WANT TO.
