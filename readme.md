@@ -1,5 +1,7 @@
 # Intro to LATEX
 
+![](https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg)
+
 ### Table of content
 * [What is Latex](#what-is-latex)
 * [Why use Latex](#why-use-latex)
@@ -24,12 +26,13 @@ LaTeX, which is pronounced «Lah-tech» or «Lay-tech» (to rhyme with «blech»
 
 ## Set up for Latex
 
-You will need two things :
-1. *Latex Interpreter.*
+You will need two things :  
+
+1. *Latex Interpreter.*   
 I highly suggest [miktex](https://miktex.org/about).
-2. *Latex Editor.*
+2. *Latex Editor.*  
 I highly suggest [TexMaker](http://www.xm1math.net/texmaker/), although any text editor should be capable of compiling a latex file.
-3. *PDF viewer.*
+3. *PDF viewer.*  
 Any PDF viewer out there is fine.
 
 ## First Latex file
@@ -156,13 +159,13 @@ Lorem ipsum dolor sit amet \lstinline{print "Hello World"} , consectetur adipisc
 \end{document}
 
 ```
-From this, you can see:
-1. To insert a code block , start with ```\begin{lstlisting}``` and end with ```\end{lstlisting}```
-2. To import code from another file within the same directory, you can use ```lstinputlisiting{name_of_file}```
-3. To specify a language for the code, use ```[language=C++]```
-4. To insert inline code use ```\lstinline```
-5. To apply custom style, use the ```\usepackage{color}``` and define your own style then define the listing with your own theme (Please look at code below). You can modify many things with your own style, but you need to read the doc for the correct property name.
-6. Interested ?? More [here](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings).
+From this, you can see:  
+1. To insert a code block , start with ```\begin{lstlisting}``` and end with ```\end{lstlisting}```  
+2. To import code from another file within the same directory, you can use ```lstinputlisiting{name_of_file}```  
+3. To specify a language for the code, use ```[language=C++]```  
+4. To insert inline code use ```\lstinline```  
+5. To apply custom style, use the ```\usepackage{color}``` and define your own style then define the listing with your own theme (Please look at code below). You can modify many things with your own style, but you need to read the doc for the correct property name.  
+6. Interested ?? More [here](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings).  
 
 Here is how the code above compile in TexMaker :  
 
