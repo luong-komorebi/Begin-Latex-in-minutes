@@ -1,10 +1,8 @@
-
 # Begin LATEX in minutes
 
 ![](https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg)  
 
 *Inspired by my professor Nghiem Quoc Minh*
-
 
 ### Table of content
 * [What is LaTeX](#what-is-latex)
@@ -37,6 +35,7 @@ Latex doesnt come without drawbacks, but is still worth learning.
 ## Set up for LaTeX
 
 You will need two things:  
+
 
 1. *LaTeX Interpreter/Compiler.*   
 I suggest [MiKTeX](https://miktex.org/about) for Windows. [TeX Live](https://www.tug.org/texlive/) for Linux and Unix-based. [MacTeX](https://tug.org/mactex/) for Mac
@@ -88,7 +87,7 @@ Xin chào thế giới. This is Hellow World in Vietnamese.
 \end{document}
 ```
 
-Here we use two package `usepackage[T5]{fontenc}` and `usepackage[utf8]{inputenc}` . This is really simple to understand as the package will import font encoder to display your content correctly. If you are using TexMaker this is what the above code display :
+Here we use two package `usepackage[T5]{fontenc}` and `usepackage[utf8]{inputenc}` . This is really simple to understand as the package will import font encoders to display your content correctly. If you are using TexMaker this is what the above code display :
 
 ![](http://i.imgur.com/OUSPekM.png)
 
@@ -105,7 +104,7 @@ vs without the packages :package::
 
 ## Making a table of contents
 
-:metal: Wisely use sections and subsections with an opening `\tableofcontents`
+:metal: It's useful to open sections and subsections with a `\tableofcontents`
 
 Example:
 
@@ -129,7 +128,7 @@ I'm referring to myself \ref{myfootnote}.
 
 ## What is a package?
 
-LaTeX offers a lot of functions by default, but in some situations it can become in handy to use so called packages. To import a package in LaTeX, you simply add the `\usepackage` :package:  
+LaTeX offers a lot of functions by default, but in some situations it can come in handy to use so called packages. To import a package in LaTeX, you simply add the `\usepackage` :package:  
 
 Here is an example of using two packages for displaying math:
 
@@ -160,10 +159,10 @@ A practical example :thought_balloon: :
 
 Now let's take a closer look :eyes: :
 
-* For table, first we need a table environment, which is why we have `\begin{table}` and `\end{table}` .
+* For tables, first we need a table environment, which is why we have `\begin{table}` and `\end{table}` .
 * You will learn about h! later in the image section. It goes with `\centering` to keep the table at the center of the page.
 * Caption is for describing. Label is for tagging. You will see these more in image section.
-* Tabular is the most important part. A table environment always need a tabular environment inside.
+* Tabular is the most important part. A table environment always needs a tabular environment inside.
   - the part `{l|c||r}` is where we format the content inside the table. Here we can see :
     * l or c or r means that the content inside each cell will be left-aligned or center-aligned or right-aligned, respectively.
     * the vertical slash | or || is actually the format of the vertical lines/borders inside the table's columns.
@@ -174,7 +173,7 @@ Now let's take a closer look :eyes: :
 
 ## Adding images
 
-To add an image to the LaTeX file , you need to use figure environment and the graphicx package. In details, it's `\usepackage{graphicx}` and
+To add an image to the LaTeX file , you need to use figure environment and the graphicx package. Use `\usepackage{graphicx}` and
 
 ```tex
 \begin{figure}
@@ -208,7 +207,7 @@ Here's how the image is rendered :
 
 One aspect of text compiling that is of the utmost importance to programmers and developers is how to professionally insert codes into the document.
 
-For LaTeX, the process is simple and very professional. We just wrap the code with the some predefined content, then we are good to go.  
+For LaTeX, the process is simple and very professional. We just wrap the code with some predefined content, then we are good to go.  
 
 Example :  
 
@@ -284,7 +283,7 @@ From this, you can see:
 2. To import code from another file within the same directory, you can use `lstinputlisiting{name_of_file}`  
 3. To specify a language for the code, use `[language=C++]`  
 4. To insert inline code use `\lstinline`  
-5. To apply custom style, use the `\usepackage{color}` and define your own style then define the listing with your own theme (Please look at code below). You can modify many things with your own style, but you need to read the doc for the correct property name.  
+5. To apply custom styles, use the `\usepackage{color}` and define your own style then define the listing with your own theme (Please look at code below). You can modify many things with your own style, but you need to read the doc for the correct property name.  
 6. Interested ?? More [here](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings).  
 
 Here is how the code above compiles in TexMaker :  
