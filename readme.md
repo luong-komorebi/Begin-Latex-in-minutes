@@ -1,6 +1,8 @@
 # Intro to LATEX
+![](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg) ![](https://jaywcjlove.github.io/sb/lang/english.svg) ![](https://cdn1.iconfinder.com/data/icons/business-237/65/icons-12-32.png) ![](http://i.imgur.com/dwKyG5w.png) ![](https://jaywcjlove.github.io/sb/star/red5.svg)
+![](https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg)  
 
-![](https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg)
+*Inspried by my professor Nghiem Quoc Minh*
 
 ### Table of content
 * [What is Latex](#what-is-latex)
@@ -29,9 +31,9 @@ LaTeX, which is pronounced «Lah-tech» or «Lay-tech» (to rhyme with «blech»
 You will need two things :  
 
 1. *Latex Interpreter.*   
-I highly suggest [miktex](https://miktex.org/about).
+I highly suggest [Miktex](https://miktex.org/about).
 2. *Latex Editor.*  
-I highly suggest [TexMaker](http://www.xm1math.net/texmaker/), although any text editor should be capable of compiling a latex file.
+I highly suggest [TexMaker](http://www.xm1math.net/texmaker/) for easy going, although any text editor can create or change a latex file.
 3. *PDF viewer.*  
 Any PDF viewer out there is fine.
 
@@ -80,7 +82,7 @@ Here we use two package ```usepackage[T5]{fontenc}``` and ```usepackage[utf8]{in
 
 ![](http://i.imgur.com/OUSPekM.png)
 
-vs without the packages :  
+vs without the packages :package: :  
 
 ![](http://i.imgur.com/Upd47xH.png)  
 
@@ -114,8 +116,9 @@ int main()
 \end{document}
 ```
 
-Latex supports syntax for these languages :  
-![](http://i.imgur.com/FJfj8Er.png)  
+:speech_balloon: **Latex supports syntax for these languages** :speech_balloon:    
+
+![](http://i.imgur.com/FJfj8Er.png)    
 
 As you can see, with the **{verbatim}** wrapper you can easily insert code without worrying about how the syntax is formatted. Here is how it looks out of the box, clean and professional :
 
@@ -123,7 +126,7 @@ As you can see, with the **{verbatim}** wrapper you can easily insert code witho
 
 #### Second Method :
 
-This method gives you more options, including insert code **inline**, make custom styled code, choose a specific language for code, import code from another file within the same directory.... With this method, you dont use **{verbatim}** , but include a package named **listings**.    
+This method gives you more options, including insert code **inline**, make **custom styled** code, choose a **specific language** for code, **import code** **from** another **file** within the same directory.... With this method, you dont use **{verbatim}** , but include a package :package: named **listings**.    
 
 Consider the following example :
 ```tex
@@ -159,7 +162,8 @@ Lorem ipsum dolor sit amet \lstinline{print "Hello World"} , consectetur adipisc
 \end{document}
 
 ```
-From this, you can see:  
+From this, you can see:   
+
 1. To insert a code block , start with ```\begin{lstlisting}``` and end with ```\end{lstlisting}```  
 2. To import code from another file within the same directory, you can use ```lstinputlisiting{name_of_file}```  
 3. To specify a language for the code, use ```[language=C++]```  
@@ -170,3 +174,18 @@ From this, you can see:
 Here is how the code above compile in TexMaker :  
 
 ![](http://i.imgur.com/XwwDJNo.png)
+
+
+## License
+
+[![](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png)](http://www.wtfpl.net/)
+
+**DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE**
+Copyright (C) 2016 Luong Vo  
+Everyone is permitted to copy and distribute verbatim or modified copies of this license document, and changing it is allowed as long as the name is changed.
+
+**DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE** 
+[![](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl.svg)](http://www.wtfpl.net/)
+
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+* You just DO WHAT THE FUCK YOU WANT TO.
