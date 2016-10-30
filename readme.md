@@ -5,15 +5,15 @@
 *Inspired by my professor Nghiem Quoc Minh*
 
 ### Table of Contents
-* [What is LaTeX](#what-is-latex-)
-* [Why use LaTeX](#why-use-latex-)
+* [What is LaTeX?](#what-is-latex-)
+* [Why use LaTeX?](#why-use-latex-)
 * [Set up for LaTeX](#set-up-for-latex)
 * [First LaTeX file](#first-latex-file)
 * [A deeper look](#a-deeper-look)
 * [Paragraph and section](#paragraph-and-section)
 * [Making a table of contents](#making-a-table-of-contents)
 * [Footnotes](#footnotes)
-* [What is package](#what-is-a-package)
+* [What is a package?](#what-is-a-package)
 * [Table](#table)
 * [Adding images](#adding-images)
 * [Insert code into LaTeX](#insert-code-into-latex)
