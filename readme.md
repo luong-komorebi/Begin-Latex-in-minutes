@@ -127,9 +127,9 @@ I'm referring to myself \ref{myfootnote}.
 
 LaTeX offers a lot of functions by default, but in some situations it can become in handy to use so called packages. To import a package in LaTeX, you simply add the ```\usepackage``` :package:  
 
-Here is an example of using a package for math display :  
+Here is an example of using two packages for math display :  
 
-![](http://i.imgur.com/NFNVN7E.png)  
+![](http://i.imgur.com/jF3oNY0.png)  
 
 :construction: You should google search more if you want a package that meets your requirements. For example, amsmath is widely used for math and has a lot of extension typeset for math. Cover them all would be impossible for this general guide.
 
