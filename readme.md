@@ -82,7 +82,7 @@ It should look like this in TexMaker:
 
 \begin{document}
 
-Xin chào thế giới. This is Hellow World in Vietnamese.
+Xin chào thế giới. This is Hello World in Vietnamese.
 
 \end{document}
 ```
