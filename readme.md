@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Begin LATEX in minutes
 
 ![](https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg)  
