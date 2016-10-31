@@ -10,6 +10,7 @@
 * [Set up for LaTeX](#set-up-for-latex)
 * [First LaTeX file](#first-latex-file)
 * [A deeper look](#a-deeper-look)
+* [Multilingual usage](#multilingual-usage)
 * [Paragraph and section](#paragraph-and-section)
 * [Making a table of contents](#making-a-table-of-contents)
 * [Footnotes](#footnotes)
