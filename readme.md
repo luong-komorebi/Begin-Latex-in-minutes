@@ -41,7 +41,7 @@ You will need two things:
 1. *LaTeX Interpreter/Compiler.*   
 I am using [MiKTeX](https://miktex.org/about) for Windows.  
 2. *LaTeX Editor.*  
-I am using [TexMaker](http://www.xm1math.net/texmaker/) for easy editing, although any text editor can create or change a LaTeX file.
+I am using c for easy editing, although any text editor can create or change a LaTeX file.
 3. *PDF viewer.* (optional)   
 Any PDF viewer out there is fine. This is for viewing your result.  
 
@@ -303,7 +303,8 @@ Here is how the code above compiles in TexMaker :
 
 #### LaTex Editors
 
-* 
+* [TexMaker](http://www.xm1math.net/texmaker/) Cross platform LaTex editors. 
+
 ## HOORAY !!
 
 :tada: Thank you for finishing the guide. That's basically all you need to know about LaTeX. :hammer:  
