@@ -78,6 +78,30 @@ It should look like this in TexMaker:
 * A document is wrapped by the **\begin{document}** and **\end{document}** . Think of this as the heart of the document, as the `main()` in *java* or *C++* ... without which the document can't be rendered.
 * The part between begin and end ( which, in this case, is `Hello World` ) is simply your own content.
 
+### :warning: Important :warning:   
+**Some languages won't work right out of the box. You will need to include some packages for the font to render. Also, you will learn about "packages" later.** For example:  
+
+```tex
+\documentclass[a4paper]{article}
+
+\usepackage[T5]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+Xin chào thế giới. This is Hellow World in Vietnamese.
+
+\end{document}
+```
+
+Here we use two package `usepackage[T5]{fontenc}` and `usepackage[utf8]{inputenc}` . This is really simple to understand as the package will import font encoders to display your content correctly. If you are using TexMaker this is what the above code display :
+
+![](http://i.imgur.com/OUSPekM.png)
+
+vs without the packages :package::  
+
+![](http://i.imgur.com/Upd47xH.png)  
+
 ## Multilingual usage
 
 To use TeX with other languages, you have some options. If you use pdfLaTeX, the
