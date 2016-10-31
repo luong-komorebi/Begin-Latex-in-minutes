@@ -41,7 +41,7 @@ You will need the following things:
 1. *LaTeX Distribution.*
 I am using [MiKTeX](https://miktex.org/about) for Windows.
 2. *LaTeX Editor.*
-I am using c for easy editing, although any text editor can create or change a LaTeX file.
+I am using [TeXMaker](http://www.xm1math.net/texmaker/) for easy editing, although any text editor can create or change a LaTeX file.
 3. *PDF viewer.* (optional)
 Any PDF viewer out there is fine. This is for viewing your result.
 
