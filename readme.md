@@ -79,7 +79,7 @@ It should look like this in TexMaker:
 
 ## Multilingual usage
 
-To use TeX with other languages, you some options. If you use pdfLaTeX, the
+To use TeX with other languages, you have some options. If you use pdfLaTeX, the
 default compiler, you are limited to 256 characters and various encoding
 issues. However, if you switch your TeX compiler to LuaLaTeX (or XeLaTeX) and
 use `fontspec` and `polyglossia`, Unicode will work out of the box:
