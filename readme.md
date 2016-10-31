@@ -46,7 +46,9 @@ I am using c for easy editing, although any text editor can create or change a L
 Any PDF viewer out there is fine. This is for viewing your result.  
 
 Or you can choose a simple online solution like [ShareLaTeX](https://www.sharelatex.com/).  
-Please look at [Additional Tools](#additional-tools) for a wider variety of choices.
+Please look at [Additional Tools](#additional-tools) for a wider variety of choices.  
+
+:pushpin: Most PDF viewers on Windows(e.g: Acrobat) **block writing** to the pdf when it is opened. This leads to an error if you compile again. There are some viewers which **don't block** and also update if the pdf was updated(e.g: Sumatra PDF) 
 
 ## First LaTeX file
 
