@@ -1,12 +1,12 @@
-# Begin LATEX in minutes
+# Begin LaTeX in minutes
 
-![](https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg)  
+![](https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg)
 
 *Inspired by my professor Nghiem Quoc Minh*
 
 ### Table of Contents
-* [What is LaTeX?](#what-is-latex-)
-* [Why use LaTeX?](#why-use-latex-)
+* [What is LaTeX?](#what-is-latex)
+* [Why use LaTeX?](#why-use-latex)
 * [Set up for LaTeX](#set-up-for-latex)
 * [First LaTeX file](#first-latex-file)
 * [A deeper look](#a-deeper-look)
@@ -19,11 +19,11 @@
 * [Insert code into LaTeX](#insert-code-into-latex)
 * [Additional Tools](#additional-tools)
 
-## What is LaTeX ?
+## What is LaTeX?
 
 LaTeX, which is pronounced «Lah-tech» or «Lay-tech» (to rhyme with «blech»), is a document preparation system for high-quality typesetting. It is most often used for medium-to-large technical or scientific documents but it can be used for almost any form of publishing.
 
-## Why use LaTeX ? 
+## Why use LaTeX?
 
 * LaTeX is free, multiplatform.
 * LaTeX is just a text document (which can be opened by any text editor), readily converted to PDF.
@@ -35,20 +35,22 @@ LaTeX, which is pronounced «Lah-tech» or «Lay-tech» (to rhyme with «blech»
 
 ## Set up for LaTeX
 
-You will need two things:  
+You will need the following things:
 
 
-1. *LaTeX Interpreter/Compiler.*   
-I am using [MiKTeX](https://miktex.org/about) for Windows.  
-2. *LaTeX Editor.*  
+1. *LaTeX Distribution.*
+I am using [MiKTeX](https://miktex.org/about) for Windows.
+2. *LaTeX Editor.*
 I am using c for easy editing, although any text editor can create or change a LaTeX file.
-3. *PDF viewer.* (optional)   
-Any PDF viewer out there is fine. This is for viewing your result.  
+3. *PDF viewer.* (optional)
+Any PDF viewer out there is fine. This is for viewing your result.
 
-Or you can choose a simple online solution like [ShareLaTeX](https://www.sharelatex.com/).  
-Please look at [Additional Tools](#additional-tools) for a wider variety of choices.  
+In addition, you need to choose a compiler. The default compiler of most
+editors is pdfLaTeX, but if you need support for Unicode or TTF/OTF fonts from
+your system, use LuaLaTeX.
 
-:pushpin: Most PDF viewers on Windows(e.g: Acrobat) **block writing** to the pdf when it is opened. This leads to an error if you compile again. There are some viewers which **don't block** and also update if the pdf was updated(e.g: Sumatra PDF) 
+Or you can choose a simple online solution like [ShareLaTeX](https://www.sharelatex.com/).
+Please look at [Additional Tools](#additional-tools) for a wider variety of choices.
 
 ## First LaTeX file
 
@@ -65,8 +67,8 @@ Hello World
 \end{document}
 ```
 
-It should look like this in TexMaker:   
-![](http://i.imgur.com/llzrDM9.png)  
+It should look like this in TexMaker:
+![](http://i.imgur.com/llzrDM9.png)
 
 ## A deeper look
 
@@ -75,14 +77,19 @@ It should look like this in TexMaker:
 * A document is wrapped by the **\begin{document}** and **\end{document}** . Think of this as the heart of the document, as the `main()` in *java* or *C++* ... without which the document can't be rendered.
 * The part between begin and end ( which, in this case, is `Hello World` ) is simply your own content.
 
-### :warning: Important :warning:   
-**Some languages won't work right out of the box. You will need to include some packages for the font to render. Also, you will learn about "packages" later.** For example:  
+## Multilingual usage
+
+To use TeX with other languages, you some options. If you use pdfLaTeX, the
+default compiler, you are limited to 256 characters and various encoding
+issues. However, if you switch your TeX compiler to LuaLaTeX (or XeLaTeX) and
+use `fontspec` and `polyglossia`, Unicode will work out of the box:
 
 ```tex
 \documentclass[a4paper]{article}
 
-\usepackage[T5]{fontenc}
-\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+%\setmainfont[]{DejaVu Serif}
 
 \begin{document}
 
@@ -91,18 +98,14 @@ Xin chào thế giới. This is Hello World in Vietnamese.
 \end{document}
 ```
 
-Here we use two packages `usepackage[T5]{fontenc}` and `usepackage[utf8]{inputenc}` . This is really simple to understand as the package will import font encoders to display your content correctly. If you are using TexMaker this is what the above code display :
-
-![](http://i.imgur.com/OUSPekM.png)
-
-vs without the packages :package::  
-
-![](http://i.imgur.com/Upd47xH.png)  
+The default font (Latin Modern) does not support all characters. You can,
+however, use almost any font installed on your system by uncommenting the
+`\setmainfont` line. (TTF and OTF fonts are fully supported).
 
 ## Paragraph and section
 
-:blue_book: We begin a section with `\section` and a paragraph with `\paragraph` .   
-:orange_book: You can also add subsection with `\subsection` and subparagraph with `\subparagraph`  
+:blue_book: We begin a section with `\section` and a paragraph with `\paragraph` .
+:orange_book: You can also add subsection with `\subsection` and subparagraph with `\subparagraph`
 
 ![](http://i.imgur.com/qKbZYnG.png)
 
@@ -128,21 +131,21 @@ I'm referring to myself \ref{myfootnote}.
 
 ![](http://i.imgur.com/BSYPX4C.png)
 
-:bangbang: **Tips** : you can use `\newline` to make a new line.  
+:bangbang: **Tips** : you can use `\newline` to make a new line.
 
 ## What is a package?
 
-LaTeX offers a lot of functions by default, but in some situations it can come in handy to use so called packages. To import a package in LaTeX, you simply add the `\usepackage` :package:  
+LaTeX offers a lot of functions by default, but in some situations it can come in handy to use so called packages. To import a package in LaTeX, you simply add the `\usepackage` :package:
 
 Here is an example of using two packages for displaying math:
 
-![](http://i.imgur.com/jF3oNY0.png)  
+![](http://i.imgur.com/jF3oNY0.png)
 
 :construction: You should google search more if you want a package that meets your requirements. For example, amsmath is widely used for math and has a lot of extension typeset for math. Covering them all would be impossible for this general guide.
 
 ## Table
 
-A practical example :thought_balloon: :   
+A practical example :thought_balloon: :
 
 ```tex
 \begin{table}[h!]
@@ -159,7 +162,7 @@ A practical example :thought_balloon: :
 
 :star2: This is what it renders :star2: :
 
-![](http://i.imgur.com/3Wxn9oB.png)  
+![](http://i.imgur.com/3Wxn9oB.png)
 
 Now let's take a closer look :eyes: :
 
@@ -187,13 +190,13 @@ To add an image to the LaTeX file , you need to use figure environment and the g
 \end{figure}
 ```
 
-:bangbang: **Tips**: Put [width=\linewidth] to scale the image to the width of the document.  If you want to float the image, then you need to attribute the begin with a certain value. Also, the fig is for later reference so name it with care.  
+:bangbang: **Tips**: Put [width=\linewidth] to scale the image to the width of the document.  If you want to float the image, then you need to attribute the begin with a certain value. Also, the fig is for later reference so name it with care.
 
 ```tex
 \begin{figure}[h!]
 ```
 
-:passport_control: Legit values are :   
+:passport_control: Legit values are :
 
 * h (here) - same location
 * t (top) - top of page
@@ -201,19 +204,19 @@ To add an image to the LaTeX file , you need to use figure environment and the g
 * p (page) - on an extra page
 * ! (override) - will force the specified location
 
-Here's how the image is rendered :  
+Here's how the image is rendered :
 
 ![](http://i.imgur.com/ysY9MOb.png)
 
-## Insert code into LaTeX  
+## Insert code into LaTeX
 
 #### :white_check_mark: First method :white_check_mark:
 
 One aspect of text compiling that is of the utmost importance to programmers and developers is how to professionally insert codes into the document.
 
-For LaTeX, the process is simple and very professional. We just wrap the code with some predefined content, then we are good to go.  
+For LaTeX, the process is simple and very professional. We just wrap the code with some predefined content, then we are good to go.
 
-Example :  
+Example :
 
 ```tex
 \documentclass[a4paper]{article}
@@ -235,9 +238,9 @@ int main()
 \end{document}
 ```
 
-:speech_balloon: **LaTeX supports syntax for these languages** :speech_balloon:    
+:speech_balloon: **LaTeX supports syntax for these languages** :speech_balloon:
 
-![](http://i.imgur.com/FJfj8Er.png)    
+![](http://i.imgur.com/FJfj8Er.png)
 
 As you can see, with the **{verbatim}** wrapper you can easily insert code without worrying about how the syntax is formatted. Here is how it looks out of the box, clean and professional :
 
@@ -245,7 +248,7 @@ As you can see, with the **{verbatim}** wrapper you can easily insert code witho
 
 #### :white_check_mark: :white_check_mark: Second Method :white_check_mark: :white_check_mark:
 
-This method gives you more options, including insert code **inline**, make **custom styles** code, choose a **specific language** for code, **import code** **from** another **file** within the same directory.... With this method, you dont use **{verbatim}** , but include a package :package: named **listings**.    
+This method gives you more options, including insert code **inline**, make **custom styles** code, choose a **specific language** for code, **import code** **from** another **file** within the same directory.... With this method, you dont use **{verbatim}** , but include a package :package: named **listings**.
 
 Consider the following example :
 ```tex
@@ -281,41 +284,43 @@ Lorem ipsum dolor sit amet \lstinline{print "Hello World"} , consectetur adipisc
 \end{document}
 
 ```
-From this, you can see:   
+From this, you can see:
 
-1. To insert a code block , start with `\begin{lstlisting}` and end with `\end{lstlisting}`  
-2. To import code from another file within the same directory, you can use `lstinputlisiting{name_of_file}`  
-3. To specify a language for the code, use `[language=C++]`  
-4. To insert inline code use `\lstinline`  
-5. To apply custom styles, use the `\usepackage{color}` and define your own style then define the listing with your own theme (Please look at code below). You can modify many things with your own style, but you need to read the doc for the correct property name.  
-6. Interested ?? More [here](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings).  
+1. To insert a code block , start with `\begin{lstlisting}` and end with `\end{lstlisting}`
+2. To import code from another file within the same directory, you can use `lstinputlisiting{name_of_file}`
+3. To specify a language for the code, use `[language=C++]`
+4. To insert inline code use `\lstinline`
+5. To apply custom styles, use the `\usepackage{color}` and define your own style then define the listing with your own theme (Please look at code below). You can modify many things with your own style, but you need to read the doc for the correct property name.
+6. Interested ?? More [here](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings).
 
-Here is how the code above compiles in TexMaker :  
+Here is how the code above compiles in TexMaker :
 
 ![](http://i.imgur.com/XwwDJNo.png)
 
 ## Additional Tools
 
-#### Compilers
+#### Distributions
 
-* [MiKTeX](https://miktex.org/about) for Windows.  
-* [TeX Live](https://www.tug.org/texlive/) for Linux and Unix-based. 
-* [MacTeX](https://tug.org/mactex/) for Mac .
-* [ShareLaTeX](https://www.sharelatex.com/) one near Online solutions with a lot of features.
+* [MiKTeX](https://miktex.org/about) for Windows.
+* [TeX Live](https://www.tug.org/texlive/) for Linux and Unix-based.
+* [MacTeX](https://tug.org/mactex/) for macOS.
+* [ShareLaTeX](https://www.sharelatex.com/) — an online editor.
 
-#### LaTex Editors
+#### LaTeX Editors
 
-* [TexMaker](http://www.xm1math.net/texmaker/) Cross platform LaTex editors. 
+* [TeXMaker](http://www.xm1math.net/texmaker/) Cross platform LaTeX editor.
+* [TeXStudio](http://www.texstudio.org/) An enhanced fork of TeXMaker with more features.
+* TeXShop and TeXworks (minimal editors)
 
 ## HOORAY !!
 
-:tada: Thank you for finishing the guide. That's basically all you need to know about LaTeX. :hammer:  
+:tada: Thank you for finishing the guide. That's basically all you need to know about LaTeX. :hammer:
 
 ## License
 
  [![](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png)](http://www.wtfpl.net/)
 
 **DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE**
-Copyright (C) 2016 Luong Vo  
+Copyright (C) 2016 Luong Vo
 Everyone is permitted to copy and distribute verbatim or modified copies of this license document, and changing it is allowed as long as the name is changed.
 TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION : You just DO WHAT THE FUCK YOU WANT TO.
