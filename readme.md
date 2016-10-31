@@ -17,6 +17,7 @@
 * [Table](#table)
 * [Adding images](#adding-images)
 * [Insert code into LaTeX](#insert-code-into-latex)
+* [Additional Tools](#additional-tools)
 
 ## What is LaTeX ?
 
@@ -38,13 +39,14 @@ You will need two things:
 
 
 1. *LaTeX Interpreter/Compiler.*   
-I suggest [MiKTeX](https://miktex.org/about) for Windows. [TeX Live](https://www.tug.org/texlive/) for Linux and Unix-based. [MacTeX](https://tug.org/mactex/) for Mac
+I am using [MiKTeX](https://miktex.org/about) for Windows.  
 2. *LaTeX Editor.*  
-I highly suggest [TexMaker](http://www.xm1math.net/texmaker/) for easy editing, although any text editor can create or change a LaTeX file.
+I am using [TexMaker](http://www.xm1math.net/texmaker/) for easy editing, although any text editor can create or change a LaTeX file.
 3. *PDF viewer.* (optional)   
 Any PDF viewer out there is fine. This is for viewing your result.  
 
-Or you can choose a simple online solution : [ShareLaTeX](https://www.sharelatex.com/).  
+Or you can choose a simple online solution like [ShareLaTeX](https://www.sharelatex.com/).  
+Please look at [Additional Tools](#additional-tools) for a wider variety of choices.
 
 ## First LaTeX file
 
@@ -290,6 +292,18 @@ Here is how the code above compiles in TexMaker :
 
 ![](http://i.imgur.com/XwwDJNo.png)
 
+## Additional Tools
+
+#### Compilers
+
+* [MiKTeX](https://miktex.org/about) for Windows.  
+* [TeX Live](https://www.tug.org/texlive/) for Linux and Unix-based. 
+* [MacTeX](https://tug.org/mactex/) for Mac .
+* [ShareLaTeX](https://www.sharelatex.com/) one near Online solutions with a lot of features.
+
+#### LaTex Editors
+
+* 
 ## HOORAY !!
 
 :tada: Thank you for finishing the guide. That's basically all you need to know about LaTeX. :hammer:  
