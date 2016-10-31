@@ -330,7 +330,7 @@ Here is how the code above compiles in TexMaker :
 * [TeX Live](https://www.tug.org/texlive/) for Linux and Unix-based.
 * [MacTeX](https://tug.org/mactex/) for macOS.
 * [ShareLaTeX](https://www.sharelatex.com/) — an online editor.
-* [Overleaf](https://www.overleaf.com/) — an collarborative online editor.
+* [Overleaf](https://www.overleaf.com/) — an collaborative online editor.
 
 #### LaTeX Editors
 
