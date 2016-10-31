@@ -307,6 +307,7 @@ Here is how the code above compiles in TexMaker :
 * [MacTeX](https://tug.org/mactex/) for macOS.
 * [ShareLaTeX](https://www.sharelatex.com/) — an online editor.
 * [Overleaf](https://www.overleaf.com/) — an collarborative online editor.
+* [StackEdit](https://stackedit.io/) - In-browser markdown editor.
 
 #### LaTeX Editors
 
