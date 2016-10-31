@@ -26,13 +26,13 @@ LaTeX, which is pronounced «Lah-tech» or «Lay-tech» (to rhyme with «blech»
 
 ## Why use LaTeX?
 
-* LaTeX is free, multiplatform.
-* LaTeX is just a text document (which can be opened by any text editor), readily converted to PDF.
+* LaTeX is free and multiplatform.
+* LaTeX is just a text document (which can be opened by any text editor), which can be converted in many formats like PDF, HTML or Word Documents.
 * LaTeX separates content and style. Style once, then focus on content.
-* The workflow is faster compared to MS Word.
-* LaTeX is widely used for scientific topics.
+* The workflow is faster compared to MS Word (once you get accustomed with the way it works, or if you use a visual tools like Kyle).
+* LaTeX is widely used for scientific papers.
 
-> LaTeX doesn't come without drawbacks, but is still worth learning.
+> LaTeX doesn't come without drawbacks, but it is still worth learning.
 
 ## Set up for LaTeX
 
@@ -40,7 +40,7 @@ You will need the following things:
 
 
 1. *LaTeX Distribution.*
-I am using [MiKTeX](https://miktex.org/about) for Windows.
+I am using [MiKTeX](https://miktex.org/about) for Windows. (please make sure that you either install the complete suite, or enable on-the-fly packages installation. It's safer to install the complete suite). For OS X, use [MacText](https://tug.org/mactex/)
 2. *LaTeX Editor.*
 I am using [TeXMaker](http://www.xm1math.net/texmaker/) for easy editing, although any text editor can create or change a LaTeX file.
 3. *PDF viewer.* (optional)
