@@ -364,7 +364,7 @@ Hello Latex, This is my second part.
 
 Here is the code example in TexMaker:
 
-![](http://imgur.com/a/GZ3dp)
+[![multi_file.png](https://s14.postimg.org/deg0kqhu9/multi_file.png)](https://postimg.org/image/hnkqmwl3h/)
 
 :bangbang: **Tips** : if you divide the document into multiple files, it is better to divide the document based on subjects.
 
