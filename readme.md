@@ -322,6 +322,48 @@ Here is how the code above compiles in TexMaker :
 
 ![](http://i.imgur.com/XwwDJNo.png)
 
+## Multiple files in LaTex
+When we use Latex, we may face that document is too long to handle contents. In this moment, the time to divide the file.
+
+Let's look at the example:
+
+```tex
+% main.tex
+\documentclass[a4paper]{article}
+
+\begin{document}
+
+Hello Latex, This is my first part.
+
+Hello Latex, This is my second part.
+
+\end{document}
+```
+
+From above document, we can divide the document into two using `\input` keyword:
+
+
+```tex
+% main.tex
+\documentclass[a4paper]{article}
+
+\begin{document}
+
+Hello Latex, This is my first part.
+
+\input{second_file}
+
+\end{document}
+```
+
+
+```tex
+% second_file.tex
+Hello Latex, This is my second part.
+```
+:bangbang: **Tips** : if you divide the document into multiple files, it is better to divide the document based on subjects.
+
+
 ## Additional Tools
 
 #### Distributions
