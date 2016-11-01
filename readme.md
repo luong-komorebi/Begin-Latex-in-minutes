@@ -94,7 +94,7 @@ Xin chào thế giới. This is Hellow World in Vietnamese.
 \end{document}
 ```
 
-Here we use two package `usepackage[T5]{fontenc}` and `usepackage[utf8]{inputenc}` . This is really simple to understand as the package will import font encoders to display your content correctly. If you are using TexMaker this is what the above code display :
+Here we use the packages `usepackage[T5]{fontenc}` and `usepackage[utf8]{inputenc}` . This is really simple to understand as the package will import font encoders to display your content correctly. If you are using TexMaker this is what the above code display :
 
 ![](http://i.imgur.com/OUSPekM.png)
 
