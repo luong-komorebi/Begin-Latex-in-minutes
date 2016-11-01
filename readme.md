@@ -361,8 +361,12 @@ Hello Latex, This is my first part.
 % second_file.tex
 Hello Latex, This is my second part.
 ```
-:bangbang: **Tips** : if you divide the document into multiple files, it is better to divide the document based on subjects.
 
+Here is the code example in TexMaker:
+
+![](http://imgur.com/a/GZ3dp)
+
+:bangbang: **Tips** : if you divide the document into multiple files, it is better to divide the document based on subjects.
 
 ## Additional Tools
 
