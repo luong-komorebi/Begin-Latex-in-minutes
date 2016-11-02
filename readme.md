@@ -1,3 +1,4 @@
+
 # Begin LaTeX in minutes
 
 ![](https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg)
@@ -321,6 +322,53 @@ From this, you can see:
 Here is how the code above compiles in TexMaker :
 
 ![](http://i.imgur.com/XwwDJNo.png)
+
+## Multiple files in LaTeX  
+
+When we use LaTeX, we may face a problem that a document is too long to be handle. Therefore, we should divide the file so that its contents can be easily handled.
+
+Let's look at the example:
+
+```tex
+% main.tex
+\documentclass[a4paper]{article}
+
+\begin{document}
+
+Hello Latex, This is my first part.
+
+Hello Latex, This is my second part.
+
+\end{document}
+```
+
+It's just a normal LaTeX file. Now, let's divide the document into two parts using the `\input` keyword:
+
+
+```tex
+% main.tex
+\documentclass[a4paper]{article}
+
+\begin{document}
+
+Hello Latex, This is my first part.
+
+\input{second_file}
+
+\end{document}
+```
+
+
+```tex
+% second_file.tex
+Hello Latex, This is my second part.
+```
+
+Now the main file looks different, but better documented. Here is the result in TexMaker:
+
+[![multi_file.png](https://s14.postimg.org/deg0kqhu9/multi_file.png)](https://postimg.org/image/hnkqmwl3h/)
+
+:bangbang: **Tips** : For readability, clarity and maintenance purpose, it is highly suggested that you divide your Main file systematically, hierarchically and scientifically. Don't divide without reasons or you may get a mess later.  
 
 ## Additional Tools
 
