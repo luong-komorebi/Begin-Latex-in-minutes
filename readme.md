@@ -222,7 +222,7 @@ LaTeX offers a lot of functions by default, but in some situations it can come i
 
 Here is an example of using two packages for displaying math:
 
-![](http://i.imgur.com/jF3oNY0.png)  
+![](http://i.imgur.com/050nrfh.png)  
 
 Even more epic is how circuits are displayed: 
 
@@ -249,7 +249,7 @@ A practical example :thought_balloon: :
 
 :star2: This is what it renders :star2: :
 
-![](http://i.imgur.com/3Wxn9oB.png)
+![](http://i.imgur.com/XbZJJ2E.png)
 
 Now let's take a closer look :eyes: :
 
