@@ -141,7 +141,7 @@ As easy as eating :sushi: and :bento: :
 ![](http://i.imgur.com/Td2LmGz.png)  
 
 #### :white_check_mark: Second method :white_check_mark:
-Another method is achievable if you switch your TeX compiler to [LuaLaTeX](#Additional-tools) (or XeLaTeX). Using `fontspec` and `polyglossia`, Unicode will work out of the box:
+Another method is achievable if you switch your TeX compiler to [LuaLaTeX](#additional-tools) (or [XeLaTeX](#additional-tools)). Using `fontspec` and `polyglossia`, Unicode will work out of the box:
 
 ```tex
 \documentclass[a4paper]{article}
@@ -448,9 +448,16 @@ Now the main file looks different, but better documented. Here is the result in 
 * [TeXStudio](http://www.texstudio.org/) An enhanced fork of TeXMaker with more features.
 * TeXShop and TeXworks (minimal editors)
 
+#### LaTeX Compilers
+
+* Most editors will have an option for you to change the default compiler. Here's an example : 
+
+![](http://i.imgur.com/FbNUiL7.png)
+
 ## HOORAY !!
 
 :tada: Thank you for finishing the guide. That's basically all you need to know about LaTeX. :hammer:  
+If you are greatly interested, more on LaTeX can be found [here](http://www.latex-project.org/help/documentation/) or all over the web, depending on your need.
 
 ## License
 
