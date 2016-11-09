@@ -12,6 +12,7 @@
 * [First LaTeX file](#first-latex-file)
 * [A deeper look](#a-deeper-look)
 * [Multilingual usage](#multilingual-usage)
+* [Lists](#lists)
 * [Paragraph and section](#paragraph-and-section)
 * [Making a table of contents](#making-a-table-of-contents)
 * [Footnotes](#footnotes)
@@ -32,6 +33,7 @@ LaTeX, which is pronounced «Lah-tech» or «Lay-tech» (to rhyme with «blech»
 * LaTeX separates content and style. Style once, then focus on content.
 * The workflow is faster compared to MS Word.
 * LaTeX is widely used for scientific topics.
+* LaTeX is simply the best option when it comes to typesetting math expressions.
 
 > LaTeX doesn't come without drawbacks, but is still worth learning.
 
@@ -57,14 +59,14 @@ Please look at [Additional Tools](#additional-tools) for a wider variety of choi
 ## First LaTeX file
 
 Let's do the traditional **Hello World** in **LaTeX**.
-If you have installed **TexMaker**, first create a new file with ending `.tex`. Then type in the following code below to render "Hello World!" and run "quick build"
+If you have installed **TexMaker**, first create a new file with ending `.tex`. Then type in the following code below to render "Hello World!" and run "quick build". For other LaTeX editors, it should also be easy to follow the same procedure.
 
 ```tex
 \documentclass[a4paper]{article}
 
 \begin{document}
 
-Hello World
+Hello World !  % This is your content
 
 \end{document}
 ```
@@ -76,11 +78,25 @@ It should look like this in TexMaker:
 
 :eyes: A deeper look into your first LaTeX file easily shows that :
 * The first line tells the Interpreter that you are working on an **article** with the size of the a4. Other types of document you might be working with in the future are **report**, **book**... and so on.
-* A document is wrapped by the **\begin{document}** and **\end{document}** . Think of this as the heart of the document, as the `main()` in *java* or *C++* ... without which the document can't be rendered.
+* A document is wrapped by the **\begin{document}** and **\end{document}** . Think of this as the heart of the document, as the `main()` in *java* or *C++* ... without which the document can't be rendered. 
 * The part between begin and end ( which, in this case, is `Hello World` ) is simply your own content.
+* A **percent sign** (%) denotes your comment, which LaTeX will ignore.
 
-### :warning: Important :warning:   
-**Some languages won't work right out of the box. You will need to include some packages for the font to render. Also, you will learn about "packages" later.** For example:  
+#### :zap: Attention :zap: 
+
+* Looking back at **\begin{document}** , **\end{document}** , **\documentclass[a4paper]{article}** . You may notice the pattern now. These are called **Typesetting Commands** ( which are usually preceded by “\” ) and **arguments** ( placed inside curly braces “{}” ). LaTeX are basically normal texts, but powered by these commands.
+* While you are following this guide, everything will work smoothly. However, in the future, should there be any problems, **don't panic**. The error reports are human-friendly and readable. If you can't resolve them, a search tool like Google may be your best friend.  
+* Some characters are **predefined with special meanings in LaTeX. You may want to use backslashes (\) in front of these characters for proper output.**  
+
+![](http://i.imgur.com/9d0bXHH.png)   
+
+## Multilingual usage
+
+**Some languages won't work right out of the box. To use TeX with other languages, you have some options.**  
+
+#### :white_check_mark: First method :white_check_mark:
+
+The first method is including ["packages"](#what-is-a-package) (You will learn about it later) because pdfLaTeX, the default compiler, is limited to 256 characters and various encoding issues. For example:  
 
 ```tex
 \documentclass[a4paper]{article}
@@ -90,25 +106,42 @@ It should look like this in TexMaker:
 
 \begin{document}
 
-Xin chào thế giới. This is Hellow World in Vietnamese.
+Xin chào thế giới. This is Hello World in Vietnamese.
 
 \end{document}
 ```
 
 Here we use the packages `usepackage[T5]{fontenc}` and `usepackage[utf8]{inputenc}` . This is really simple to understand as the package will import font encoders to display your content correctly. If you are using TexMaker this is what the above code display :
 
-![](http://i.imgur.com/OUSPekM.png)
+![](http://i.imgur.com/UQEewYi.png)
 
 vs without the packages :package::  
 
-![](http://i.imgur.com/Upd47xH.png)  
+![](http://i.imgur.com/xvzrQX2.png)  
 
-## Multilingual usage
+:umbrella: A tricky situation is dealing with Chinese-Japanese-Korean. Here, `usepackage{CJKutf8}` with `\begin{CJK}{UTF8}` and `\end{CJK}` comes in very handy. Here's Japanese :jp: : 
+```tex
+\documentclass[a4paper]{article}
 
-To use TeX with other languages, you have some options. If you use pdfLaTeX, the
-default compiler, you are limited to 256 characters and various encoding
-issues. However, if you switch your TeX compiler to LuaLaTeX (or XeLaTeX) and
-use `fontspec` and `polyglossia`, Unicode will work out of the box:
+\usepackage{CJKutf8}
+
+\begin{document}
+
+\begin{CJK}{UTF8}{min}
+こんにちは、私はあなたのすべてを愛しています。
+%Hello, I love you all.
+\end{CJK} 
+
+
+\end{document}
+```
+
+As easy as eating :sushi: and :bento: : 
+
+![](http://i.imgur.com/Td2LmGz.png)  
+
+#### :white_check_mark: Second method :white_check_mark:
+Another method is achievable if you switch your TeX compiler to [LuaLaTeX](#Additional-tools) (or XeLaTeX). Using `fontspec` and `polyglossia`, Unicode will work out of the box:
 
 ```tex
 \documentclass[a4paper]{article}
@@ -124,9 +157,33 @@ Xin chào thế giới. This is Hello World in Vietnamese.
 \end{document}
 ```
 
-The default font (Latin Modern) does not support all characters. You can,
-however, use almost any font installed on your system by uncommenting the
-`\setmainfont` line. (TTF and OTF fonts are fully supported).
+The default font (Latin Modern) does not support all characters. You can, however, use almost any font installed on your system by uncommenting the `\setmainfont` line. (TTF and OTF fonts are fully supported).
+
+
+## Lists
+
+:straight_ruler: It is very important to organize your document well. Thus, let's start by putting your items into a list.  
+Two common types of lists are **unordered** and **ordered** list. Each of them can be handled with ease in LaTeX document :  
+* Unordered List  
+Unordered list only needs **"itemize"**. (pun intended)
+```tex
+\begin{itemize}
+\item Item.
+\item Another Item.
+\end{itemize}
+```  
+* Ordered List  
+Ordered list, however, need us to **"enumerate"** them. (pun intended)  
+```tex
+\begin{enumerate}
+\item First Item.
+\item Second Item.
+\end{enumerate}
+```
+
+Here's how two types of list display in the output: 
+
+![](http://i.imgur.com/jzN4RWm.png)
 
 ## Paragraph and section
 
@@ -165,9 +222,13 @@ LaTeX offers a lot of functions by default, but in some situations it can come i
 
 Here is an example of using two packages for displaying math:
 
-![](http://i.imgur.com/jF3oNY0.png)
+![](http://i.imgur.com/jF3oNY0.png)  
 
-:construction: You should google search more if you want a package that meets your requirements. For example, amsmath is widely used for math and has a lot of extension typeset for math. Covering them all would be impossible for this general guide.
+Even more epic is how circuits are displayed: 
+
+![](http://i.imgur.com/If4lbLA.png)
+
+:construction: You should google search more if you want a package that meets your requirements. For example, amsmath is widely used for math and has a lot of extension typeset for math, circuitikz is for circuits designing, etc.. Covering them all would be impossible for this general guide.
 
 ## Table
 
@@ -389,7 +450,7 @@ Now the main file looks different, but better documented. Here is the result in 
 
 ## HOORAY !!
 
-:tada: Thank you for finishing the guide. That's basically all you need to know about LaTeX. :hammer:
+:tada: Thank you for finishing the guide. That's basically all you need to know about LaTeX. :hammer:  
 
 ## License
 
