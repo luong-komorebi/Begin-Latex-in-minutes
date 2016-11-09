@@ -49,7 +49,7 @@ I am using [TeXMaker](http://www.xm1math.net/texmaker/) for easy editing, althou
 3. *PDF viewer.* (optional)
 Any PDF viewer out there is fine. This is for viewing your result.
 
-In addition, you need to choose a compiler. The default compiler of most
+In addition, you need to choose a [compiler](#additional-tools). The default compiler of most
 editors is pdfLaTeX, but if you need support for Unicode or TTF/OTF fonts from
 your system, use LuaLaTeX.
 
@@ -72,7 +72,7 @@ Hello World !  % This is your content
 ```
 
 It should look like this in TexMaker:
-![](http://i.imgur.com/llzrDM9.png)
+![](http://i.imgur.com/ZuD5N6U.png)
 
 ## A deeper look
 
@@ -86,7 +86,7 @@ It should look like this in TexMaker:
 
 * Looking back at **\begin{document}** , **\end{document}** , **\documentclass[a4paper]{article}** . You may notice the pattern now. These are called **Typesetting Commands** ( which are usually preceded by “\” ) and **arguments** ( placed inside curly braces “{}” ). LaTeX are basically normal texts, but powered by these commands.
 * While you are following this guide, everything will work smoothly. However, in the future, should there be any problems, **don't panic**. The error reports are human-friendly and readable. If you can't resolve them, a search tool like Google may be your best friend.  
-* Some characters are **predefined with special meanings in LaTeX. You may want to use backslashes (\) in front of these characters for proper output.**  
+* Some characters are **predefined with special meanings in LaTeX. You may want to use backslashes (\\) in front of these characters for proper output.**  
 
 ![](http://i.imgur.com/9d0bXHH.png)   
 
