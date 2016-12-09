@@ -124,23 +124,21 @@ vs without the packages :package::
 :umbrella: A tricky situation is dealing with Chinese-Japanese-Korean. Here, `usepackage{CJKutf8}` with `\begin{CJK}{UTF8}` and `\end{CJK}` comes in very handy. Here's Japanese :jp: : 
 ```tex
 \documentclass[a4paper]{article}
-
 \usepackage{CJKutf8}
 
 \begin{document}
 
 \begin{CJK}{UTF8}{min}
-こんにちは、私はあなたのすべてを愛しています。
-%Hello, I love you all.
+この記事を読んでいただきありがとうございます。
+%Thank you for reading this article.
 \end{CJK} 
-
 
 \end{document}
 ```
 
 As easy as eating :sushi: and :bento: : 
 
-![](http://i.imgur.com/Td2LmGz.png)  
+![](http://i.imgur.com/vAN1WUi.png)  
 
 #### :white_check_mark: Second method :white_check_mark:
 Another method is achievable if you switch your TeX compiler to [LuaLaTeX](#additional-tools) (or [XeLaTeX](#additional-tools)). Using `fontspec` and `polyglossia`, Unicode will work out of the box:
