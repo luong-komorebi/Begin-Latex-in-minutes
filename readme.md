@@ -22,6 +22,7 @@
 * [Table](#table)
 * [Adding images](#adding-images)
 * [Insert code into LaTeX](#insert-code-into-latex)
+* [Multiple files in LaTeX](#Multiple-files-in-LaTeX)
 * [Additional Tools](#additional-tools)
 
 ## What is LaTeX?
