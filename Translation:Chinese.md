@@ -87,7 +87,7 @@ Hello World !  % This is your content
 
 #### :zap: 注意 :zap:
 
-* 返回看 **\begin{document}** , **\end{document}** , **\documentclass[a4paper]{article}** ，你大概注意到了格式，它们被称为**排版命令(Typesetting Commands)**(通常在前面加上"\")和**参数(arfuments)**(放在一对花括号"{}"之间)。 LaTax 是由这些命令驱动的普通格式的文本。
+* 返回看 **\begin{document}** , **\end{document}** , **\documentclass[a4paper]{article}** ，你大概注意到了格式，它们被称为**排版命令(Typesetting Commands)**(通常在前面加上"\")和**参数(arguments)**(放在一对花括号"{}"之间)。 LaTax 是由这些命令驱动的普通格式的文本。
 * 如果你按照该指南的步骤完成，一切都会很顺畅。但将来你可能会遇到一些错误，**不要惊慌**。错误报告写的非常明白且容易理解。如果你不能解决这些问题，谷歌等搜索工具会是你的好伙伴。
 * 一些字符**在 LaTeX 中被预定义了。你如果想得到正确的输出，需要在这些字符之前加上反斜杠(\\)。**
 
