@@ -23,7 +23,7 @@
 * [Tabela](#tabela)
 * [Adicionando imagens](#adicionando-imagens)
 * [Insira código no LaTeX](#insira-código-no-latex)
-* [Vários arquivos no LaTeX](#vários-arquivos-no-LaTeX)
+* [Vários arquivos no LaTeX](#vários-arquivos-no-latex)
 * [Ferramentas adicionais](#ferramentas-adicionais)
 
 ## O que é Latex?
