@@ -3,7 +3,7 @@
 
 ![](https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg)
 
-**Aviso:** * Todo conteúdo escrito abaixo é de minha própria experiência na faculdade e da leitura de diversos materiais. Eu não sou nem professional nem especialista, mas um estudante com uma grande paixão pela linguagem. Qualquer um pode abrir uma discussão na seção issue, ou um pull request no caso de algo que deve ser modificado ou adicionado. Se você considera meu trabalho valioso, uma [donation](#donation) é muito apreciada. *
+**Aviso:** *Todo conteúdo escrito abaixo é de minha própria experiência na faculdade e da leitura de diversos materiais. Eu não sou nem professional nem especialista, mas um estudante com uma grande paixão pela linguagem. Qualquer um pode abrir uma discussão na seção issue, ou um pull request no caso de algo que deve ser modificado ou adicionado. Se você considera meu trabalho valioso, uma [donation](#donation) é muito apreciada.*
 
 *Versão em chinês disponível [Aqui](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Chinese.md)*  
 *Versão em espanhol disponível  [Aqui](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Spanish.md)*
@@ -28,25 +28,27 @@
 
 ## O que é Latex?
 
-LaTeX, which is pronounced «Lah-tech» or «Lay-tech» (to rhyme with «blech»), is a document preparation system for high-quality typesetting. It is most often used for medium-to-large technical or scientific documents but it can be used for almost any form of publishing.
+LaTeX, que é pronunciado «Lah-tech» ou «Lay-tech» (para rimar com «blech»), é um sistema de preparação de documentos para a tipografia de alta qualidade. É usado geralmente para documentos técnicos ou cientifícos, médios ou grandes, mas também pode ser usado para quase todas as formas de publicação.
+
+
 
 ## Por quê usar LaTeX?
 
-* LaTeX is free, multiplatform.
-* LaTeX is just a text document (which can be opened by any text editor), readily converted to PDF.
-* LaTeX separates content and style. Style once, then focus on content.
-* The workflow is faster compared to MS Word.
-* LaTeX is widely used for scientific topics.
-* LaTeX is simply the best option when it comes to typesetting math expressions.
+* LaTeX é gratuito, multiplataforma.
+* LaTeX é apenas um documento de texto (que pode ser aberto por qualquer editor de texto), pronto para ser convertido em pdf.
+* LaTeX separa o conteúdo do estilo. Uma vez que o estilo é definido, podemos nos concentrar no conteúdo.
+* O fluxo de trabalho é mais rápido se comparado ao MS Word.
+* LaTeX é amplamente usado em temas científicos.
+* LaTeX é simplesmente a melhor opção quando se trata de escrever expressões matemáticas.
 
-> LaTeX doesn't come without drawbacks, but is still worth learning.
+> LaTeX não vem sem incovenientes, mas aindaa vale a pena aprendê-lo.
 
 ## Configurar LaTeX
 
-You will need the following things:
+Precisarás do seguinte:
 
 
-1. *LaTeX Distribution.*
+1. *Uma distribuição LaTeX.*
 I am using [MiKTeX](https://miktex.org/about) for Windows.
 2. *LaTeX Editor.*
 I am using [TeXMaker](http://www.xm1math.net/texmaker/) for easy editing, although any text editor can create or change a LaTeX file.
