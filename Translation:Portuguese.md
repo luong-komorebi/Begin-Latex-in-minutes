@@ -3,7 +3,7 @@
 
 ![](https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg)
 
-**Aviso:** *Todo conteúdo escrito abaixo é de minha própria experiência na faculdade e da leitura de diversos materiais. Eu não sou nem professional nem especialista, mas um estudante com uma grande paixão pela linguagem. Qualquer um pode abrir uma discussão na seção issue, ou um pull request no caso de algo que deve ser modificado ou adicionado. Se você considera meu trabalho valioso, uma [donation](#donation) é muito apreciada.*
+**Aviso:** *Todo conteúdo escrito abaixo é de minha própria experiência na faculdade e da leitura de diversos materiais. Eu não sou nem professional nem especialista, mas um estudante com uma grande paixão pela linguagem. Qualquer um pode abrir uma discussão na seção issue, ou um pull request no caso de algo que deve ser modificado ou adicionado. Se você considera meu trabalho valioso, uma [doação](#doação) é muito apreciada.*
 
 *Versão em chinês disponível [Aqui](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Chinese.md)*  
 *Versão em espanhol disponível  [Aqui](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Spanish.md)*
@@ -41,7 +41,7 @@ LaTeX, que é pronunciado «Lah-tech» ou «Lay-tech» (para rimar com «blech»
 * LaTeX é amplamente usado em temas científicos.
 * LaTeX é simplesmente a melhor opção quando se trata de escrever expressões matemáticas.
 
-> LaTeX não vem sem incovenientes, mas aindaa vale a pena aprendê-lo.
+> LaTeX não vem sem incovenientes, mas ainda vale a pena aprendê-lo.
 
 ## Configurar LaTeX
 
@@ -49,18 +49,16 @@ Precisarás do seguinte:
 
 
 1. *Uma distribuição LaTeX.*
-I am using [MiKTeX](https://miktex.org/about) for Windows.
-2. *LaTeX Editor.*
-I am using [TeXMaker](http://www.xm1math.net/texmaker/) for easy editing, although any text editor can create or change a LaTeX file.
-3. *PDF viewer.* (optional)
-Any PDF viewer out there is fine. This is for viewing your result.
+Eu estou usando [MiKTeX](https://miktex.org/about) para Windows.
+2. *Um editor LaTeX.*
+Eu estou usando [TeXMaker](http://www.xm1math.net/texmaker/) para facilitar a edição, embora qualquer editor de texto possa criar ou modificar um arquivo LaTeX.
+3. *Um visualizador de PDF.* (opcional)
+Qualquer visualizador de pdf servirá. Isto será usado para que você veja o resultado de seu trabalho.
 
-In addition, you need to choose a [compiler](#additional-tools). The default compiler of most
-editors is pdfLaTeX, but if you need support for Unicode or TTF/OTF fonts from
-your system, use LuaLaTeX.
+Ademais, você precisa escolher um [compiler](#additional-tools). O compilador padrão para maioria dos editores é o pdfLateX, mas se você precisar de suporte para as fontes TTF/OTF do seu sistema, use LuaLateX. 
 
-Or you can choose a simple online solution like [ShareLaTeX](https://www.sharelatex.com/).
-Please look at [Additional Tools](#additional-tools) for a wider variety of choices.
+Também é possível escolher uma solução online como [ShareLaTeX](https://www.sharelatex.com/).
+Por favor olhe nas [Additional Tools](#additional-tools) para uma ampla variedade de opções.
 
 ## Primeiro Arquivo LaTeX 
 
@@ -474,7 +472,7 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION : You just DO WH
 
 
 
-<div id='donation'/>  
+<div id='doação'/>  
 
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5ZG5Z47L2ZGYC)
 
