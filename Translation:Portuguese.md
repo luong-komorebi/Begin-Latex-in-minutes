@@ -26,7 +26,7 @@
 * [Vários arquivos no LaTeX](#vários-arquivos-no-latex)
 * [Ferramentas adicionais](#ferramentas-adicionais)
 
-## O que é Latex?
+## O que é LaTex?
 
 LaTeX, que é pronunciado «Lah-tech» ou «Lay-tech» (para rimar com «blech»), é um sistema de preparação de documentos para a tipografia de alta qualidade. É usado geralmente para documentos técnicos ou cientifícos, médios ou grandes, mas também pode ser usado para quase todas as formas de publicação.
 
@@ -62,15 +62,15 @@ Por favor olhe nas [Additional Tools](#additional-tools) para uma ampla variedad
 
 ## Primeiro Arquivo LaTeX 
 
-Let's do the traditional **Hello World** in **LaTeX**.
-If you have installed **TexMaker**, first create a new file with ending `.tex`. Then type in the following code below to render "Hello World!" and run "quick build". For other LaTeX editors, it should also be easy to follow the same procedure.
+Vamos fazer o famoso **Hello World** no **LaTeX**.
+Se você já tem instalado o **TexMaker**, primeiro crie um novo arquivo com a extensão `.tex`. Então digite o seguinte código abaixo para renderizar o "Hello World!" e pressione o botão de "construção rápida". Para outros editores LaTeX, deve ser fácil seguir o mesmo procedimento.
 
 ```tex
 \documentclass[a4paper]{article}
 
 \begin{document}
 
-Hello World !  % This is your content
+Hello World !  % Este é o seu conteúdo
 
 \end{document}
 ```
@@ -80,27 +80,28 @@ It should look like this in TexMaker:
 
 ## Um olhar mais profundo
 
-:eyes: A deeper look into your first LaTeX file easily shows that :
-* The first line tells the Interpreter that you are working on an **article** with the size of the a4. Other types of document you might be working with in the future are **report**, **book**... and so on.
-* A document is wrapped by the **\begin{document}** and **\end{document}** . Think of this as the heart of the document, as the `main()` in *java* or *C++* ... without which the document can't be rendered. 
-* The part between begin and end ( which, in this case, is `Hello World` ) is simply your own content.
-* A **percent sign** (%) denotes your comment, which LaTeX will ignore.
+:eyes: Um olhar mais profunfo sobre seu primeiro arquivo LaTeX mostra que :
+* A primeira linha diz ao interpretador que você está trabalhando em um **artigo(article)** de tamanho A4. Outros tipos de documentos que você poderá está trabalhando no futuro são **relatório(report)**, **livro(book)**... dentre outros.
+* Um documento que é delimitado pelo **\begin{document}** e **\end{document}** . Pense nisto como sendo o núcleo do documento, como o `main()` em *java* ou *C++* ..., sem ele o documento não poderá ser renderizado. 
+* A parte entre o **\begin{document}** e **\end{document}** ( que, neste caso, é `Hello World` ) é simplesmente seu próprio conteúdo.
+* Um **simbólo de porcentagem** (%) indica comentários, que serão ignorados pelo LaTeX.
 
-#### :zap: Attention :zap: 
+#### :zap: Atenção :zap: 
 
-* Looking back at **\begin{document}** , **\end{document}** , **\documentclass[a4paper]{article}** . You may notice the pattern now. These are called **Typesetting Commands** ( which are usually preceded by “\” ) and **arguments** ( placed inside curly braces “{}” ). LaTeX are basically normal texts, but powered by these commands.
-* While you are following this guide, everything will work smoothly. However, in the future, should there be any problems, **don't panic**. The error reports are human-friendly and readable. If you can't resolve them, a search tool like Google may be your best friend.  
-* Some characters are **predefined with special meanings in LaTeX. You may want to use backslashes (\\) in front of these characters for proper output.**  
+* Olhando novamente para o documento **\begin{document}** , **\end{document}** , **\documentclass[a4paper]{article}** . Você poderá notar esse padrão agora. Eles são chamados de  **Comandos de Configuração** ( que geralmente são precedidos por “\” ) e precisam de **argumentos** ( colocados dentro de “{}” ). LaTeX é um texto normal, que é embelezado por esses comandos.
+* Enquanto você está seguindo este tutorial, tudo deverá sair bem. No entanto, no futuro, poderás ter alguns problemas, **não entre em pânico**. Os relatórios de erros são amigáveis e legíveis. Se você não conseguir resolvê-los uma ferramenta de pesquisa como o Google poderá ser sua melhor amiga.  
+* Alguns caracteres estão **predefinidos com significados especiais no LaTeX. Você deverá usar duas barras invertidas (\\) na frente desses caracteres para obter a saída adequada.**  
 
 ![](http://i.imgur.com/9d0bXHH.png)   
 
 ## Uso multilíngue
 
-**Some languages won't work right out of the box. To use TeX with other languages, you have some options.**  
+** Algumas linguagens ou idiomas não funcionarão de imediato(como é o caso do português com seus acentos). Para usar o LaTeX com outras linguagens, temos algumas opções:** 
+  
 
-#### :white_check_mark: First method :white_check_mark:
+#### :white_check_mark: Primeiro método :white_check_mark:
 
-The first method is including ["packages"](#what-is-a-package) (You will learn about it later) because pdfLaTeX, the default compiler, is limited to 256 characters and various encoding issues. For example:  
+O primeiro método está incluindo ["pacotes"](#o-que-é-um-pacote) (Você irá aprender sobre isso depois) porque o compilador padrão do pdfLaTeX, está limitado à 256 caracteres e vários problemas de codificação. Por exemplo:  
 
 ```tex
 \documentclass[a4paper]{article}
@@ -115,15 +116,15 @@ Xin chào thế giới. This is Hello World in Vietnamese.
 \end{document}
 ```
 
-Here we use the packages `usepackage[T5]{fontenc}` and `usepackage[utf8]{inputenc}` . This is really simple to understand as the package will import font encoders to display your content correctly. If you are using TexMaker this is what the above code display :
+Aqui nós usamos os pacotes `usepackage[T5]{fontenc}` e `usepackage[utf8]{inputenc}` . Isso é realmente simples de entender, o pacote irá importar a codificação das fontes para exibir seu conteúdo corretamente. Se você está usando TexMaker o codigo anterior será exibido da seguinte maneira:
 
 ![](http://i.imgur.com/UQEewYi.png)
 
-vs without the packages :package::  
+vs sem os pacotes :package::  
 
 ![](http://i.imgur.com/xvzrQX2.png)  
 
-:umbrella: A tricky situation is dealing with Chinese-Japanese-Korean. Here, `usepackage{CJKutf8}` with `\begin{CJK}{UTF8}` and `\end{CJK}` comes in very handy. Here's Japanese :jp: : 
+:umbrella: Uma situação complicada é lidar com caracter Chinês-Japonês-Korean. Aqui, `usepackage{CJKutf8}` com`\begin{CJK}{UTF8}` e `\end{CJK}` são bastante úteis. Aqui está um exemplo da forma de escrever em Japonês :jp: : 
 ```tex
 \documentclass[a4paper]{article}
 \usepackage{CJKutf8}
@@ -138,12 +139,12 @@ vs without the packages :package::
 \end{document}
 ```
 
-As easy as eating :sushi: and :bento: : 
+Tão fácil quanto comer :sushi: e :bento: : 
 
 ![](http://i.imgur.com/vAN1WUi.png)  
 
-#### :white_check_mark: Second method :white_check_mark:
-Another method is achievable if you switch your TeX compiler to [LuaLaTeX](#additional-tools) (or [XeLaTeX](#additional-tools)). Using `fontspec` and `polyglossia`, Unicode will work out of the box:
+#### :white_check_mark: Segundo método :white_check_mark:
+Outro método viável é se você mudar seu compilador TeX para [LuaLaTeX](#ferramentas-adicionais) (ou [XeLaTeX](#ferramentas-adicionais)). Usando `fontspec` e `polyglossia`, Unicode irá funcionar corretamente:
 
 ```tex
 \documentclass[a4paper]{article}
@@ -159,7 +160,7 @@ Xin chào thế giới. This is Hello World in Vietnamese.
 \end{document}
 ```
 
-The default font (Latin Modern) does not support all characters. You can, however, use almost any font installed on your system by uncommenting the `\setmainfont` line. (TTF and OTF fonts are fully supported).
+A fonte padrão (Latin Modern) não suporta todos os caracteres. Você pode, no entanto, usar qualquer outra fonte instalada no seu systema descomentando a linha `\setmainfont`. ( As fontes TTF e OTF são totalmente suportadas).
 
 
 ## Listas
