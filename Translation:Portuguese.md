@@ -80,7 +80,7 @@ It should look like this in TexMaker:
 
 ## Um olhar mais profundo
 
-:eyes: Um olhar mais profunfo sobre seu primeiro arquivo LaTeX mostra que :
+:eyes: Um olhar mais profundo sobre seu primeiro arquivo LaTeX mostra que :
 * A primeira linha diz ao interpretador que você está trabalhando em um **artigo(article)** de tamanho A4. Outros tipos de documentos que você poderá está trabalhando no futuro são **relatório(report)**, **livro(book)**... dentre outros.
 * Um documento que é delimitado pelo **\begin{document}** e **\end{document}** . Pense nisto como sendo o núcleo do documento, como o `main()` em *java* ou *C++* ..., sem ele o documento não poderá ser renderizado. 
 * A parte entre o **\begin{document}** e **\end{document}** ( que, neste caso, é `Hello World` ) é simplesmente seu próprio conteúdo.
@@ -90,7 +90,7 @@ It should look like this in TexMaker:
 
 * Olhando novamente para o documento **\begin{document}** , **\end{document}** , **\documentclass[a4paper]{article}** . Você poderá notar esse padrão agora. Eles são chamados de  **Comandos de Configuração** ( que geralmente são precedidos por “\” ) e precisam de **argumentos** ( colocados dentro de “{}” ). LaTeX é um texto normal, que é embelezado por esses comandos.
 * Enquanto você está seguindo este tutorial, tudo deverá sair bem. No entanto, no futuro, poderás ter alguns problemas, **não entre em pânico**. Os relatórios de erros são amigáveis e legíveis. Se você não conseguir resolvê-los uma ferramenta de pesquisa como o Google poderá ser sua melhor amiga.  
-* Alguns caracteres estão **predefinidos com significados especiais no LaTeX. Você deverá usar duas barras invertidas (\\) na frente desses caracteres para obter a saída adequada.**  
+* Alguns caracteres estão **predefinidos com significados especiais no LaTeX. Você deverá usar duas barras invertidas ("`\\`") na frente desses caracteres para obter a saída adequada.**  
 
 ![](http://i.imgur.com/9d0bXHH.png)   
 
@@ -124,7 +124,7 @@ vs sem os pacotes :package::
 
 ![](http://i.imgur.com/xvzrQX2.png)  
 
-:umbrella: Uma situação complicada é lidar com caracter Chinês-Japonês-Korean. Aqui, `usepackage{CJKutf8}` com`\begin{CJK}{UTF8}` e `\end{CJK}` são bastante úteis. Aqui está um exemplo da forma de escrever em Japonês :jp: : 
+:umbrella: Uma situação complicada é lidar com caractere Chinês-Japonês-Korean. Aqui, `usepackage{CJKutf8}` com`\begin{CJK}{UTF8}` e `\end{CJK}` são bastante úteis. Aqui está um exemplo da forma de escrever em Japonês :jp: : 
 ```tex
 \documentclass[a4paper]{article}
 \usepackage{CJKutf8}
@@ -165,18 +165,18 @@ A fonte padrão (Latin Modern) não suporta todos os caracteres. Você pode, no 
 
 ## Listas
 
-:straight_ruler: It is very important to organize your document well. Thus, let's start by putting your items into a list.  
-Two common types of lists are **unordered** and **ordered** list. Each of them can be handled with ease in LaTeX document :  
-* Unordered List  
-Unordered list only needs **"itemize"**. (pun intended)
+:straight_ruler: É muito importante organizar bem o seu documento. Então, vamos começar a colocar seus itens em uma lista.  
+Dois tipos de listas são comuns **não ordenadas** e **ordernadas**. Cada uma pode ser fácilmente manipulada em um documento LaTeX :  
+* Lista não ordenada 
+Listas não ordenadas precisam apenas do  **"itemize"**.
 ```tex
 \begin{itemize}
 \item Item.
 \item Another Item.
 \end{itemize}
 ```  
-* Ordered List  
-Ordered list, however, need us to **"enumerate"** them. (pun intended)  
+* Lista Ordenada  
+Listas ordenadas, no entanto, precisam de  **"enumerate"**.
 ```tex
 \begin{enumerate}
 \item First Item.
@@ -184,40 +184,40 @@ Ordered list, however, need us to **"enumerate"** them. (pun intended)
 \end{enumerate}
 ```
 
-Here's how two types of list display in the output: 
+Aqui estão, como os dois tipos de lista são exibidos na saída: 
 
 ![](http://i.imgur.com/jzN4RWm.png)
 
 ## Paragráfo e seção
 
-:blue_book: We begin a section with `\section` and a paragraph with `\paragraph` .
-:orange_book: You can also add subsection with `\subsection` and subparagraph with `\subparagraph`
+:blue_book: Nós iniciamos uma seção com `\section` e um paragráfo com `\paragraph` .
+:orange_book: Você também pode adicionar uma subseção com `\subsection` e um subparagráfo com `\subparagraph`
 
 ![](http://i.imgur.com/qKbZYnG.png)
 
 ## Fazendo uma tabela de conteúdos
 
-:metal: It's useful to open sections and subsections with a `\tableofcontents`
+:metal: É útil para abrir seções e subseções com uma `\tableofcontents`
 
-Example:
+Exemplo:
 
 ![](http://i.imgur.com/TBUOTRj.png)
 
-:bangbang: **Tips** : you can use `\newpage` if you want to make a new page.
+:bangbang: **Dica** : Você pode usar `\newpage` se você quiser criar uma nova página.
 
 ## Notas de rodapé
 
-It's as easy as pie to use footnote+label+ref to make all kinds of footnotes you want. For example:
+É extremamente fácil usar footnote+label+ref para fazer todos os tipos de notas de rodapé que você queira. Por exemplo:
 ```tex
 Hi let me introduce myself\footnote{\label{myfootnote}Hello footnote}.
 ... (later on)
 I'm referring to myself \ref{myfootnote}.
 ```
-:point_down: :point_down: Can you see it ?  :point_down: :point_down:
+:point_down: :point_down: Podes vê-lo ?  :point_down: :point_down:
 
 ![](http://i.imgur.com/BSYPX4C.png)
 
-:bangbang: **Tips** : you can use `\newline` to make a new line.
+:bangbang: **Dica** : Você pode usar `\newline` para fazer uma nova linha.
 
 ## O que é um pacote?
 
