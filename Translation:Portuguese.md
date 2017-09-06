@@ -96,7 +96,7 @@ It should look like this in TexMaker:
 
 ## Uso multilíngue
 
-** Algumas linguagens ou idiomas não funcionarão de imediato(como é o caso do português com seus acentos). Para usar o LaTeX com outras linguagens, temos algumas opções:** 
+**Algumas linguagens ou idiomas não funcionarão de imediato(como é o caso do português com seus acentos). Para usar o LaTeX com outras linguagens, temos algumas opções:** 
   
 
 #### :white_check_mark: Primeiro método :white_check_mark:
@@ -124,7 +124,7 @@ vs sem os pacotes :package::
 
 ![](http://i.imgur.com/xvzrQX2.png)  
 
-:umbrella: Uma situação complicada é lidar com caractere Chinês-Japonês-Korean. Aqui, `usepackage{CJKutf8}` com`\begin{CJK}{UTF8}` e `\end{CJK}` são bastante úteis. Aqui está um exemplo da forma de escrever em Japonês :jp: : 
+:umbrella: Uma situação complicada é lidar com caractere Chinês-Japonês-Koreano. Aqui, `usepackage{CJKutf8}` com`\begin{CJK}{UTF8}` e `\end{CJK}` são bastante úteis. Aqui está um exemplo da forma de escrever em Japonês :jp: : 
 ```tex
 \documentclass[a4paper]{article}
 \usepackage{CJKutf8}
@@ -144,7 +144,7 @@ Tão fácil quanto comer :sushi: e :bento: :
 ![](http://i.imgur.com/vAN1WUi.png)  
 
 #### :white_check_mark: Segundo método :white_check_mark:
-Outro método viável é se você mudar seu compilador TeX para [LuaLaTeX](#ferramentas-adicionais) (ou [XeLaTeX](#ferramentas-adicionais)). Usando `fontspec` e `polyglossia`, Unicode irá funcionar corretamente:
+Outro método viável é se você mudar seu compilador TeX para [LuaLaTeX](#ferramentas-adicionais) (ou [XeLaTeX](#ferramentas-adicionais)). Usando `fontspec` e `polyglossia`, o Unicode irá funcionar corretamente:
 
 ```tex
 \documentclass[a4paper]{article}
@@ -167,7 +167,7 @@ A fonte padrão (Latin Modern) não suporta todos os caracteres. Você pode, no 
 
 :straight_ruler: É muito importante organizar bem o seu documento. Então, vamos começar a colocar seus itens em uma lista.  
 Dois tipos de listas são comuns **não ordenadas** e **ordernadas**. Cada uma pode ser fácilmente manipulada em um documento LaTeX :  
-* Lista não ordenada 
+* Lista não ordenada
 Listas não ordenadas precisam apenas do  **"itemize"**.
 ```tex
 \begin{itemize}
@@ -221,21 +221,21 @@ I'm referring to myself \ref{myfootnote}.
 
 ## O que é um pacote?
 
-LaTeX offers a lot of functions by default, but in some situations it can come in handy to use so called packages. To import a package in LaTeX, you simply add the `\usepackage` :package:
+LaTeX oferece uma gama de funções por padrão, mas em algumas situações pode ser útil utilizar os chamados pacotes. Para importar um pacote no LaTeX, você simplesmente adiciona `\usepackage` :package:
 
-Here is an example of using two packages for displaying math:
+Aqui está um exemplo de como usar dois pacotes para exibir expressões matemáticas:
 
 ![](http://i.imgur.com/050nrfh.png)  
 
-Even more epic is how circuits are displayed: 
+Mais épico é como os circuitos são exibidos: 
 
 ![](http://i.imgur.com/If4lbLA.png)
 
-:construction: You should google search more if you want a package that meets your requirements. For example, amsmath is widely used for math and has a lot of extension typeset for math, circuitikz is for circuits designing, etc.. Covering them all would be impossible for this general guide.
+:construction: Você deve pesquisar mais no google se você quiser um pacote que atenda a sua exigência. Por exemplo, amsmath é amplamente usado para escrever expressões matemáticas, circuitikz é para o desenho de circuits, etc..Explicar todos seria impossível neste tutorial.
 
 ## Tabela
 
-A practical example :thought_balloon: :
+Um exemplo prático :thought_balloon: :
 
 ```tex
 \begin{table}[h!]
@@ -250,23 +250,23 @@ A practical example :thought_balloon: :
 \end{table}
 ```
 
-:star2: This is what it renders :star2: :
+:star2: Isto é o que será renderizado :star2: :
 
 ![](http://i.imgur.com/XbZJJ2E.png)
 
-Now let's take a closer look :eyes: :
+Vejamos detalhadamente :eyes: :
 
-* For tables, first we need a table environment, which is why we have `\begin{table}` and `\end{table}` .
-* You will learn about h! later in the image section. It goes with `\centering` to keep the table at the center of the page.
-* Caption is for describing. Label is for tagging. You will see these more in image section.
-* Tabular is the most important part. A table environment always needs a tabular environment inside.
-  - the part `{l|c||r}` is where we format the content inside the table. Here we can see :
-    * l or c or r means that the content inside each cell will be left-aligned or center-aligned or right-aligned, respectively.
-    * the vertical slash | or || is actually the format of the vertical lines/borders inside the table's columns.
-  - 1 & 2 & 3 => 1 2 3 are the contents of each cells. the ampersand & is used to separate the content of each cell in a row.
-  - a `\hline` actually adds a horizontal line to separate each row.
+* Para tabelas precisamos do ambiente `\begin{table}`,  `código para o conteúdo da tabela`  e `\end{table}` .
+* Você irá aprender sobre h! depois na seção de imagem. Use `\centering` para manter a tabela no centro da página.
+* Caption é para descrever. Label é para colocar etiquetas. Você verá melhor isso na seção de imagens.
+* Tabular é a parte mais importante. Um meio mabiente de tabela sempre precisa de um `tabular` dentro.
+  - A parte `{l|c||r}` é onde nós formatamos o conteúdo dentro da tabela. Aqui nós podemos ver :
+    * l ou c ou r significa que o conteúdo dentro de cada célula irá ser alinhado à esquerda ou ao centro ou à direita, respectivamente.
+    * A `|` or `||` representam o formato das linhas(margens) verticais entre colunas.
+  - 1 & 2 & 3 => 1 2 3 são os conteúdos de cada célula. O & é usado para separar o conteúdo de cada célula em uma linha.
+  - Um `\hline` atualmente adiciona uma linha horizontal para separar cada coluna.
 
-:bangbang: **Tips** You can use a package :package: called booktabs `\usepackage{booktabs}` for a visually better table.
+:bangbang: **Dica** Você pode usar um pacote :package: chamado booktabs `\usepackage{booktabs}` para uma visualização melhor da tabela.
 
 ## Adicionando imagens
 
