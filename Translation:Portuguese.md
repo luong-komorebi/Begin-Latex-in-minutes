@@ -55,10 +55,10 @@ Eu estou usando [TeXMaker](http://www.xm1math.net/texmaker/) para facilitar a ed
 3. *Um visualizador de PDF.* (opcional)
 Qualquer visualizador de pdf servirá. Isto será usado para que você veja o resultado de seu trabalho.
 
-Ademais, você precisa escolher um [compiler](#additional-tools). O compilador padrão para maioria dos editores é o pdfLateX, mas se você precisar de suporte para as fontes TTF/OTF do seu sistema, use LuaLateX. 
+Ademais, você precisa escolher um [compilador](#ferramentas-adicionais). O compilador padrão para maioria dos editores é o pdfLateX, mas se você precisar de suporte para as fontes TTF/OTF do seu sistema, use LuaLateX. 
 
 Também é possível escolher uma solução online como [ShareLaTeX](https://www.sharelatex.com/).
-Por favor olhe nas [Additional Tools](#additional-tools) para uma ampla variedade de opções.
+Por favor olhe nas [Ferramentas adicionais](#ferramentaas-adicionais) para uma ampla variedade de opções.
 
 ## Primeiro Arquivo LaTeX 
 
@@ -75,7 +75,7 @@ Hello World !  % Este é o seu conteúdo
 \end{document}
 ```
 
-It should look like this in TexMaker:
+Você deve ver isso no TexMaker:
 ![](http://i.imgur.com/ZuD5N6U.png)
 
 ## Um olhar mais profundo
@@ -259,7 +259,7 @@ Vejamos detalhadamente :eyes: :
 * Para tabelas precisamos do ambiente `\begin{table}`,  `código para o conteúdo da tabela`  e `\end{table}` .
 * Você irá aprender sobre h! depois na seção de imagem. Use `\centering` para manter a tabela no centro da página.
 * Caption é para descrever. Label é para colocar etiquetas. Você verá melhor isso na seção de imagens.
-* Tabular é a parte mais importante. Um meio mabiente de tabela sempre precisa de um `tabular` dentro.
+* Tabular é a parte mais importante. Um ambiente de tabela sempre precisa de um `tabular` dentro.
   - A parte `{l|c||r}` é onde nós formatamos o conteúdo dentro da tabela. Aqui nós podemos ver :
     * l ou c ou r significa que o conteúdo dentro de cada célula irá ser alinhado à esquerda ou ao centro ou à direita, respectivamente.
     * A `|` or `||` representam o formato das linhas(margens) verticais entre colunas.
@@ -270,7 +270,7 @@ Vejamos detalhadamente :eyes: :
 
 ## Adicionando imagens
 
-To add an image to the LaTeX file , you need to use figure environment and the graphicx package. Use `\usepackage{graphicx}` and
+Para adicionar um arquivo de imagem ao LaTeX, você precisa usar um ambiente de figuras e o pacote graphicx. 
 
 ```tex
 \begin{figure}
@@ -280,7 +280,7 @@ To add an image to the LaTeX file , you need to use figure environment and the g
 \end{figure}
 ```
 
-:bangbang: **Tips**: Put [width=\linewidth] to scale the image to the width of the document.  If you want to float the image, then you need to attribute the begin with a certain value. Also, the fig is for later reference so name it with care.
+:bangbang: **Dica**: Coloque [width=\linewidth] para escalar a imagem para o tamanho do documento.  Se você quiser que a imagem seja flutuante, então você precisa atribuir ao ínicio um certo valor. Também, `fig` é para tornar disponível uma referência da imagem em um uso posterior.
 
 ```tex
 \begin{figure}[h!]
@@ -288,23 +288,22 @@ To add an image to the LaTeX file , you need to use figure environment and the g
 
 :passport_control: Legit values are :
 
-* h (here) - same location
-* t (top) - top of page
-* b (bottom) - bottom of page
-* p (page) - on an extra page
-* ! (override) - will force the specified location
+* h (here) - Mesma localização
+* t (top) - Parte superior da página
+* b (bottom) - Parte inferior  da página
+* p (page) - Página extra
+* ! (override) - Força à uma localização indicada
 
-Here's how the image is rendered :
+Aqui está a imagem que será renderizada :
 
 ![](http://i.imgur.com/ysY9MOb.png)
 
 ## Insira código no LaTeX
 
-#### :white_check_mark: First method :white_check_mark:
+#### :white_check_mark: Primeiro método :white_check_mark:
 
-One aspect of text compiling that is of the utmost importance to programmers and developers is how to professionally insert codes into the document.
-
-For LaTeX, the process is simple and very professional. We just wrap the code with some predefined content, then we are good to go.
+Um aspecto da compilação de texto é que ela é bastante importante para programadores e desenvolvedores, é como profissionalmente se insere código em um documento.
+Para LaTeX, o processo é simples e muito profissional. Nós apenas envolvemos o código com algum conteúdo pré-definido.
 
 Example :
 
@@ -328,19 +327,19 @@ int main()
 \end{document}
 ```
 
-:speech_balloon: **LaTeX supports syntax for these languages** :speech_balloon:
+:speech_balloon: **LaTeX suporta syntaxe para essas linguagens** :speech_balloon:
 
 ![](http://i.imgur.com/FJfj8Er.png)
 
-As you can see, with the **{verbatim}** wrapper you can easily insert code without worrying about how the syntax is formatted. Here is how it looks out of the box, clean and professional :
+Como você pode ver, com o  **{verbatim}** você pode fácilmente inserir código sem se preocupar em como a sintaxe irá ser formatada. Aqui está como será exibida, limpo e profissional :
 
 ![](http://i.imgur.com/tpercup.png)
 
-#### :white_check_mark: :white_check_mark: Second Method :white_check_mark: :white_check_mark:
+#### :white_check_mark: :white_check_mark: Segundo Método :white_check_mark: :white_check_mark:
 
-This method gives you more options, including insert code **inline**, make **custom styles** code, choose a **specific language** for code, **import code** **from** another **file** within the same directory.... With this method, you dont use **{verbatim}** , but include a package :package: named **listings**.
+Esse método dá a você mais opções, incluindo inserir código **inline**, faz **estilos próprios** de código, escolhe uma **linguagem específica** para o código, **importar código** **de** outro **arquivo** em um mesmo diretório.... Com este método, você não usa **{verbatim}** , mas inclue um pacote :package: chamado **listings**.
 
-Consider the following example :
+Considere o seguinte exemplo :
 ```tex
 \documentclass[a4paper]{article}
 
@@ -374,24 +373,23 @@ Lorem ipsum dolor sit amet \lstinline{print "Hello World"} , consectetur adipisc
 \end{document}
 
 ```
-From this, you can see:
-a
-1. To insert a code block , start with `\begin{lstlisting}` and end with `\end{lstlisting}`
-2. To import code from another file within the same directory, you can use `lstinputlisiting{name_of_file}`
-3. To specify a language for the code, use `[language=C++]`
-4. To insert inline code use `\lstinline`
-5. To apply custom styles, use the `\usepackage{color}` and define your own style then define the listing with your own theme (Please look at code below). You can modify many things with your own style, but you need to read the doc for the correct property name.
-6. Interested ?? More [here](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings).
+Aqui podemos observar:
+1. Para inserir um bloco de código , inicia-se com `\begin{lstlisting}` e finaliza-se com `\end{lstlisting}`
+2. Para importar o código de um arquivo em um mesmo diretório, você pode usar `lstinputlisiting{name_of_file}`
+3. Para especificar uma linguagem, use `[language=C++]`
+4. Para inserir código inline, use `\lstinline`
+5. Para aplicar estilos prórpios, use o `\usepackage{color}` e defina seu próprio estilo então defina uma lista com seu próprio tema (Por favor veja o código abaixo). Você pode modificar várias coisas com seu próprio estilo, mas você precisa ler a documentação para saber que propriedade modificar.
+6. Interessado ?? Mais [Aqui](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings).
 
-Here is how the code above compiles in TexMaker :
+Aqui está como o código acima compila no TexMaker :
 
 ![](http://i.imgur.com/XwwDJNo.png)
 
 ## Vários arquivos no LaTeX
 
-When we use LaTeX, we may face a problem that a document is too long to be handle. Therefore, we should divide the file so that its contents can be easily handled.
+Quando nós usamos LaTeX, we podemos ter problemas de gerenciamento quando um documento é muito grande. No entanto, nós devemos dividir o arquivo de forma que o conteúdo se torne mais fácil de manipular.
 
-Let's look at the example:
+Vejamos um exemplo:
 
 ```tex
 % main.tex
@@ -406,7 +404,7 @@ Hello Latex, This is my second part.
 \end{document}
 ```
 
-It's just a normal LaTeX file. Now, let's divide the document into two parts using the `\input` keyword:
+É apenas um arquivo LaTeX normal. Agora, vamos dividir o documento em duas partes usando o comando `\input` keyword:
 
 
 ```tex
@@ -428,30 +426,30 @@ Hello Latex, This is my first part.
 Hello Latex, This is my second part.
 ```
 
-Now the main file looks different, but better documented. Here is the result in TexMaker:
+Agora o arquivo principal é diferente, mas melhor documentado e mais legível. Aqui está o resultado no TexMaker:
 
 [![multi_file.png](https://s14.postimg.org/deg0kqhu9/multi_file.png)](https://postimg.org/image/hnkqmwl3h/)
 
-:bangbang: **Tips** : For readability, clarity and maintenance purpose, it is highly suggested that you divide your Main file systematically, hierarchically and scientifically. Don't divide without reasons or you may get a mess later.  
+:bangbang: **Dica** : Para legibilidade, clareza e manutenção, é muito recomendado que você divida seu arquivo principal sistematicamente, hierarquicamente e cientifcamente. Não divida sem razões ou você terá uma bagunça depois.  
 
 ## Ferramentas Adicionais
 
-#### Distributions
+#### Distribuições
 
-* [MiKTeX](https://miktex.org/about) for Windows.
-* [TeX Live](https://www.tug.org/texlive/) for Linux and Unix-based.
-* [MacTeX](https://tug.org/mactex/) for macOS.
-* [ShareLaTeX](https://www.sharelatex.com/) — an online editor.
-* [Overleaf](https://www.overleaf.com/) — an collaborative online editor.
+* [MiKTeX](https://miktex.org/about) para Windows.
+* [TeX Live](https://www.tug.org/texlive/) para Linux e sistemas baseados em Unix.
+* [MacTeX](https://tug.org/mactex/) para macOS.
+* [ShareLaTeX](https://www.sharelatex.com/) — um editor online.
+* [Overleaf](https://www.overleaf.com/) — um editor online colaborativo.
 * [StackEdit](https://stackedit.io/) - In-browser markdown editor.
 
-#### LaTeX Editors
+#### Editores LaTeX
 
-* [TeXMaker](http://www.xm1math.net/texmaker/) Cross platform LaTeX editor.
+* [TeXMaker](http://www.xm1math.net/texmaker/) Um editor LaTeX multiplataforma.
 * [TeXStudio](http://www.texstudio.org/) An enhanced fork of TeXMaker with more features.
 * TeXShop and TeXworks (minimal editors)
 
-#### LaTeX Compilers
+#### Compiladores LaTeX
 
 * Most editors will have an option for you to change the default compiler. Here's an example : 
 
