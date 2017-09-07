@@ -466,9 +466,9 @@ Se você está muito interessado, mais informações do LaTeX podem ser encontra
 
  [![](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png)](http://www.wtfpl.net/)
   
-** LICENÇA PÚBLICA PARA FAZER O QUE LHE AGRADA **
-Copyright (C) 2016 Luong Vo
-É permitida a cópia e distribuição de cópias literais ou modificadas deste documento de licença, e a modificação é permitida desde que o nome seja alterado. (Alterar é permitido enquanto o nome for alterado).
+**LICENÇA PÚBLICA PARA FAZER O QUE LHE AGRADA**  
+Copyright (C) 2016 Luong Vo  
+É permitida a cópia e distribuição de cópias literais ou modificadas deste documento de licença, e a modificação é permitida desde que o nome seja alterado. (Alterar é permitido enquanto o nome for alterado).  
 TERMOS E CONDIÇÕES DE CÓPIA, DISTRIBUIÇÃO E MODIFICAÇÃO: Claro, FAÇA O QUE LHE AGRADA.
 
 
