@@ -3,6 +3,8 @@
 
 ![](https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg)
 
+(Portuguese translator's acknowledgement: I tried to translate this guide as the original meaning of the author as much as i could. If you think the translation is inappropriate, please feel free to modify it or add missing stuff you think ould make this guide better. If you like this guide, please share to more people.)
+
 **Aviso:** *Todo conteúdo escrito abaixo é de minha própria experiência na faculdade e da leitura de diversos materiais. Eu não sou nem professional nem especialista, mas um estudante com uma grande paixão pela linguagem. Qualquer um pode abrir uma discussão na seção issue, ou um pull request no caso de algo que deve ser modificado ou adicionado. Se você considera meu trabalho valioso, uma [doação](#doação) é muito apreciada.*
 
 *Versão em chinês disponível [Aqui](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Chinese.md)*  
@@ -58,7 +60,7 @@ Qualquer visualizador de pdf servirá. Isto será usado para que você veja o re
 Ademais, você precisa escolher um [compilador](#ferramentas-adicionais). O compilador padrão para maioria dos editores é o pdfLateX, mas se você precisar de suporte para as fontes TTF/OTF do seu sistema, use LuaLateX. 
 
 Também é possível escolher uma solução online como [ShareLaTeX](https://www.sharelatex.com/).
-Por favor olhe nas [Ferramentas adicionais](#ferramentaas-adicionais) para uma ampla variedade de opções.
+Por favor olhe nas [Ferramentas adicionais](#ferramentas-adicionais) para uma ampla variedade de opções.
 
 ## Primeiro Arquivo LaTeX 
 
@@ -84,7 +86,7 @@ Você deve ver isso no TexMaker:
 * A primeira linha diz ao interpretador que você está trabalhando em um **artigo(article)** de tamanho A4. Outros tipos de documentos que você poderá está trabalhando no futuro são **relatório(report)**, **livro(book)**... dentre outros.
 * Um documento que é delimitado pelo **\begin{document}** e **\end{document}** . Pense nisto como sendo o núcleo do documento, como o `main()` em *java* ou *C++* ..., sem ele o documento não poderá ser renderizado. 
 * A parte entre o **\begin{document}** e **\end{document}** ( que, neste caso, é `Hello World` ) é simplesmente seu próprio conteúdo.
-* Um **simbólo de porcentagem** (%) indica comentários, que serão ignorados pelo LaTeX.
+* Um **símbolo de porcentagem** (%) indica comentários, que serão ignorados pelo LaTeX.
 
 #### :zap: Atenção :zap: 
 
@@ -160,14 +162,14 @@ Xin chào thế giới. This is Hello World in Vietnamese.
 \end{document}
 ```
 
-A fonte padrão (Latin Modern) não suporta todos os caracteres. Você pode, no entanto, usar qualquer outra fonte instalada no seu systema descomentando a linha `\setmainfont`. ( As fontes TTF e OTF são totalmente suportadas).
+A fonte padrão (Latin Modern) não suporta todos os caracteres. Você pode, no entanto, usar qualquer outra fonte instalada no seu sistema descomentando a linha `\setmainfont`. ( As fontes TTF e OTF são totalmente suportadas).
 
 
 ## Listas
 
 :straight_ruler: É muito importante organizar bem o seu documento. Então, vamos começar a colocar seus itens em uma lista.  
 Dois tipos de listas são comuns **não ordenadas** e **ordernadas**. Cada uma pode ser fácilmente manipulada em um documento LaTeX :  
-* Lista não ordenada
+* Lista não ordenada  
 Listas não ordenadas precisam apenas do  **"itemize"**.
 ```tex
 \begin{itemize}
@@ -280,13 +282,13 @@ Para adicionar um arquivo de imagem ao LaTeX, você precisa usar um ambiente de 
 \end{figure}
 ```
 
-:bangbang: **Dica**: Coloque [width=\linewidth] para escalar a imagem para o tamanho do documento.  Se você quiser que a imagem seja flutuante, então você precisa atribuir ao ínicio um certo valor. Também, `fig` é para tornar disponível uma referência da imagem em um uso posterior.
+:bangbang: **Dica**: Coloque [width=\linewidth] para dimensionar a imagem para o tamanho do documento.  Se você quiser que a imagem seja flutuante, então você precisa atribuir ao ínicio um certo valor. Também, `fig` é para tornar disponível uma referência da imagem em um uso posterior.
 
 ```tex
 \begin{figure}[h!]
 ```
 
-:passport_control: Legit values are :
+:passport_control: Os valores aceitos são :
 
 * h (here) - Mesma localização
 * t (top) - Parte superior da página
@@ -302,7 +304,7 @@ Aqui está a imagem que será renderizada :
 
 #### :white_check_mark: Primeiro método :white_check_mark:
 
-Um aspecto da compilação de texto é que ela é bastante importante para programadores e desenvolvedores, é como profissionalmente se insere código em um documento.
+Um aspecto da compilação de texto é que ela é muito importante para programadores e desenvolvedores, é como profissionalmente se insere código em um documento.
 Para LaTeX, o processo é simples e muito profissional. Nós apenas envolvemos o código com algum conteúdo pré-definido.
 
 Example :
@@ -327,17 +329,17 @@ int main()
 \end{document}
 ```
 
-:speech_balloon: **LaTeX suporta syntaxe para essas linguagens** :speech_balloon:
+:speech_balloon: **LaTeX suporta sintaxe para essas linguagens** :speech_balloon:
 
 ![](http://i.imgur.com/FJfj8Er.png)
 
-Como você pode ver, com o  **{verbatim}** você pode fácilmente inserir código sem se preocupar em como a sintaxe irá ser formatada. Aqui está como será exibida, limpo e profissional :
+Como você pode ver, com o  `{verbatim}` você pode fácilmente inserir código sem se preocupar em como a sintaxe irá ser formatada. Aqui está como será exibida, limpo e profissional :
 
 ![](http://i.imgur.com/tpercup.png)
 
 #### :white_check_mark: :white_check_mark: Segundo Método :white_check_mark: :white_check_mark:
 
-Esse método dá a você mais opções, incluindo inserir código **inline**, faz **estilos próprios** de código, escolhe uma **linguagem específica** para o código, **importar código** **de** outro **arquivo** em um mesmo diretório.... Com este método, você não usa **{verbatim}** , mas inclue um pacote :package: chamado **listings**.
+Esse método dá a você mais opções, incluindo inserir código **inline**, fazer **estilos próprios** de código, escolher uma **linguagem específica** para o código, **importar código** **de** outro **arquivo** em um mesmo diretório.... Com este método, você não usa `{verbatim}` , mas inclue um pacote :package: chamado `listings`.
 
 Considere o seguinte exemplo :
 ```tex
@@ -378,7 +380,7 @@ Aqui podemos observar:
 2. Para importar o código de um arquivo em um mesmo diretório, você pode usar `lstinputlisiting{name_of_file}`
 3. Para especificar uma linguagem, use `[language=C++]`
 4. Para inserir código inline, use `\lstinline`
-5. Para aplicar estilos prórpios, use o `\usepackage{color}` e defina seu próprio estilo então defina uma lista com seu próprio tema (Por favor veja o código abaixo). Você pode modificar várias coisas com seu próprio estilo, mas você precisa ler a documentação para saber que propriedade modificar.
+5. Para aplicar estilos própios, use o `\usepackage{color}` e defina seu próprio estilo então defina uma lista com seu próprio tema (Por favor veja o código abaixo). Você pode modificar várias coisas com seu próprio estilo, mas você precisa ler a documentação para saber que propriedade modificar.
 6. Interessado ?? Mais [Aqui](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings).
 
 Aqui está como o código acima compila no TexMaker :
@@ -387,7 +389,7 @@ Aqui está como o código acima compila no TexMaker :
 
 ## Vários arquivos no LaTeX
 
-Quando nós usamos LaTeX, we podemos ter problemas de gerenciamento quando um documento é muito grande. No entanto, nós devemos dividir o arquivo de forma que o conteúdo se torne mais fácil de manipular.
+Quando nós usamos LaTeX, nós podemos ter problemas de gerenciamento quando um documento é muito grande. No entanto, nós podemos devemos dividir o arquivo de forma que o conteúdo se torne mais fácil de manipular.
 
 Vejamos um exemplo:
 
@@ -441,33 +443,33 @@ Agora o arquivo principal é diferente, mas melhor documentado e mais legível. 
 * [MacTeX](https://tug.org/mactex/) para macOS.
 * [ShareLaTeX](https://www.sharelatex.com/) — um editor online.
 * [Overleaf](https://www.overleaf.com/) — um editor online colaborativo.
-* [StackEdit](https://stackedit.io/) - In-browser markdown editor.
+* [StackEdit](https://stackedit.io/) - Editor de Markdown no navegador.
 
 #### Editores LaTeX
 
 * [TeXMaker](http://www.xm1math.net/texmaker/) Um editor LaTeX multiplataforma.
-* [TeXStudio](http://www.texstudio.org/) An enhanced fork of TeXMaker with more features.
-* TeXShop and TeXworks (minimal editors)
+* [TeXStudio](http://www.texstudio.org/) Um fork melhorado do TeXMaker com mais recursos.
+* TeXShop e TeXworks (editores mínimos)
 
 #### Compiladores LaTeX
 
-* Most editors will have an option for you to change the default compiler. Here's an example : 
+* A maioria dos editores que tem uma opção para você modificador o compilador padrão. Aqui está um exemplo : 
 
 ![](http://i.imgur.com/FbNUiL7.png)
 
 ## HOORAY !!
 
-:tada: Thank you for finishing the guide. That's basically all you need to know about LaTeX. :hammer:  
-If you are greatly interested, more on LaTeX can be found [here](http://www.latex-project.org/help/documentation/) or all over the web, depending on your need.
+:tada: Obrigado por completar este tutorial. Isso é basicamente tudo que você precisa saber sobre LaTeX. :hammer:  
+Se você está muito interessado, mais informações do LaTeX podem ser encontradas [aqui](http://www.latex-project.org/help/documentation/) ou em toda web, dependendo do que você precisa.
 
 ## Licença
 
  [![](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png)](http://www.wtfpl.net/)
-
-**DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE**
+  
+** LICENÇA PÚBLICA PARA FAZER O QUE LHE AGRADA **
 Copyright (C) 2016 Luong Vo
-Everyone is permitted to copy and distribute verbatim or modified copies of this license document, and changing it is allowed as long as the name is changed.
-TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION : You just DO WHAT THE FUCK YOU WANT TO.  
+É permitida a cópia e distribuição de cópias literais ou modificadas deste documento de licença, e a modificação é permitida desde que o nome seja alterado. (Alterar é permitido enquanto o nome for alterado).
+TERMOS E CONDIÇÕES DE CÓPIA, DISTRIBUIÇÃO E MODIFICAÇÃO: Claro, FAÇA O QUE LHE AGRADA.
 
 
 
@@ -475,4 +477,4 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION : You just DO WH
 
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5ZG5Z47L2ZGYC)
 
-A beer in your country can buy a meal in mine.
+Uma cerveja no seu país pode comprar uma refeição no meu.
