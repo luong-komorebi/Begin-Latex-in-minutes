@@ -7,6 +7,7 @@
 
 *Chinese version available [here](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Chinese.md)*  
 *Spanish version available [here](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Spanish.md)*
+*Portugese version available [here](https://github.com/LewisVo/Begin-Latex-in-minutes/blob/master/Translation:Portuguese.md)*
 
 ### Table of Contents
 * [What is LaTeX?](#what-is-latex)
