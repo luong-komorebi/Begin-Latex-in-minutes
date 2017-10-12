@@ -404,7 +404,7 @@ Hello Latex, This is my second part.
 \end{document}
 ```
 
-这只是一个普通的 LaTeX 文件，让我们用 `\input` 关键字来讲文件分成两个部分:
+这只是一个普通的 LaTeX 文件，让我们用 `\input` 关键字来将文件分成两个部分:
 
 ```tex
 % main.tex
