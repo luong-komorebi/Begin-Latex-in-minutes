@@ -378,7 +378,7 @@ Lorem ipsum dolor sit amet \lstinline{print "Hello World"} , consectetur adipisc
 2. 你可以使用 `lstinputlisiting{name_of_file}` 来从同一目录(the same directory)下导入另一个文件的代码。
 3. 用 `[language=C++]` 来指定使用的语言。
 4. 想插入内联代码需要使用 `\lstinline`
-5. 想应用自定义样式，需要使用 `\usepackage{color}` 然后用你自己的主题定义列表(请看下面的代码)。你可以使用自己的风格修改许多内容，但ni需要阅读文档以获取正确的属性名称。
+5. 想应用自定义样式，需要使用 `\usepackage{color}` 然后用你自己的主题定义列表(请看下面的代码)。你可以使用自己的风格修改许多内容，但你需要阅读文档以获取正确的属性名称。
 6.  感兴趣？？查看[更多内容](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings)
 
 以下是 TexMaker 中的代码如何编译的:
