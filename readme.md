@@ -5,7 +5,8 @@
 
 **Acknowledgement:** *Everything written below is from my own experience in college and after reading various materials. I am neither a professional nor expert, but a student who has great passion for the language. Anyone can open a discussion in the issue section, or a pull request in case something should be modified or added. If you consider my work valuable, a [donation](#donation) is much appreciated.*
 
-*[Chinese](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Chinese.md), [Portuguese](https://github.com/LewisVo/Begin-Latex-in-minutes/blob/master/Translation:Portuguese.md) and [Spanish](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Spanish.md) versions are available.*
+*[Chinese](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Chinese.md),
+[French](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:French.md), [Portuguese](https://github.com/LewisVo/Begin-Latex-in-minutes/blob/master/Translation:Portuguese.md) and [Spanish](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Spanish.md) versions are available.*
 
 ### Table of Contents
 * [What is LaTeX?](#what-is-latex)
@@ -81,11 +82,11 @@ It should look like this in TexMaker:
 
 :eyes: A deeper look into your first LaTeX file easily shows that :
 * The first line tells the Interpreter that you are working on an **article** with the size of the a4. Other types of document you might be working with in the future are **report**, **book**... and so on.
-* A document is wrapped by the **\begin{document}** and **\end{document}** . Think of this as the heart of the document, as the `main()` in *java* or *C++* ... without which the document can't be rendered. 
+* A document is wrapped by the **\begin{document}** and **\end{document}** . Think of this as the heart of the document, as the `main()` in *java* or *C++* ... without which the document can't be rendered.
 * The part between begin and end ( which, in this case, is `Hello World` ) is simply your own content.
 * A **percent sign** (%) denotes your comment, which LaTeX will ignore.
 
-#### :zap: Attention :zap: 
+#### :zap: Attention :zap:
 
 * Looking back at **\begin{document}** , **\end{document}** , **\documentclass[a4paper]{article}** . You may notice the pattern now. These are called **Typesetting Commands** ( which are usually preceded by “\” ) and **arguments** ( placed inside curly braces “{}” ). LaTeX are basically normal texts, but powered by these commands.
 * While you are following this guide, everything will work smoothly. However, in the future, should there be any problems, **don't panic**. The error reports are human-friendly and readable. If you can't resolve them, a search tool like Google may be your best friend.  
@@ -122,7 +123,7 @@ vs without the packages :package::
 
 ![](http://i.imgur.com/xvzrQX2.png)  
 
-:umbrella: A tricky situation is dealing with Chinese-Japanese-Korean. Here, `usepackage{CJKutf8}` with `\begin{CJK}{UTF8}` and `\end{CJK}` comes in very handy. Here's Japanese :jp: : 
+:umbrella: A tricky situation is dealing with Chinese-Japanese-Korean. Here, `usepackage{CJKutf8}` with `\begin{CJK}{UTF8}` and `\end{CJK}` comes in very handy. Here's Japanese :jp: :
 ```tex
 \documentclass[a4paper]{article}
 \usepackage{CJKutf8}
@@ -132,12 +133,12 @@ vs without the packages :package::
 \begin{CJK}{UTF8}{min}
 この記事を読んでいただきありがとうございます。
 %Thank you for reading this article.
-\end{CJK} 
+\end{CJK}
 
 \end{document}
 ```
 
-As easy as eating :sushi: and :bento: : 
+As easy as eating :sushi: and :bento: :
 
 ![](http://i.imgur.com/vAN1WUi.png)  
 
@@ -182,7 +183,7 @@ Ordered list, however, need us to **"enumerate"** them. (pun intended)
 \end{enumerate}
 ```
 
-Here's how two types of list display in the output: 
+Here's how two types of list display in the output:
 
 ![](http://i.imgur.com/jzN4RWm.png)
 
@@ -225,7 +226,7 @@ Here is an example of using two packages for displaying math:
 
 ![](http://i.imgur.com/050nrfh.png)  
 
-Even more epic is how circuits are displayed: 
+Even more epic is how circuits are displayed:
 
 ![](http://i.imgur.com/If4lbLA.png)
 
@@ -451,7 +452,7 @@ Now the main file looks different, but better documented. Here is the result in 
 
 #### LaTeX Compilers
 
-* Most editors will have an option for you to change the default compiler. Here's an example : 
+* Most editors will have an option for you to change the default compiler. Here's an example :
 
 ![](http://i.imgur.com/FbNUiL7.png)
 
