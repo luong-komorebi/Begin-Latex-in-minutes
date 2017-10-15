@@ -12,24 +12,24 @@
 * [Espagnol](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Spanish.md)
 
 ### Sommaire
-* [Qu'est ce que LaTeX?](#qu'est-ce-que-latex)
+* [Qu'est ce que LaTeX?](#qu-est-ce-que-latex)
 * [Pourquoi utiliser LaTeX?](#pourquoi-utiliser-latex)
 * [Installation de LaTeX](#installation-de-latex)
 * [Premier document LaTeX](#premier-document-latex)
 * [Un regard plus attentif](#un-regard-plus-attentif)
-* [Multilangues](#multilangues)
+* [Multilangue](#multilangue)
 * [Listes](#listes)
 * [Paragraphes et sections](#paragraphes-et-sections)
 * [Faire un sommaire](#faire-un-sommaire)
 * [Notes de bas de page](#notes-de-bas-de-page)
-* [Les packages?](#les-packages)
+* [Les packages](#les-packages)
 * [Table](#table)
 * [Ajouter des images](#ajouter-des-images)
 * [Insérer du code](#insérer-du-code)
 * [Travailler sur plusieurs documents](#travailler-sur-plusieurs-documents)
 * [Outils supplémentaires](#outils-supplémentaires)
 
-## Qu'est ce que LaTeX?
+## Qu est ce que LaTeX?
 
 LaTeX, pronnoncé «Lah-tech», est un langage et un système de composition de documents. Il est essentiellement utilisé pour les documents scientifiques plutôt technique, mais peut être utilisé pour toute forme de publication.
 
@@ -219,7 +219,7 @@ Je fais référence à moi même \ref{myfootnote}.
 
 :bangbang: **Astuce** : Vous pouvez utiliser `\newline` pour aller à la ligne.
 
-## Qu'est ce qu'un package?
+## Les packages
 
 LaTeX contient beaucoup de fonctionnalités par défaut, mais il est parfois utile d'utiliser des packages. Pour importer un package en LaTeX, ajoutez simplement `\usepackage` :package:
 
