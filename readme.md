@@ -80,15 +80,15 @@ It should look like this in TexMaker:
 
 ## A deeper look
 
-:eyes: A deeper look into your first LaTeX file easily shows that :
+:eyes: A deeper look into your first LaTeX file easily shows that:
 * The first line tells the Interpreter that you are working on an **article** with the size of the a4. Other types of document you might be working with in the future are **report**, **book**... and so on.
-* A document is wrapped by the **\begin{document}** and **\end{document}** . Think of this as the heart of the document, as the `main()` in *java* or *C++* ... without which the document can't be rendered.
+* A document is wrapped by the **\begin{document}** and **\end{document}**. Think of this as the heart of the document, as the `main()` in *java* or *C++*... without which the document can't be rendered.
 * The part between begin and end ( which, in this case, is `Hello World` ) is simply your own content.
 * A **percent sign** (%) denotes your comment, which LaTeX will ignore.
 
 #### :zap: Attention :zap:
 
-* Looking back at **\begin{document}** , **\end{document}** , **\documentclass[a4paper]{article}** . You may notice the pattern now. These are called **Typesetting Commands** ( which are usually preceded by “\” ) and **arguments** ( placed inside curly braces “{}” ). LaTeX are basically normal texts, but powered by these commands.
+* Looking back at **\begin{document}**, **\end{document}**, **\documentclass[a4paper]{article}**. You may notice the pattern now. These are called **Typesetting Commands** ( which are usually preceded by “\” ) and **arguments** ( placed inside curly braces “{}” ). LaTeX are basically normal texts, but powered by these commands.
 * While you are following this guide, everything will work smoothly. However, in the future, should there be any problems, **don't panic**. The error reports are human-friendly and readable. If you can't resolve them, a search tool like Google may be your best friend.  
 * Some characters are **predefined with special meanings in LaTeX. You may want to use backslashes (\\) in front of these characters for proper output.**  
 
@@ -115,7 +115,7 @@ Xin chào thế giới. This is Hello World in Vietnamese.
 \end{document}
 ```
 
-Here we use the packages `usepackage[T5]{fontenc}` and `usepackage[utf8]{inputenc}` . This is really simple to understand as the package will import font encoders to display your content correctly. If you are using TexMaker this is what the above code display :
+Here we use the packages `usepackage[T5]{fontenc}` and `usepackage[utf8]{inputenc}`. This is really simple to understand as the package will import font encoders to display your content correctly. If you are using TexMaker this is what the above code display:
 
 ![](http://i.imgur.com/UQEewYi.png)
 
@@ -123,7 +123,7 @@ vs without the packages :package::
 
 ![](http://i.imgur.com/xvzrQX2.png)  
 
-:umbrella: A tricky situation is dealing with Chinese-Japanese-Korean. Here, `usepackage{CJKutf8}` with `\begin{CJK}{UTF8}` and `\end{CJK}` comes in very handy. Here's Japanese :jp: :
+:umbrella: A tricky situation is dealing with Chinese-Japanese-Korean. Here, `usepackage{CJKutf8}` with `\begin{CJK}{UTF8}` and `\end{CJK}` comes in very handy. Here's Japanese :jp::
 ```tex
 \documentclass[a4paper]{article}
 \usepackage{CJKutf8}
@@ -138,7 +138,7 @@ vs without the packages :package::
 \end{document}
 ```
 
-As easy as eating :sushi: and :bento: :
+As easy as eating :sushi: and :bento::
 
 ![](http://i.imgur.com/vAN1WUi.png)  
 
@@ -165,7 +165,7 @@ The default font (Latin Modern) does not support all characters. You can, howeve
 ## Lists
 
 :straight_ruler: It is very important to organize your document well. Thus, let's start by putting your items into a list.  
-Two common types of lists are **unordered** and **ordered** list. Each of them can be handled with ease in LaTeX document :  
+Two common types of lists are **unordered** and **ordered** list. Each of them can be handled with ease in LaTeX document:  
 * Unordered List  
 Unordered list only needs **"itemize"**. (pun intended)
 ```tex
@@ -189,7 +189,7 @@ Here's how two types of list display in the output:
 
 ## Paragraph and section
 
-:blue_book: We begin a section with `\section` and a paragraph with `\paragraph` .
+:blue_book: We begin a section with `\section` and a paragraph with `\paragraph`.
 :orange_book: You can also add subsection with `\subsection` and subparagraph with `\subparagraph`
 
 ![](http://i.imgur.com/qKbZYnG.png)
@@ -202,7 +202,7 @@ Example:
 
 ![](http://i.imgur.com/TBUOTRj.png)
 
-:bangbang: **Tips** : you can use `\newpage` if you want to make a new page.
+:bangbang: **Tips**: you can use `\newpage` if you want to make a new page.
 
 ## Footnotes
 
@@ -216,7 +216,7 @@ I'm referring to myself \ref{myfootnote}.
 
 ![](http://i.imgur.com/BSYPX4C.png)
 
-:bangbang: **Tips** : you can use `\newline` to make a new line.
+:bangbang: **Tips**: you can use `\newline` to make a new line.
 
 ## What is a package?
 
@@ -230,11 +230,11 @@ Even more epic is how circuits are displayed:
 
 ![](http://i.imgur.com/If4lbLA.png)
 
-:construction: You should google search more if you want a package that meets your requirements. For example, amsmath is widely used for math and has a lot of extension typeset for math, circuitikz is for circuits designing, etc.. Covering them all would be impossible for this general guide.
+:construction: You should Google search more if you want a package that meets your requirements. For example, amsmath is widely used for math and has a lot of extension typeset for math, circuitikz is for circuits designing, etc.. Covering them all would be impossible for this general guide.
 
 ## Table
 
-A practical example :thought_balloon: :
+A practical example :thought_balloon::
 
 ```tex
 \begin{table}[h!]
@@ -249,27 +249,27 @@ A practical example :thought_balloon: :
 \end{table}
 ```
 
-:star2: This is what it renders :star2: :
+:star2: This is what it renders :star2::
 
 ![](http://i.imgur.com/XbZJJ2E.png)
 
-Now let's take a closer look :eyes: :
+Now let's take a closer look :eyes::
 
-* For tables, first we need a table environment, which is why we have `\begin{table}` and `\end{table}` .
+* For tables, first we need a table environment, which is why we have `\begin{table}` and `\end{table}`.
 * You will learn about h! later in the image section. It goes with `\centering` to keep the table at the center of the page.
 * Caption is for describing. Label is for tagging. You will see these more in image section.
 * Tabular is the most important part. A table environment always needs a tabular environment inside.
-  - the part `{l|c||r}` is where we format the content inside the table. Here we can see :
+  - the part `{l|c||r}` is where we format the content inside the table. Here we can see:
     * l or c or r means that the content inside each cell will be left-aligned or center-aligned or right-aligned, respectively.
     * the vertical slash | or || is actually the format of the vertical lines/borders inside the table's columns.
   - 1 & 2 & 3 => 1 2 3 are the contents of each cells. the ampersand & is used to separate the content of each cell in a row.
   - a `\hline` actually adds a horizontal line to separate each row.
 
-:bangbang: **Tips** You can use a package :package: called booktabs `\usepackage{booktabs}` for a visually better table.
+:bangbang: **Tips**: You can use a package :package: called booktabs `\usepackage{booktabs}` for a visually better table.
 
 ## Adding images
 
-To add an image to the LaTeX file , you need to use figure environment and the graphicx package. Use `\usepackage{graphicx}` and
+To add an image to the LaTeX file, you need to use figure environment and the graphicx package. Use `\usepackage{graphicx}` and
 
 ```tex
 \begin{figure}
@@ -279,21 +279,21 @@ To add an image to the LaTeX file , you need to use figure environment and the g
 \end{figure}
 ```
 
-:bangbang: **Tips**: Put [width=\linewidth] to scale the image to the width of the document.  If you want to float the image, then you need to attribute the begin with a certain value. Also, the fig is for later reference so name it with care.
+:bangbang: **Tips**: Put [width=\linewidth] to scale the image to the width of the document. If you want to float the image, then you need to attribute the begin with a certain value. Also, the fig is for later reference so name it with care.
 
 ```tex
 \begin{figure}[h!]
 ```
 
-:passport_control: Legit values are :
+:passport_control: Legit values are:
 
-* h (here) - same location
-* t (top) - top of page
-* b (bottom) - bottom of page
-* p (page) - on an extra page
-* ! (override) - will force the specified location
+* h (here) — same location
+* t (top) — top of page
+* b (bottom) — bottom of page
+* p (page) — on an extra page
+* ! (override) — will force the specified location
 
-Here's how the image is rendered :
+Here's how the image is rendered:
 
 ![](http://i.imgur.com/ysY9MOb.png)
 
@@ -305,7 +305,7 @@ One aspect of text compiling that is of the utmost importance to programmers and
 
 For LaTeX, the process is simple and very professional. We just wrap the code with some predefined content, then we are good to go.
 
-Example :
+Example:
 
 ```tex
 \documentclass[a4paper]{article}
@@ -331,15 +331,15 @@ int main()
 
 ![](http://i.imgur.com/FJfj8Er.png)
 
-As you can see, with the **{verbatim}** wrapper you can easily insert code without worrying about how the syntax is formatted. Here is how it looks out of the box, clean and professional :
+As you can see, with the **{verbatim}** wrapper you can easily insert code without worrying about how the syntax is formatted. Here is how it looks out of the box, clean and professional:
 
 ![](http://i.imgur.com/tpercup.png)
 
 #### :white_check_mark: :white_check_mark: Second Method :white_check_mark: :white_check_mark:
 
-This method gives you more options, including insert code **inline**, make **custom styles** code, choose a **specific language** for code, **import code** **from** another **file** within the same directory.... With this method, you dont use **{verbatim}** , but include a package :package: named **listings**.
+This method gives you more options, including insert code **inline**, make **custom styles** code, choose a **specific language** for code, **import code** **from** another **file** within the same directory.... With this method, you dont use **{verbatim}**, but include a package :package: named **listings**.
 
-Consider the following example :
+Consider the following example:
 ```tex
 \documentclass[a4paper]{article}
 
@@ -375,14 +375,14 @@ Lorem ipsum dolor sit amet \lstinline{print "Hello World"} , consectetur adipisc
 ```
 From this, you can see:
 
-1. To insert a code block , start with `\begin{lstlisting}` and end with `\end{lstlisting}`
+1. To insert a code block, start with `\begin{lstlisting}` and end with `\end{lstlisting}`
 2. To import code from another file within the same directory, you can use `lstinputlisiting{name_of_file}`
 3. To specify a language for the code, use `[language=C++]`
 4. To insert inline code use `\lstinline`
 5. To apply custom styles, use the `\usepackage{color}` and define your own style then define the listing with your own theme (Please look at code below). You can modify many things with your own style, but you need to read the doc for the correct property name.
 6. Interested ?? More [here](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings).
 
-Here is how the code above compiles in TexMaker :
+Here is how the code above compiles in TexMaker:
 
 ![](http://i.imgur.com/XwwDJNo.png)
 
@@ -431,7 +431,7 @@ Now the main file looks different, but better documented. Here is the result in 
 
 [![multi_file.png](https://s14.postimg.org/deg0kqhu9/multi_file.png)](https://postimg.org/image/hnkqmwl3h/)
 
-:bangbang: **Tips** : For readability, clarity and maintenance purpose, it is highly suggested that you divide your Main file systematically, hierarchically and scientifically. Don't divide without reasons or you may get a mess later.  
+:bangbang: **Tips**: For readability, clarity and maintenance purpose, it is highly suggested that you divide your Main file systematically, hierarchically and scientifically. Don't divide without reasons or you may get a mess later.  
 
 ## Additional Tools
 
@@ -442,7 +442,7 @@ Now the main file looks different, but better documented. Here is the result in 
 * [MacTeX](https://tug.org/mactex/) for macOS.
 * [ShareLaTeX](https://www.sharelatex.com/) — an online editor.
 * [Overleaf](https://www.overleaf.com/) — an collaborative online editor.
-* [StackEdit](https://stackedit.io/) - In-browser markdown editor.
+* [StackEdit](https://stackedit.io/) — In-browser markdown editor.
 
 #### LaTeX Editors
 
@@ -452,11 +452,11 @@ Now the main file looks different, but better documented. Here is the result in 
 
 #### LaTeX Compilers
 
-* Most editors will have an option for you to change the default compiler. Here's an example :
+* Most editors will have an option for you to change the default compiler. Here's an example:
 
 ![](http://i.imgur.com/FbNUiL7.png)
 
-## HOORAY !!
+## HOORAY!!
 
 :tada: Thank you for finishing the guide. That's basically all you need to know about LaTeX. :hammer:  
 If you are greatly interested, more on LaTeX can be found [here](http://www.latex-project.org/help/documentation/) or all over the web, depending on your need.
@@ -468,7 +468,7 @@ If you are greatly interested, more on LaTeX can be found [here](http://www.late
 **DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE**
 Copyright (C) 2016 Luong Vo
 Everyone is permitted to copy and distribute verbatim or modified copies of this license document, and changing it is allowed as long as the name is changed.
-TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION : You just DO WHAT THE FUCK YOU WANT TO.  
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION: You just DO WHAT THE FUCK YOU WANT TO.  
 
 
 
