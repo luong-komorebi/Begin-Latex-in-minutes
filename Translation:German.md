@@ -28,7 +28,7 @@
 
 ## Was ist LaTeX?
 
-LaTeX, ausgesprochen «Lah-tech» oder «Lay-tech» (reimt sich auf «blech»), ist eine Software die ein hochqualitatives Textsatzsystem darstellt. LaTeX wird of für mittlere bis lange technische und wissenschaftliche Dokumente eingesetzt, kann jedoch für beinahe jede Form von Veröffentlichungen verwendet werden.
+LaTeX, ausgesprochen «Lah-tech» oder «Lay-tech» (reimt sich auf «blech»), ist eine Software die ein hochqualitatives Textsatzsystem zur Verfügung stellt. LaTeX wird oft für technische und wissenschaftliche Dokumente eingesetzt, kann jedoch für beinahe jede Form von Veröffentlichungen, von Essays bis hin zu Büchern, verwendet werden.
 
 ## Why use LaTeX?
 
