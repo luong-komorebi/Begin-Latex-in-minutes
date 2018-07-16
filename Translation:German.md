@@ -5,10 +5,10 @@
 
 **Acknowledgement:** *Everything written below is from my own experience in college and after reading various materials. I am neither a professional nor expert, but a student who has great passion for the language. Anyone can open a discussion in the issue section, or a pull request in case something should be modified or added. If you consider my work valuable, a [donation](#donation) is much appreciated.*
 
-*[Chinese](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Chinese.md),
-[French](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:French.md), [Portuguese](https://github.com/LewisVo/Begin-Latex-in-minutes/blob/master/Translation:Portuguese.md) and [Spanish](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Spanish.md) versions are available.*
+*[Chinesische](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Chinese.md),
+[französische](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:French.md), [portugisische](https://github.com/LewisVo/Begin-Latex-in-minutes/blob/master/Translation:Portuguese.md) und [spanische](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Spanish.md) Übersetzungen sind verfügbar.*
 
-### Table of Contents
+### Inhaltsverzeichnis
 * [What is LaTeX?](#what-is-latex)
 * [Why use LaTeX?](#why-use-latex)
 * [Set up for LaTeX](#set-up-for-latex)
