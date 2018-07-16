@@ -6,10 +6,10 @@
 **Acknowledgement:** *Everything written below is from my own experience in college and after reading various materials. I am neither a professional nor expert, but a student who has great passion for the language. Anyone can open a discussion in the issue section, or a pull request in case something should be modified or added. If you consider my work valuable, a [donation](#donation) is much appreciated.*
 
 *[Chinesische](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Chinese.md),
-[französische](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:French.md), [portugisische](https://github.com/LewisVo/Begin-Latex-in-minutes/blob/master/Translation:Portuguese.md) und [spanische](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Spanish.md) Übersetzungen sind verfügbar.*
+[französische](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:French.md), [portugiesische](https://github.com/LewisVo/Begin-Latex-in-minutes/blob/master/Translation:Portuguese.md) und [spanische](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Spanish.md) Übersetzungen sind verfügbar.*
 
 ### Inhaltsverzeichnis
-* [What is LaTeX?](#what-is-latex)
+* [Was ist LaTeX?](#was-ist-latex)
 * [Why use LaTeX?](#why-use-latex)
 * [Set up for LaTeX](#set-up-for-latex)
 * [First LaTeX file](#first-latex-file)
@@ -26,9 +26,9 @@
 * [Multiple files in LaTeX](#Multiple-files-in-LaTeX)
 * [Additional Tools](#additional-tools)
 
-## What is LaTeX?
+## Was ist LaTeX?
 
-LaTeX, which is pronounced «Lah-tech» or «Lay-tech» (to rhyme with «blech»), is a document preparation system for high-quality typesetting. It is most often used for medium-to-large technical or scientific documents but it can be used for almost any form of publishing.
+LaTeX, ausgesprochen «Lah-tech» oder «Lay-tech» (reimt sich auf «blech»), ist eine Software die ein hochqualitatives Textsatzsystem darstellt. LaTeX wird of für mittlere bis lange technische und wissenschaftliche Dokumente eingesetzt, kann jedoch für beinahe jede Form von Veröffentlichungen verwendet werden.
 
 ## Why use LaTeX?
 
