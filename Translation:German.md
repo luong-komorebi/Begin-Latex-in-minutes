@@ -3,7 +3,7 @@
 
 ![](https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg)
 
-**Acknowledgement:** *Everything written below is from my own experience in college and after reading various materials. I am neither a professional nor expert, but a student who has great passion for the language. Anyone can open a discussion in the issue section, or a pull request in case something should be modified or added. If you consider my work valuable, a [donation](#donation) is much appreciated.*
+**Vorwort:** *Alle Informationen stammen aus meinen Erfahrungen an der Hochschule und aus diversen anderen Quellen. Ich bin weder ein Profi noch ein Experte, sondern ein Student mit einer Leidenschaft für die Software. Jeder kann sich in das Projekt einbringen, entweder, in dem er auf Fehler hinweist, oder selbst einen Pull-Request anfragt. Falls du meine Arbeit unterstützen möchtest, kannst du gerne einen kleinen Beitrag spenden. ([Spenden](#Spenden)).*
 
 *[Chinesische](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Chinese.md),
 [französische](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:French.md), [portugiesische](https://github.com/LewisVo/Begin-Latex-in-minutes/blob/master/Translation:Portuguese.md) und [spanische](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Spanish.md) Übersetzungen sind verfügbar.*
@@ -472,8 +472,8 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION: You just DO WHA
 
 
 
-<div id='donation'/>  
+<div id='Spenden'/>  
 
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5ZG5Z47L2ZGYC)
 
-A beer in your country can buy a meal in mine.
+Ein Bier in deinem Land kostet soviel wie eine Mahlzeit in meinem Land.
