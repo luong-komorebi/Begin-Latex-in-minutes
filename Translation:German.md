@@ -10,8 +10,8 @@
 
 ### Inhaltsverzeichnis
 * [Was ist LaTeX?](#was-ist-latex)
-* [Why use LaTeX?](#warum-sollte-ich-latex-benutzen)
-* [Set up for LaTeX](#set-up-for-latex)
+* [Warum sollte ich LaTeX benutzen?](#warum-sollte-ich-latex-benutzen)
+* [LaTeX einrichten](#latex-einrichten)
 * [First LaTeX file](#first-latex-file)
 * [A deeper look](#a-deeper-look)
 * [Multilingual usage](#multilingual-usage)
@@ -41,17 +41,17 @@ LaTeX, ausgesprochen «Lah-tech» oder «Lay-tech» (reimt sich auf «blech»), 
 
 > LaTeX kommt nicht ohne Nachteile, ist es aber trotzdem Wert, erlernt zu werden.
 
-## Set up for LaTeX
+## LaTeX einrichten
 
-You will need the following things:
+Folgendes wird benötigt:
 
 
-1. *LaTeX Distribution.*
-I am using [MiKTeX](https://miktex.org/about) for Windows.
+1. *LaTeX Softwarepaket.*
+Ich benutze [MiKTeX](https://miktex.org/about) für Windows.
 2. *LaTeX Editor.*
-I am using [TeXMaker](http://www.xm1math.net/texmaker/) for easy editing, although any text editor can create or change a LaTeX file.
-3. *PDF viewer.* (optional)
-Any PDF viewer out there is fine. This is for viewing your result.
+Ich benutze [TeXMaker](http://www.xm1math.net/texmaker/) für einfaches bearbeiten, allerdings kann jeder Texteditor LaTeX-Dateien erstellen und ändern.
+3. *PDF-Software.* (optional)
+Für die Anzeige des fertigen Dokuments ist jede PDF-Software geeignet.
 
 In addition, you need to choose a [compiler](#additional-tools). The default compiler of most
 editors is pdfLaTeX, but if you need support for Unicode or TTF/OTF fonts from
