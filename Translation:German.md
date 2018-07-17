@@ -10,7 +10,7 @@
 
 ### Inhaltsverzeichnis
 * [Was ist LaTeX?](#was-ist-latex)
-* [Why use LaTeX?](#why-use-latex)
+* [Why use LaTeX?](#warum-sollte-ich-latex-benutzen)
 * [Set up for LaTeX](#set-up-for-latex)
 * [First LaTeX file](#first-latex-file)
 * [A deeper look](#a-deeper-look)
@@ -30,16 +30,16 @@
 
 LaTeX, ausgesprochen «Lah-tech» oder «Lay-tech» (reimt sich auf «blech»), ist eine Software die ein hochqualitatives Textsatzsystem zur Verfügung stellt. LaTeX wird oft für technische und wissenschaftliche Dokumente eingesetzt, kann jedoch für beinahe jede Form von Veröffentlichungen, von Essays bis hin zu Büchern, verwendet werden.
 
-## Why use LaTeX?
+## Warum sollte ich LaTeX benutzen?
 
-* LaTeX is free, multiplatform.
-* LaTeX is just a text document (which can be opened by any text editor), readily converted to PDF.
-* LaTeX separates content and style. Style once, then focus on content.
-* The workflow is faster compared to MS Word.
-* LaTeX is widely used for scientific topics.
-* LaTeX is simply the best option when it comes to typesetting math expressions.
+* LaTeX ist frei und für viele Plattformen verfügbar
+* LaTeX ist ein einfaches Textdokument, das mit jedem Texteditor geöffnet werden und leicht in ein PDF umgewandelt werden kann
+* LaTeX separiert Inhalt und Design. Einmal das Design festlegen, dann auf den Inhalt konzentrieren
+* Der Workflow ist schneller verglichen mit MS Word
+* LaTeX ist für wissenschaftliche Themen gut geeignet.
+* LaTeX ist die beste Lösung wenn es um die Darstellung komplexer mathematischer Formeln geht.
 
-> LaTeX doesn't come without drawbacks, but is still worth learning.
+> LaTeX kommt nicht ohne Nachteile, ist es aber trotzdem Wert, erlernt zu werden.
 
 ## Set up for LaTeX
 
