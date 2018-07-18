@@ -458,10 +458,10 @@ Now the main file looks different, but better documented. Here is the result in 
 
 ## HOORAY!!
 
-:tada: Thank you for finishing the guide. That's basically all you need to know about LaTeX. :hammer:  
-If you are greatly interested, more on LaTeX can be found [here](http://www.latex-project.org/help/documentation/) or all over the web, depending on your need.
+:tada: Danke, dass du diese Anleitung gelesen hast. Du weißt jetzt alles, um mit LaTeX zu beginnen. :hammer:  
+Wenn du noch mehr wissen möchtest, ist [hier](http://www.latex-project.org/help/documentation/) ein guter Einstiegspunkt.
 
-## License
+## Lizenz
 
  [![](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png)](http://www.wtfpl.net/)
 
