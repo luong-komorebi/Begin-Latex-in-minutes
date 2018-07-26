@@ -24,7 +24,7 @@
 * [Adding images](#adding-images)
 * [Insert code into LaTeX](#insert-code-into-latex)
 * [Multiple files in LaTeX](#Multiple-files-in-LaTeX)
-* [Additional Tools](#additional-tools)
+* [Weitere Software](#weitere-software)
 
 ## Was ist LaTeX?
 
@@ -433,26 +433,26 @@ Now the main file looks different, but better documented. Here is the result in 
 
 :bangbang: **Tips**: For readability, clarity and maintenance purpose, it is highly suggested that you divide your Main file systematically, hierarchically and scientifically. Don't divide without reasons or you may get a mess later.  
 
-## Additional Tools
+## Weitere Software
 
-#### Distributions
+#### Softwarepakete
 
-* [MiKTeX](https://miktex.org/about) for Windows.
-* [TeX Live](https://www.tug.org/texlive/) for Linux and Unix-based.
-* [MacTeX](https://tug.org/mactex/) for macOS.
-* [ShareLaTeX](https://www.sharelatex.com/) — an online editor.
-* [Overleaf](https://www.overleaf.com/) — an collaborative online editor.
-* [StackEdit](https://stackedit.io/) — In-browser markdown editor.
+* [MiKTeX](https://miktex.org/about) für Windows.
+* [TeX Live](https://www.tug.org/texlive/) für Linux und Unix-basierte Systeme.
+* [MacTeX](https://tug.org/mactex/) für macOS.
+* [ShareLaTeX](https://www.sharelatex.com/) — ein Online-Editor.
+* [Overleaf](https://www.overleaf.com/) — ein kollaborativer Online-Editor.
+* [StackEdit](https://stackedit.io/) — browserbasierter Editor auf Markdown-Basis.
 
-#### LaTeX Editors
+#### LaTeX Editoren
 
-* [TeXMaker](http://www.xm1math.net/texmaker/) Cross platform LaTeX editor.
-* [TeXStudio](http://www.texstudio.org/) An enhanced fork of TeXMaker with more features.
-* TeXShop and TeXworks (minimal editors)
+* [TeXMaker](http://www.xm1math.net/texmaker/) LaTeX-Editor (Multiplattform).
+* [TeXStudio](http://www.texstudio.org/) Ein verbesserter Fork von TeXMaker mit mehr Funktionen.
+* TeXShop und TeXworks (minimalistische Editoren)
 
-#### LaTeX Compilers
+#### LaTeX Compiler
 
-* Most editors will have an option for you to change the default compiler. Here's an example:
+* Die meisten Editoren haben eine Option um den Standard-Kompiler zu ändern. Hier ein Beispiel:
 
 ![](http://i.imgur.com/FbNUiL7.png)
 
