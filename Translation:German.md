@@ -75,7 +75,7 @@ Hello World !  % This is your content
 \end{document}
 ```
 
-It should look like this in TexMaker:
+Es sollte in TexMaker ungefähr so aussehen:
 ![](http://i.imgur.com/ZuD5N6U.png)
 
 ## A deeper look
