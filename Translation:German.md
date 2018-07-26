@@ -12,7 +12,7 @@
 * [Was ist LaTeX?](#was-ist-latex)
 * [Warum sollte ich LaTeX benutzen?](#warum-sollte-ich-latex-benutzen)
 * [LaTeX einrichten](#latex-einrichten)
-* [First LaTeX file](#first-latex-file)
+* [Die erste LaTeX-Datei](#die-erste-latex-datei)
 * [A deeper look](#a-deeper-look)
 * [Multilingual usage](#multilingual-usage)
 * [Lists](#lists)
@@ -60,10 +60,10 @@ your system, use LuaLaTeX.
 Or you can choose a simple online solution like [ShareLaTeX](https://www.sharelatex.com/).
 Please look at [Additional Tools](#additional-tools) for a wider variety of choices.
 
-## First LaTeX file
+## Die erste LaTeX-Datei
 
-Let's do the traditional **Hello World** in **LaTeX**.
-If you have installed **TexMaker**, first create a new file with ending `.tex`. Then type in the following code below to render "Hello World!" and run "quick build". For other LaTeX editors, it should also be easy to follow the same procedure.
+Lasst uns ein klassisches **Hello World** in **LaTeX** machen.
+Wenn du **TexMaker** installiert hast, erstelle eine neue Datei mit der Endung `.tex`. Dann gib den unten stehenden Code ein um "Hello World!" zu rendern und klicke auf "quick build". In anderen Editoren sollte der Vorgang ähnlich einfach sein.
 
 ```tex
 \documentclass[a4paper]{article}
