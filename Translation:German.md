@@ -13,7 +13,7 @@
 * [Warum sollte ich LaTeX benutzen?](#warum-sollte-ich-latex-benutzen)
 * [LaTeX einrichten](#latex-einrichten)
 * [Die erste LaTeX-Datei](#die-erste-latex-datei)
-* [A deeper look](#a-deeper-look)
+* [Mehr Einblicke in LaTeX](#mehr-einblicke-in-latex)
 * [Multilingual usage](#multilingual-usage)
 * [Lists](#lists)
 * [Paragraph and section](#paragraph-and-section)
@@ -78,19 +78,19 @@ Hello World !  % This is your content
 Es sollte in TexMaker ungefähr so aussehen:
 ![](http://i.imgur.com/ZuD5N6U.png)
 
-## A deeper look
+## Mehr Einblicke in LaTeX
 
-:eyes: A deeper look into your first LaTeX file easily shows that:
-* The first line tells the Interpreter that you are working on an **article** with the size of the a4. Other types of document you might be working with in the future are **report**, **book**... and so on.
-* A document is wrapped by the **\begin{document}** and **\end{document}**. Think of this as the heart of the document, as the `main()` in *java* or *C++*... without which the document can't be rendered.
-* The part between begin and end ( which, in this case, is `Hello World` ) is simply your own content.
-* A **percent sign** (%) denotes your comment, which LaTeX will ignore.
+:eyes: Ein genauerer Blick in deine erste LaTex-Datei zeigt:
+* Die erste Zeile sagt dem Interpreter, dass du an einem **article** im DIN-A4-Format arbeitest. Zukünftigt wirst du sicherlich auch mit **report**, **book** und anderen arbeiten.
+* Ein Dokument ist begrenzt mit **\begin{document}** und **\end{document}**. Das ist das Herzstück des Dokuments, vergleichbar mit `main()` in *java* oder *C++*. Ohne diese Zeilen kann das Dokument nicht erstellt werden.
+* Der Inhalt zwischen begin und end ( in diesem Fall `Hello World` ) ist dein eigener Inhalt
+* Ein **Prozentzeichen** (%) zeigt einen Kommentar an.
 
-#### :zap: Attention :zap:
+#### :zap: Achtung :zap:
 
-* Looking back at **\begin{document}**, **\end{document}**, **\documentclass[a4paper]{article}**. You may notice the pattern now. These are called **Typesetting Commands** ( which are usually preceded by “\” ) and **arguments** ( placed inside curly braces “{}” ). LaTeX are basically normal texts, but powered by these commands.
-* While you are following this guide, everything will work smoothly. However, in the future, should there be any problems, **don't panic**. The error reports are human-friendly and readable. If you can't resolve them, a search tool like Google may be your best friend.  
-* Some characters are **predefined with special meanings in LaTeX. You may want to use backslashes (\\) in front of these characters for proper output.**  
+* Schau dir nochmal **\begin{document}**, **\end{document}**, **\documentclass[a4paper]{article}** an. Du wirst jetzt das Muster verstehen. Diese Kommandos werden **Typesetting Commands** ( mit vorangestelltem Backslash “\” ) und **arguments** ( innerhalb von geschweiften Klammern “{}” ) genannt. LaTeX stellt genaugenommen einfachen Text dar, der durch diese Befehle seine Form erhält.
+* Wenn du im Rahmen dieser Anleitung bleibst, solltest du keine Probleme bekommen. Solltest du in der Zukunft auf Probleme stoßen, gilt: **keine Panik**. Die Fehlermeldungen sind verständlich und gut lesbar. Wenn du einen Fehler dadurch auch nicht beheben kannst, hilft eine Suche im Internet oft weiter.  
+* Einige Zeichen sind intern für LaTeX reserviert. **Wenn du sie benutzten möchtest, stelle einen doppelten Backslash (\\) voran um eine korrekte Ausgabe zu garantieren**.  
 
 ![](http://i.imgur.com/9d0bXHH.png)   
 
