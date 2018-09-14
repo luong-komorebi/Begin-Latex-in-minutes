@@ -3,7 +3,7 @@
 
 ![](https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg)
 
-(Spanish translator's acknowledgement: I tried to translate this guide as the original meaning of the author as much as i could. If you think the translation is inappropriate, please feel free to modify it or add missing stuff you think ould make this guide better. If you like this guide, please share to more people.)
+(Spanish translator's acknowledgement: I tried to translate this guide as the original meaning of the author as much as i could. If you think the translation is inappropriate, please feel free to modify it or add missing stuff you think would make this guide better. If you like this guide, please share to more people.)
 
 
 **Aviso:** *Todo lo descrito abajo es desde mi experiencia en la universidad y después de leer varios materiales. No soy ni un profesional ni un experto, sino un estudiante que tiene gran pasión por el lenguaje. Cualquiera puede abrir una discusión en la sección de issues, o una solicitud de pull en caso de que algo deba ser modificado o agregado. Si valoras mi trabajo, una [donación](#donación) sería muy apreciada. ¡Gracias!*
@@ -11,8 +11,8 @@
 
 
 
-*Versión en chino disponible: [aquí](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Chinese.md)*  
-*Versión en inglés disponible: [aquí](https://github.com/LewisVo/Begin-Latex-in-minutes/blob/master/readme.md)*
+*Versión en chino disponible: [aquí](./Translation:Chinese.md)*  
+*Versión en inglés disponible: [aquí](readme.md)*
 
 ### Table of Contents
 * [¿Qué es LaTeX?](#qué-es-latex)
