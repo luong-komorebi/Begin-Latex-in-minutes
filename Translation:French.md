@@ -7,9 +7,9 @@
 
 *Versions disponibles :*
 * [Anglais](readme.md)
-* [Chinois](Translation:Chinese.md)
-* [Portugais](Translation:Portuguese.md)
-* [Espagnol](Translation:Spanish.md)
+* [Chinois](./Translation:Chinese.md)
+* [Portugais](./Translation:Portuguese.md)
+* [Espagnol](./Translation:Spanish.md)
 
 ### Sommaire
 * [Qu'est ce que LaTeX?](#qu-est-ce-que-latex)
