@@ -11,7 +11,7 @@
 
 
 
-*Versión en chino disponible: [aquí](Translation:Chinese.md)*  
+*Versión en chino disponible: [aquí](./Translation:Chinese.md)*  
 *Versión en inglés disponible: [aquí](readme.md)*
 
 ### Table of Contents
