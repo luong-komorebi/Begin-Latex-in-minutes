@@ -6,10 +6,10 @@
 **Note:** *Tout ce qui est écrit dans ce guide vient de ma propre expérience et des articles que j'ai lu. Je ne suis pas un professionnel ou expert, mais un étudiant qui apprécie beaucoup ce langage. N'importe qui peut ouvrir une discussion dans la section "issue", ou faire une "pull request". Si vous appréciez mon travail, vous pouvez me faire une [donation](#donation).*
 
 *Versions disponibles :*
-* [Anglais](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/readme.md)
-* [Chinois](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Chinese.md)
-* [Portugais](https://github.com/LewisVo/Begin-Latex-in-minutes/blob/master/Translation:Portuguese.md)
-* [Espagnol](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Spanish.md)
+* [Anglais](readme.md)
+* [Chinois](Translation:Chinese.md)
+* [Portugais](Translation:Portuguese.md)
+* [Espagnol](Translation:Spanish.md)
 
 ### Sommaire
 * [Qu'est ce que LaTeX?](#qu-est-ce-que-latex)
