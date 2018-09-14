@@ -5,8 +5,8 @@
 
 **Acknowledgement:** *Everything written below is from my own experience in college and after reading various materials. I am neither a professional nor expert, but a student who has great passion for the language. Anyone can open a discussion in the issue section, or a pull request in case something should be modified or added. If you consider my work valuable, a [donation](#donation) is much appreciated.*
 
-*[Chinese](Translation:Chinese.md),
-[French](Translation:French.md), [Portuguese](Translation:Portuguese.md) and [Spanish](Translation:Spanish.md) versions are available.*
+*[Chinese](./Translation:Chinese.md),
+[French](./Translation:French.md), [Portuguese](./Translation:Portuguese.md) and [Spanish](./Translation:Spanish.md) versions are available.*
 
 ### Table of Contents
 * [What is LaTeX?](#what-is-latex)
