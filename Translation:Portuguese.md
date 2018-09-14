@@ -7,8 +7,8 @@
 
 **Aviso:** *Todo conteúdo escrito abaixo é de minha própria experiência na faculdade e da leitura de diversos materiais. Eu não sou nem professional nem especialista, mas um estudante com uma grande paixão pela linguagem. Qualquer um pode abrir uma discussão na seção issue, ou um pull request no caso de algo que deve ser modificado ou adicionado. Se você considera meu trabalho valioso, uma [doação](#doação) é muito apreciada.*
 
-*Versão em chinês disponível [Aqui](Translation:Chinese.md)*  
-*Versão em espanhol disponível  [Aqui](Translation:Spanish.md)*
+*Versão em chinês disponível [Aqui](./Translation:Chinese.md)*  
+*Versão em espanhol disponível  [Aqui](./Translation:Spanish.md)*
 
 ### Tabela de Conteúdos
 * [O que é LaTeX?](#o-que-é-latex)
