@@ -1,3 +1,10 @@
+[English](./readme.md) ·
+[中文](./Translation:Chinese.md) ·
+Español ·
+[Português](./Translation:Portuguese.md) ·
+[Français](./Translation:French.md)
+
+---
 
 # Empieza con LaTeX en minutos
 
@@ -10,9 +17,6 @@
 
 
 
-
-*Versión en chino disponible: [aquí](./Translation:Chinese.md)*  
-*Versión en inglés disponible: [aquí](readme.md)*
 
 ### Table of Contents
 * [¿Qué es LaTeX?](#qué-es-latex)
