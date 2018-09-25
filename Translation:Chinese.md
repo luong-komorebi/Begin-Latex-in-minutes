@@ -1,3 +1,11 @@
+[English](./readme.md) ·
+中文 ·
+[Español](./Translation:Spanish.md) ·
+[Português](./Translation:Portuguese.md) ·
+[Français](./Translation:French.md)
+
+---
+
 # 学习 LaTeX 从现在开始
 
 ![](https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg)

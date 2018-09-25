@@ -1,15 +1,16 @@
+[English](./readme.md) ·
+[中文](./Translation:Chinese.md) ·
+[Español](./Translation:Spanish.md) ·
+[Português](./Translation:Portuguese.md) ·
+Français
+
+---
 
 # LaTeX en quelques minutes
 
 ![](https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg)
 
 **Note:** *Tout ce qui est écrit dans ce guide vient de ma propre expérience et des articles que j'ai lu. Je ne suis pas un professionnel ou expert, mais un étudiant qui apprécie beaucoup ce langage. N'importe qui peut ouvrir une discussion dans la section "issue", ou faire une "pull request". Si vous appréciez mon travail, vous pouvez me faire une [donation](#donation).*
-
-*Versions disponibles :*
-* [Anglais](readme.md)
-* [Chinois](./Translation:Chinese.md)
-* [Portugais](./Translation:Portuguese.md)
-* [Espagnol](./Translation:Spanish.md)
 
 ### Sommaire
 * [Qu'est ce que LaTeX?](#qu-est-ce-que-latex)
