@@ -2,7 +2,8 @@
 [中文](./Translation:Chinese.md) ·
 [Español](./Translation:Spanish.md) ·
 Português ·
-[Français](./Translation:French.md)
+[Français](./Translation:French.md) ·
+[Русский](./Translation:Russian.md)
 
 ---
 
