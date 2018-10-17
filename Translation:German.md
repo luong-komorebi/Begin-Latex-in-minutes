@@ -1,3 +1,10 @@
+[English] (./readme.md) ·
+[中文](./Translation:Chinese.md) ·
+[Español](./Translation:Spanish.md) ·
+[Português](./Translation:Portuguese.md) ·
+[Français](./Translation:French.md) ·
+[Русский](./Translation:Russian.md) ·
+Deutsch
 
 # Mit LaTeX in Minuten beginnen
 
@@ -5,25 +12,22 @@
 
 **Vorwort:** *Alle Informationen stammen aus meinen Erfahrungen an der Hochschule und aus diversen anderen Quellen. Ich bin weder ein Profi noch ein Experte, sondern ein Student mit einer Leidenschaft für die Software. Jeder kann sich in das Projekt einbringen, entweder, in dem er auf Fehler hinweist, oder selbst einen Pull-Request anfragt. Falls du meine Arbeit unterstützen möchtest, kannst du gerne einen kleinen Beitrag spenden. ([Spenden](#Spenden)).*
 
-*[Chinesische](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Chinese.md),
-[französische](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:French.md), [portugiesische](https://github.com/LewisVo/Begin-Latex-in-minutes/blob/master/Translation:Portuguese.md) und [spanische](https://github.com/VoLuong/Begin-Latex-in-minutes/blob/master/Translation:Spanish.md) Übersetzungen sind verfügbar.*
-
 ### Inhaltsverzeichnis
 * [Was ist LaTeX?](#was-ist-latex)
 * [Warum sollte ich LaTeX benutzen?](#warum-sollte-ich-latex-benutzen)
 * [LaTeX einrichten](#latex-einrichten)
 * [Die erste LaTeX-Datei](#die-erste-latex-datei)
 * [Mehr Einblicke in LaTeX](#mehr-einblicke-in-latex)
-* [Multilingual usage](#multilingual-usage)
-* [Lists](#lists)
-* [Paragraph and section](#paragraph-and-section)
-* [Making a table of contents](#making-a-table-of-contents)
-* [Footnotes](#footnotes)
-* [What is a package?](#what-is-a-package)
-* [Table](#table)
-* [Adding images](#adding-images)
-* [Insert code into LaTeX](#insert-code-into-latex)
-* [Multiple files in LaTeX](#Multiple-files-in-LaTeX)
+* [Benutzen von mehreren Sprachen](#benutzen-von-mehreren-sprachen)
+* [Listen](#listen)
+* [Paragrafen und Abschnitte](#paragrafen-und-abschnitte)
+* [Ein Inhaltsverzeichnis erstellen](#ein-inhaltsverzeichnis-erstellen)
+* [Fußnoten](#fußnoten)
+* [Was ist ein Packet?](#was-ist-ein-paket)
+* [Tabellen](#tabellen)
+* [Bilder einfügen](#bilder-einfügen)
+* [Code in LaTeX einfügen](#code-in-latex-einfügen)
+* [Mehrere Dateien in LaTeX](#mehrere-dateien-in-latex)
 * [Weitere Software](#weitere-software)
 
 ## Was ist LaTeX?
@@ -53,12 +57,12 @@ Ich benutze [TeXMaker](http://www.xm1math.net/texmaker/) für einfaches bearbeit
 3. *PDF-Software.* (optional)
 Für die Anzeige des fertigen Dokuments ist jede PDF-Software geeignet.
 
-In addition, you need to choose a [compiler](#additional-tools). The default compiler of most
-editors is pdfLaTeX, but if you need support for Unicode or TTF/OTF fonts from
-your system, use LuaLaTeX.
+Zusätzlich musst du einen [Kompiler](#weitere-software) wählen. Die Voreinstellung der meisten
+Editoren ist pdfLaTeX, aber wenn du Unterstützung für Unicode oder TTF/OTF Fonts benötigst,
+benutze LuaLatex.
 
-Or you can choose a simple online solution like [ShareLaTeX](https://www.sharelatex.com/).
-Please look at [Additional Tools](#additional-tools) for a wider variety of choices.
+Oder du benutzt eine Onlinelösung wie [ShareLaTeX](https://www.sharelatex.com/).
+Unter [Weitere Software](#weitere-software) findest du eine breitere Auswahl.
 
 ## Die erste LaTeX-Datei
 
@@ -90,17 +94,18 @@ Es sollte in TexMaker ungefähr so aussehen:
 
 * Schau dir nochmal **\begin{document}**, **\end{document}**, **\documentclass[a4paper]{article}** an. Du wirst jetzt das Muster verstehen. Diese Kommandos werden **Typesetting Commands** ( mit vorangestelltem Backslash “\” ) und **arguments** ( innerhalb von geschweiften Klammern “{}” ) genannt. LaTeX stellt genaugenommen einfachen Text dar, der durch diese Befehle seine Form erhält.
 * Wenn du im Rahmen dieser Anleitung bleibst, solltest du keine Probleme bekommen. Solltest du in der Zukunft auf Probleme stoßen, gilt: **keine Panik**. Die Fehlermeldungen sind verständlich und gut lesbar. Wenn du einen Fehler dadurch auch nicht beheben kannst, hilft eine Suche im Internet oft weiter.  
-* Einige Zeichen sind intern für LaTeX reserviert. **Wenn du sie benutzten möchtest, stelle einen doppelten Backslash (\\) voran um eine korrekte Ausgabe zu garantieren**.  
+* Einige Zeichen sind intern für LaTeX reserviert. **Wenn du sie benutzten möchtest, stelle einen Backslash (\) voran um eine korrekte Ausgabe zu garantieren**.  
 
 ![](http://i.imgur.com/9d0bXHH.png)   
 
-## Multilingual usage
+## Benutzen von mehreren Sprachen
 
-**Some languages won't work right out of the box. To use TeX with other languages, you have some options.**  
+**Einige sprachen funktionieren nicht ohne zusätzlcihe Konfiguration. Um TeX mit anderen Sprachen zu benutzen hast du ein paar Optionen.**
 
-#### :white_check_mark: First method :white_check_mark:
 
-The first method is including ["packages"](#what-is-a-package) (You will learn about it later) because pdfLaTeX, the default compiler, is limited to 256 characters and various encoding issues. For example:  
+#### :white_check_mark: Erste Methode :white_check_mark:
+
+Die erste Methode benutzt ["Packete"](#was-ist-ein-packet) (Du wirst später darüber lesen) weil pdfLaTex, der Standard-Kompiler, auf 256 Zeichen beschränkt ist und einige Kodierungsprobleme hat. Als Beispiel:
 
 ```tex
 \documentclass[a4paper]{article}
@@ -115,15 +120,15 @@ Xin chào thế giới. This is Hello World in Vietnamese.
 \end{document}
 ```
 
-Here we use the packages `usepackage[T5]{fontenc}` and `usepackage[utf8]{inputenc}`. This is really simple to understand as the package will import font encoders to display your content correctly. If you are using TexMaker this is what the above code display:
+Wir benutzen hier die Packete `usepackage[T5]{fontenc}` und `usepackage[utf8]{inputenc}`. Das ist hier leicht verständlich, die Packete importieren die benötigen Font Kodierer um den Text richtig dar zu stellen. Wenn du TexMaker benutzt wird der obere Code das darstellen:
 
 ![](http://i.imgur.com/UQEewYi.png)
 
-vs without the packages :package::  
+gegenüber ohne die Packete zu verwenden :package::  
 
 ![](http://i.imgur.com/xvzrQX2.png)  
 
-:umbrella: A tricky situation is dealing with Chinese-Japanese-Korean. Here, `usepackage{CJKutf8}` with `\begin{CJK}{UTF8}` and `\end{CJK}` comes in very handy. Here's Japanese :jp::
+:umbrella: Mit Chinesisch-Japansich-Koreanischen Zeichen zu arbeiten ist etwas verzwickter. Hier macht sich `usepackage{CJKutf8}` mit `\begin{CJK}{UTF8}` und `\end{CJK}` nützlich. Hier ist Japanisch :jp::
 ```tex
 \documentclass[a4paper]{article}
 \usepackage{CJKutf8}
@@ -138,12 +143,12 @@ vs without the packages :package::
 \end{document}
 ```
 
-As easy as eating :sushi: and :bento::
+So einfach wie :sushi: und :bento: zu essen:
 
 ![](http://i.imgur.com/vAN1WUi.png)  
 
-#### :white_check_mark: Second method :white_check_mark:
-Another method is achievable if you switch your TeX compiler to [LuaLaTeX](#additional-tools) (or [XeLaTeX](#additional-tools)). Using `fontspec` and `polyglossia`, Unicode will work out of the box:
+#### :white_check_mark: Zweite Methode :white_check_mark:
+Eine andere Methode ist es deinen TeX Kompiler zu [LuaLaTeX](#weitere-software) (oder [XeLaTeX](#weitere-software)) zu wechseln. Nutzt man nun `fontspec` und `polyglossia` funktioniert Unicode ohne weitere Konfiguration:
 
 ```tex
 \documentclass[a4paper]{article}
@@ -159,23 +164,23 @@ Xin chào thế giới. This is Hello World in Vietnamese.
 \end{document}
 ```
 
-The default font (Latin Modern) does not support all characters. You can, however, use almost any font installed on your system by uncommenting the `\setmainfont` line. (TTF and OTF fonts are fully supported).
+Das Standardfont (Latin Modern) unterstützt nicht alle Zeichen. Du kannst aber fast alle auf deinem System installierten Fonts benutzen, indem du die `\setmainfont` Zeile auskommentierst. (TTF und OTF Fonts haben volle Unterstützung.)
 
 
-## Lists
+## Listen
 
-:straight_ruler: It is very important to organize your document well. Thus, let's start by putting your items into a list.  
-Two common types of lists are **unordered** and **ordered** list. Each of them can be handled with ease in LaTeX document:  
-* Unordered List  
-Unordered list only needs **"itemize"**. (pun intended)
+:straight_ruler: Es ist sehr witchtig dein Dokument ordentlich zu halten. Deswegen beginnen wir jetzt damit deine Objekte in Listen zu schreiben.
+Die zwei üblichen Typen von Listen sind die **ungeordnete** und die **geordnete** Liste. Beide können mit leichtigkeit in Latex benutzt werden:
+* Ungeordnete Liste 
+Ungeordnete Listen benutzen **"itemize"**.
 ```tex
 \begin{itemize}
 \item Item.
 \item Another Item.
 \end{itemize}
 ```  
-* Ordered List  
-Ordered list, however, need us to **"enumerate"** them. (pun intended)  
+* Geordnete Liste 
+Geordnete Listen brauchen **"enumerate"**.
 ```tex
 \begin{enumerate}
 \item First Item.
@@ -183,58 +188,57 @@ Ordered list, however, need us to **"enumerate"** them. (pun intended)
 \end{enumerate}
 ```
 
-Here's how two types of list display in the output:
+Hier ist die Ausgabe der zwei Listen:
 
 ![](http://i.imgur.com/jzN4RWm.png)
 
-## Paragraph and section
+## Paragrafen und Abschnitte
 
-:blue_book: We begin a section with `\section` and a paragraph with `\paragraph`.
-:orange_book: You can also add subsection with `\subsection` and subparagraph with `\subparagraph`
+:blue_book: Wir beginnen Abschnitte mit `\section` und Paragrafen mit `\paragraph`.
+:orange_book: Du kannst auch Unterabschnitte mit `\subsection` und Unterabsätze mit `\subparagraph` erstellen.
 
 ![](http://i.imgur.com/qKbZYnG.png)
 
-## Making a table of contents
+## Ein Inhaltsverzeichnis erstellen
 
-:metal: It's useful to open sections and subsections with a `\tableofcontents`
+:metal: Es ist nützlich deine Abschnitte und Unterabschnitte mit einem `\tableofcontents` zu eröffnen
 
-Example:
+Beispiel:
 
 ![](http://i.imgur.com/TBUOTRj.png)
 
-:bangbang: **Tips**: you can use `\newpage` if you want to make a new page.
+:bangbang: **Tipp**: Du kannst `\newpage` benutzen wenn du deine neue Seite beginnen willst.
 
-## Footnotes
+## Fußnoten
 
-It's as easy as pie to use footnote+label+ref to make all kinds of footnotes you want. For example:
+Es ist kinderleicht footnote+label+ref zu benutzen um jederlei Fu0noten zu erstellen. Als Beispiel:
 ```tex
 Hi let me introduce myself\footnote{\label{myfootnote}Hello footnote}.
 ... (later on)
 I'm referring to myself \ref{myfootnote}.
 ```
-:point_down: :point_down: Can you see it ?  :point_down: :point_down:
+:point_down: :point_down: Siehst du?  :point_down: :point_down:
 
 ![](http://i.imgur.com/BSYPX4C.png)
 
-:bangbang: **Tips**: you can use `\newline` to make a new line.
+:bangbang: **Tipp**: Du kannst `\newline` benutzen um eine neue Zeile zu beginnen.
 
-## What is a package?
+## Was ist ein Paket?
 
-LaTeX offers a lot of functions by default, but in some situations it can come in handy to use so called packages. To import a package in LaTeX, you simply add the `\usepackage` :package:
-
-Here is an example of using two packages for displaying math:
+LaTeX bietet standardmäßig viele Funktionen, allerdings gibt es Situationen in denen ein so genanntes Packet nützlich ist. Um ein Packet in LaTeX zu importieren musst du nur `\usepackage` benutzen :package:
+In diesem Beispiel benutzen wir ein Packet um mathematische Gleichungen zu zeigen:
 
 ![](http://i.imgur.com/050nrfh.png)  
 
-Even more epic is how circuits are displayed:
+Noch eindrucksvoller ist die Ausgabe von Schaltplänen:
 
 ![](http://i.imgur.com/If4lbLA.png)
 
-:construction: You should Google search more if you want a package that meets your requirements. For example, amsmath is widely used for math and has a lot of extension typeset for math, circuitikz is for circuits designing, etc.. Covering them all would be impossible for this general guide.
+:construction: Du solltest Google benutzen um ein Packet zu finden, dass deinen Anforderungen erfüllt. `asmath` beispielsweise wird oft für mathematische Gleichungen benutzt und hat eine Menge Funktionen, `circuitikz` wird zum designen von Schaltplänen benutzt, etc... Alle Pakete zu erwähnen würde den Rahmen dieser Anleitung sprengen.
 
-## Table
+## Tabellen
 
-A practical example :thought_balloon::
+Ein praktisches Beispiel :thought_balloon::
 
 ```tex
 \begin{table}[h!]
@@ -249,27 +253,27 @@ A practical example :thought_balloon::
 \end{table}
 ```
 
-:star2: This is what it renders :star2::
+:star2: Das ist die Ergebnis :star2::
 
 ![](http://i.imgur.com/XbZJJ2E.png)
 
-Now let's take a closer look :eyes::
+Nun schauen wir uns das genauer an :eyes::
 
-* For tables, first we need a table environment, which is why we have `\begin{table}` and `\end{table}`.
-* You will learn about h! later in the image section. It goes with `\centering` to keep the table at the center of the page.
-* Caption is for describing. Label is for tagging. You will see these more in image section.
-* Tabular is the most important part. A table environment always needs a tabular environment inside.
-  - the part `{l|c||r}` is where we format the content inside the table. Here we can see:
-    * l or c or r means that the content inside each cell will be left-aligned or center-aligned or right-aligned, respectively.
-    * the vertical slash | or || is actually the format of the vertical lines/borders inside the table's columns.
-  - 1 & 2 & 3 => 1 2 3 are the contents of each cells. the ampersand & is used to separate the content of each cell in a row.
-  - a `\hline` actually adds a horizontal line to separate each row.
+* Um eine Tabelle zu erstellen brauchen wir erst eine Umgebung dafür, wofür wir `\begin{table}` und `\end{table}` benutzen.
+* Über h! wirst du später im "Bilder einfügen"-Teil lernen. Zusammen mit `\centering` hält es die Tabelle in der Mitte der Seite.
+* "caption" ist der beschreibende Unteritel. "Label" ist für das makieren. Von beiden wirst du mehr im "Bilder Einfügen"-Teil sehen.
+* "tabular" ist der wichtigste Teil. Eine Tabellenumgebung muss immer eine "tabular"-Umgebung beinhalten.
+  - In dem Teil `{l|c||r}` formatieren wir den Inhalt der Tabelle. Hier sehen wir:
+    * l oder c oder r bedeutet, dass der Inhalt respektive linksbündig, zentriert oder rechtsbündig angeordnet werden soll.
+    * Die vertikalen Striche | oder || beschreiben die vertikalen Linien/Ränder der Tabellenspalten.
+  - 1 & 2 & 3 => 1 2 3 sind die Inhalte der einzelnen Zellen. Das kaufmännische Und-Zeichen "&" grenzt die Inhalte der Zellen in einer Zeile ab.
+  - `\hline` fügt eine horizontale Linie ein um die Zeilen zu separieren.
 
-:bangbang: **Tips**: You can use a package :package: called booktabs `\usepackage{booktabs}` for a visually better table.
+:bangbang: **Tipp**: Du kannst ein Packet :package: namens booktabs `\usepackage{booktabs}` benutzen für visuell bessere Tabellen.
 
-## Adding images
+## Bilder einfügen
 
-To add an image to the LaTeX file, you need to use figure environment and the graphicx package. Use `\usepackage{graphicx}` and
+Um ein Bild in einer LaTeX Datei einzufügen musst du eine "figure"-Umgebung und das graphicx Packet benutzen. Benutze `\usepackage{graphicx}` und 
 
 ```tex
 \begin{figure}
@@ -279,33 +283,33 @@ To add an image to the LaTeX file, you need to use figure environment and the gr
 \end{figure}
 ```
 
-:bangbang: **Tips**: Put [width=\linewidth] to scale the image to the width of the document. If you want to float the image, then you need to attribute the begin with a certain value. Also, the fig is for later reference so name it with care.
+:bangbang: **Tipp**: Schreibe [width=\linewidth] um das Bild auf die breite des Dokuments zu skallieren. Das "fig" wird für spätere Referenzen benutzt, also benenne deine Bilder mit Bedacht. Wenn das Bild im Text gleiten soll, musst du dem "begin" ein bestimmtes Attribut mitgeben:
 
 ```tex
 \begin{figure}[h!]
 ```
 
-:passport_control: Legit values are:
+:passport_control: Erlaubte Attribute sind:
 
-* h (here) — same location
-* t (top) — top of page
-* b (bottom) — bottom of page
-* p (page) — on an extra page
-* ! (override) — will force the specified location
+* h (here) — gleiche Stelle
+* t (top) — Oben auf der Seite
+* b (bottom) — Unten auf der Seite
+* p (page) — auf einer separaten Seite
+* ! (override) — erzwingt die ausgewählte Stelle
 
-Here's how the image is rendered:
+So wird das Bild nun angezeigt:
 
 ![](http://i.imgur.com/ysY9MOb.png)
 
-## Insert code into LaTeX
+## Code in LaTeX einfügen
 
-#### :white_check_mark: First method :white_check_mark:
+#### :white_check_mark: Erste Methode :white_check_mark:
 
-One aspect of text compiling that is of the utmost importance to programmers and developers is how to professionally insert codes into the document.
+Ein Aspekt der Texterstellung, der für Programmierer und Entwickler von größter Bedeutung ist, ist das professionelle Einfügen von Codes in das Dokument.
 
-For LaTeX, the process is simple and very professional. We just wrap the code with some predefined content, then we are good to go.
+Für LaTeX ist der Prozess simple und sehr professionell. Wir umhüllen den Code einfach mit vordefinierten Textstücken und sind fertig.
 
-Example:
+Beispiel:
 
 ```tex
 \documentclass[a4paper]{article}
@@ -327,19 +331,19 @@ int main()
 \end{document}
 ```
 
-:speech_balloon: **LaTeX supports syntax for these languages** :speech_balloon:
+:speech_balloon: **LaTeX unterstützt die Syntax für diese Sprachen** :speech_balloon:
 
 ![](http://i.imgur.com/FJfj8Er.png)
 
-As you can see, with the **{verbatim}** wrapper you can easily insert code without worrying about how the syntax is formatted. Here is how it looks out of the box, clean and professional:
+Wie du siehst, kannst du mit **{verbatim}** deinen Code einfach einfügen ohne dir Gedanken über die Syntaxformatierung zu machen. So sieht es ohne weitere Konfiguration aus, sauber und professionell:
 
 ![](http://i.imgur.com/tpercup.png)
 
-#### :white_check_mark: :white_check_mark: Second Method :white_check_mark: :white_check_mark:
+#### :white_check_mark: :white_check_mark: Zweite Methode :white_check_mark: :white_check_mark:
 
-This method gives you more options, including insert code **inline**, make **custom styles** code, choose a **specific language** for code, **import code** **from** another **file** within the same directory.... With this method, you dont use **{verbatim}**, but include a package :package: named **listings**.
+Diese Methode gibt dir mehr Einstellungsmöglichkeiten, einschließlich das Einfügen von code **inline**, einen **eigenen Code-Stil** erstellen, eine **spezifische Sprache** für den Code wählen, **Code** von einer anderen **Datei** im selben Verzeichnis zu **importieren**... Mit dieser Methode benutzt du nicht **{verbatim}**, sondern importierst das Packet :package: mit dem Namen **listings**.
 
-Consider the following example:
+Folgendes dient als Beispiel:
 ```tex
 \documentclass[a4paper]{article}
 
@@ -373,24 +377,24 @@ Lorem ipsum dolor sit amet \lstinline{print "Hello World"} , consectetur adipisc
 \end{document}
 
 ```
-From this, you can see:
+Aus dem Beispiel erkennen wir:
 
-1. To insert a code block, start with `\begin{lstlisting}` and end with `\end{lstlisting}`
-2. To import code from another file within the same directory, you can use `lstinputlisiting{name_of_file}`
-3. To specify a language for the code, use `[language=C++]`
-4. To insert inline code use `\lstinline`
-5. To apply custom styles, use the `\usepackage{color}` and define your own style then define the listing with your own theme (Please look at code below). You can modify many things with your own style, but you need to read the doc for the correct property name.
-6. Interested ?? More [here](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings).
+1. Um einen Codeblock einzufügen starten man mit `\begin{lstlisting}` und endet mit `\end{lstlisting}`
+2. Um Code aus einer anderen Datei im selben Verzeichnis zu importieren benutzt man `lstinputlisiting{name_of_file}`
+3. Um eine Sprache für den Code fest zu legen benutzt man `[language=C++]`
+4. Um Code inline einzufügen benutzt man `\lstinline`
+5. Um einen eigenen Code-Stil zu erstellen wird das `\usepackage{color}` importiert und der eigene Stil definiert, dann legt man den zu benutzenden Stil für das Objekt fest (Bitte schaue die Dokumentation hier drunter an). Man kann viele Dinge selbst definieren, in der Dokumentation findet man dafür die richtigen Namen der Eigenschaften.
+6. Interessiert? Mehr gibt es [hier](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings).
 
-Here is how the code above compiles in TexMaker:
+Hier ist die Ausagbe des oberen Codes in TexMaker:
 
 ![](http://i.imgur.com/XwwDJNo.png)
 
-## Multiple files in LaTeX  
+## Mehrere Dateien in LaTeX
 
-When we use LaTeX, we may face a problem that a document is too long to be handle. Therefore, we should divide the file so that its contents can be easily handled.
+Wenn wir LaTeX benutzen kann es vorkommen, dass das Dokument zu lang ist um es zu verarbeiten. Deswegen sollten wir die Datei aufteilen damit der Inhalt leichter zu bearbeiten ist.
 
-Let's look at the example:
+Sehen wir uns ein Beispiel an:
 
 ```tex
 % main.tex
@@ -405,7 +409,7 @@ Hello Latex, This is my second part.
 \end{document}
 ```
 
-It's just a normal LaTeX file. Now, let's divide the document into two parts using the `\input` keyword:
+Das ist nur eine normale LaTeX Datei. Nun lasst uns die Datei in zwei Zeile aufteilen, dazu benutzen wir `\input`:
 
 
 ```tex
@@ -427,11 +431,11 @@ Hello Latex, This is my first part.
 Hello Latex, This is my second part.
 ```
 
-Now the main file looks different, but better documented. Here is the result in TexMaker:
+Jetzt sieht die Hauptdatei anders aus, kann aber besser dokumentiert werden. Hier ist das Ergebnis in TexMaker:
 
 [![multi_file.png](https://s14.postimg.org/deg0kqhu9/multi_file.png)](https://postimg.org/image/hnkqmwl3h/)
 
-:bangbang: **Tips**: For readability, clarity and maintenance purpose, it is highly suggested that you divide your Main file systematically, hierarchically and scientifically. Don't divide without reasons or you may get a mess later.  
+:bangbang: **Tipp**: Für die Lesbarkeit, Deutlichkeit und für Wartungszwecke wird nahegelegt, dass die Hauptdatei systematisch, hierarchisch und wissenschaftlich eingeteilt wird. Teile die Datei nicht grundlos, da es sonst zu einem Durcheinander kommen kann.
 
 ## Weitere Software
 
@@ -456,7 +460,7 @@ Now the main file looks different, but better documented. Here is the result in 
 
 ![](http://i.imgur.com/FbNUiL7.png)
 
-## HOORAY!!
+## Hurrah!!
 
 :tada: Danke, dass du diese Anleitung gelesen hast. Du weißt jetzt alles, um mit LaTeX zu beginnen. :hammer:  
 Wenn du noch mehr wissen möchtest, ist [hier](http://www.latex-project.org/help/documentation/) ein guter Einstiegspunkt.
