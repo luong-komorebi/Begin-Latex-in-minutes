@@ -1,4 +1,4 @@
-[English](./readme.md) ·
+﻿[English](./readme.md) ·
 [中文](./Translation:Chinese.md) ·
 [Español](./Translation:Spanish.md) ·
 [Português](./Translation:Portuguese.md) ·
@@ -23,7 +23,7 @@ Deutsch
 * [Paragrafen und Abschnitte](#paragrafen-und-abschnitte)
 * [Ein Inhaltsverzeichnis erstellen](#ein-inhaltsverzeichnis-erstellen)
 * [Fußnoten](#fußnoten)
-* [Was ist ein Packet?](#was-ist-ein-paket)
+* [Was ist ein Paket?](#was-ist-ein-paket)
 * [Tabellen](#tabellen)
 * [Bilder einfügen](#bilder-einfügen)
 * [Code in LaTeX einfügen](#code-in-latex-einfügen)
@@ -85,14 +85,14 @@ Es sollte in TexMaker ungefähr so aussehen:
 ## Mehr Einblicke in LaTeX
 
 :eyes: Ein genauerer Blick in deine erste LaTex-Datei zeigt:
-* Die erste Zeile sagt dem Interpreter, dass du an einem **article** im DIN-A4-Format arbeitest. Zukünftigt wirst du sicherlich auch mit **report**, **book** und anderen arbeiten.
+* Die erste Zeile sagt dem Interpreter, dass du an einem **article** im DIN-A4-Format arbeitest. Zukünftig wirst du sicherlich auch mit **report**, **book** und anderen arbeiten.
 * Ein Dokument ist begrenzt mit **\begin{document}** und **\end{document}**. Das ist das Herzstück des Dokuments, vergleichbar mit `main()` in *java* oder *C++*. Ohne diese Zeilen kann das Dokument nicht erstellt werden.
 * Der Inhalt zwischen begin und end ( in diesem Fall `Hello World` ) ist dein eigener Inhalt
 * Ein **Prozentzeichen** (%) zeigt einen Kommentar an.
 
 #### :zap: Achtung :zap:
 
-* Schau dir nochmal **\begin{document}**, **\end{document}**, **\documentclass[a4paper]{article}** an. Du wirst jetzt das Muster verstehen. Diese Kommandos werden **Typesetting Commands** ( mit vorangestelltem Backslash “\” ) und **arguments** ( innerhalb von geschweiften Klammern “{}” ) genannt. LaTeX stellt genaugenommen einfachen Text dar, der durch diese Befehle seine Form erhält.
+* Schau dir nochmal **\begin{document}**, **\end{document}**, **\documentclass[a4paper]{article}** an. Du wirst jetzt das Muster verstehen. Diese Kommandos werden **Typesetting Commands** ( mit vorangestelltem Backslash “\” ) und **arguments** ( innerhalb von geschweiften Klammern “{}” ) genannt. LaTeX stellt genau genommen einfachen Text dar, der durch diese Befehle seine Form erhält.
 * Wenn du im Rahmen dieser Anleitung bleibst, solltest du keine Probleme bekommen. Solltest du in der Zukunft auf Probleme stoßen, gilt: **keine Panik**. Die Fehlermeldungen sind verständlich und gut lesbar. Wenn du einen Fehler dadurch auch nicht beheben kannst, hilft eine Suche im Internet oft weiter.  
 * Einige Zeichen sind intern für LaTeX reserviert. **Wenn du sie benutzten möchtest, stelle einen Backslash (\) voran um eine korrekte Ausgabe zu garantieren**.  
 
@@ -100,12 +100,12 @@ Es sollte in TexMaker ungefähr so aussehen:
 
 ## Benutzen von mehreren Sprachen
 
-**Einige sprachen funktionieren nicht ohne zusätzlcihe Konfiguration. Um TeX mit anderen Sprachen zu benutzen hast du ein paar Optionen.**
+**Einige sprachen funktionieren nicht ohne zusätzliche Konfiguration. Um TeX mit anderen Sprachen zu benutzen hast du ein paar Optionen.**
 
 
 #### :white_check_mark: Erste Methode :white_check_mark:
 
-Die erste Methode benutzt ["Packete"](#was-ist-ein-packet) (Du wirst später darüber lesen) weil pdfLaTex, der Standard-Kompiler, auf 256 Zeichen beschränkt ist und einige Kodierungsprobleme hat. Als Beispiel:
+Die erste Methode benutzt ["Pakete"](#was-ist-ein-paket) (Du wirst später darüber lesen) weil pdfLaTex, der Standard-Kompiler, auf 256 Zeichen beschränkt ist und einige Kodierungsprobleme hat. Als Beispiel:
 
 ```tex
 \documentclass[a4paper]{article}
@@ -169,8 +169,8 @@ Das Standardfont (Latin Modern) unterstützt nicht alle Zeichen. Du kannst aber 
 
 ## Listen
 
-:straight_ruler: Es ist sehr witchtig dein Dokument ordentlich zu halten. Deswegen beginnen wir jetzt damit deine Objekte in Listen zu schreiben.
-Die zwei üblichen Typen von Listen sind die **ungeordnete** und die **geordnete** Liste. Beide können mit leichtigkeit in Latex benutzt werden:
+:straight_ruler: Es ist sehr wichtig dein Dokument ordentlich zu halten. Deswegen beginnen wir jetzt damit deine Objekte in Listen zu schreiben.
+Die zwei üblichen Typen von Listen sind die **ungeordnete** und die **geordnete** Liste. Beide können mit Leichtigkeit in Latex benutzt werden:
 * Ungeordnete Liste 
 Ungeordnete Listen benutzen **"itemize"**.
 ```tex
@@ -261,7 +261,7 @@ Nun schauen wir uns das genauer an :eyes::
 
 * Um eine Tabelle zu erstellen brauchen wir erst eine Umgebung dafür, wofür wir `\begin{table}` und `\end{table}` benutzen.
 * Über h! wirst du später im "Bilder einfügen"-Teil lernen. Zusammen mit `\centering` hält es die Tabelle in der Mitte der Seite.
-* "caption" ist der beschreibende Unteritel. "Label" ist für das makieren. Von beiden wirst du mehr im "Bilder Einfügen"-Teil sehen.
+* "caption" ist der beschreibende Untertitel. "Label" ist für das markieren. Von beiden wirst du mehr im "Bilder Einfügen"-Teil sehen.
 * "tabular" ist der wichtigste Teil. Eine Tabellenumgebung muss immer eine "tabular"-Umgebung beinhalten.
   - In dem Teil `{l|c||r}` formatieren wir den Inhalt der Tabelle. Hier sehen wir:
     * l oder c oder r bedeutet, dass der Inhalt respektive linksbündig, zentriert oder rechtsbündig angeordnet werden soll.
@@ -269,7 +269,7 @@ Nun schauen wir uns das genauer an :eyes::
   - 1 & 2 & 3 => 1 2 3 sind die Inhalte der einzelnen Zellen. Das kaufmännische Und-Zeichen "&" grenzt die Inhalte der Zellen in einer Zeile ab.
   - `\hline` fügt eine horizontale Linie ein um die Zeilen zu separieren.
 
-:bangbang: **Tipp**: Du kannst ein Packet :package: namens booktabs `\usepackage{booktabs}` benutzen für visuell bessere Tabellen.
+:bangbang: **Tipp**: Du kannst ein Paket :package: namens booktabs `\usepackage{booktabs}` benutzen für visuell bessere Tabellen.
 
 ## Bilder einfügen
 
@@ -283,7 +283,7 @@ Um ein Bild in einer LaTeX Datei einzufügen musst du eine "figure"-Umgebung und
 \end{figure}
 ```
 
-:bangbang: **Tipp**: Schreibe [width=\linewidth] um das Bild auf die breite des Dokuments zu skallieren. Das "fig" wird für spätere Referenzen benutzt, also benenne deine Bilder mit Bedacht. Wenn das Bild im Text gleiten soll, musst du dem "begin" ein bestimmtes Attribut mitgeben:
+:bangbang: **Tipp**: Schreibe [width=\linewidth] um das Bild auf die Breite des Dokuments zu skalieren. Das "fig" wird für spätere Referenzen benutzt, also benenne deine Bilder mit Bedacht. Wenn das Bild im Text gleiten soll, musst du dem "begin" ein bestimmtes Attribut mitgeben:
 
 ```tex
 \begin{figure}[h!]
@@ -341,7 +341,7 @@ Wie du siehst, kannst du mit **{verbatim}** deinen Code einfach einfügen ohne d
 
 #### :white_check_mark: :white_check_mark: Zweite Methode :white_check_mark: :white_check_mark:
 
-Diese Methode gibt dir mehr Einstellungsmöglichkeiten, einschließlich das Einfügen von code **inline**, einen **eigenen Code-Stil** erstellen, eine **spezifische Sprache** für den Code wählen, **Code** von einer anderen **Datei** im selben Verzeichnis zu **importieren**... Mit dieser Methode benutzt du nicht **{verbatim}**, sondern importierst das Packet :package: mit dem Namen **listings**.
+Diese Methode gibt dir mehr Einstellungsmöglichkeiten, einschließlich das Einfügen von Code **inline**, einen **eigenen Code-Stil** erstellen, eine **spezifische Sprache** für den Code wählen, **Code** von einer anderen **Datei** im selben Verzeichnis zu **importieren**... Mit dieser Methode benutzt du nicht **{verbatim}**, sondern importierst das Paket :package: mit dem Namen **listings**.
 
 Folgendes dient als Beispiel:
 ```tex
@@ -386,13 +386,13 @@ Aus dem Beispiel erkennen wir:
 5. Um einen eigenen Code-Stil zu erstellen wird das `\usepackage{color}` importiert und der eigene Stil definiert, dann legt man den zu benutzenden Stil für das Objekt fest (Bitte schaue die Dokumentation hier drunter an). Man kann viele Dinge selbst definieren, in der Dokumentation findet man dafür die richtigen Namen der Eigenschaften.
 6. Interessiert? Mehr gibt es [hier](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings).
 
-Hier ist die Ausagbe des oberen Codes in TexMaker:
+Hier ist die Ausgabe des oberen Codes in TexMaker:
 
 ![](http://i.imgur.com/XwwDJNo.png)
 
 ## Mehrere Dateien in LaTeX
 
-Wenn wir LaTeX benutzen kann es vorkommen, dass das Dokument zu lang ist um es zu verarbeiten. Deswegen sollten wir die Datei aufteilen damit der Inhalt leichter zu bearbeiten ist.
+Wenn wir LaTeX benutzen kann es vorkommen, dass das Dokument zu lang ist um es zu verarbeiten. Deswegen sollten wir die Datei aufteilen, damit der Inhalt leichter zu bearbeiten ist.
 
 Sehen wir uns ein Beispiel an:
 
