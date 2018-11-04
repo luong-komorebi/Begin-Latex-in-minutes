@@ -276,6 +276,7 @@ LaTeX и сам по себе предоставляет много возмож
 ```tex
 \begin{figure}
   \includegraphics[width=\linewidth]{имя_файла.jpg}
+  \graphicspath{ {./images/} }
   \caption{О чём это?}
   \label{fig:некая_метка}
 \end{figure}
