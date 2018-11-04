@@ -279,7 +279,8 @@ To add an image to the LaTeX file, you need to use figure environment and the gr
 ```tex
 \begin{figure}
   \includegraphics[width=\linewidth]{filename.jpg}
-  \caption{What is it about?}
+  \graphicspath{ {./images/} }
+  \caption{What is it about?} 
   \label{fig:whateverlabel}
 \end{figure}
 ```
