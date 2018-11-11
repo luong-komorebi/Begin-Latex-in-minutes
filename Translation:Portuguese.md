@@ -3,7 +3,8 @@
 [Español](./Translation:Spanish.md) ·
 Português ·
 [Français](./Translation:French.md) ·
-[Русский](./Translation:Russian.md)
+[Русский](./Translation:Russian.md) ·
+[Deutsch](./Translation:German.md)
 
 ---
 

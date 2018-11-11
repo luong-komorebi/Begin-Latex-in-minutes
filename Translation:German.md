@@ -6,6 +6,8 @@
 [Русский](./Translation:Russian.md) ·
 Deutsch
 
+---
+
 # Mit LaTeX in Minuten beginnen
 
 ![](https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg)
