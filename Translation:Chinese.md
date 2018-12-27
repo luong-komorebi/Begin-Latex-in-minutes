@@ -63,15 +63,15 @@ LaTeX 是一种高质量的文件排版方式。LaTeX 读作 Lah-tech 或者 Lay
 3. *PDF 查看器：*(可选)
 任何 PDF 查看器均可，这由你的喜好而定。
 
-另外，你需要选择一个[编译器](#更多工具).大多是编辑人员的默认编译器是 pdfLaTeX ，但如果你想在你的系统中使用 Unicode 或 TTF / OTF 字体，你需要 LuaLaTeX 。
+另外，你需要选择一个[编译器](#更多工具)。大多是编辑人员的默认编译器是 pdfLaTeX ，但如果你想在你的系统中使用 Unicode 或 TTF / OTF 字体，你需要 LuaLaTeX 。
 
-或者你可以选择在线软件，比如 [ShareLaTeX](https://www.sharelatex.com/).
+或者你可以选择在线软件，比如 [ShareLaTeX](https://www.sharelatex.com/)，
 在[更多工具](#更多工具)中你可以看到更多选择。
 
 ## 第一个 LaTeX 文件
 
 让我们在 **LaTeX** 中完成传统 **Hello World**。
-如果你安装有 **TexMaker** ,首先创建一个后缀名为`.tex`的新文件。然后在文件里敲入如下代码并运行快速构建( quick build )。对于其他 LaTeX 编辑器，也应该很容易遵循相同的过程。
+如果你安装有 **TexMaker** ，首先创建一个后缀名为`.tex`的新文件。然后在文件里敲入如下代码并运行快速构建( quick build )。对于其他 LaTeX 编辑器，也应该很容易遵循相同的过程。
 
 
 ```tex
@@ -90,16 +90,16 @@ Hello World !  % This is your content
 ## 深入理解 LaTeX
 
 :eyes: 仔细看你的第一个 LaTeX 文件你会发现：
-* 第一行告诉解释器：你正在使用一张大小为 A4 的**文章(article)**。你将来可能还会使用**报告(report)**,**书(book)**等等。
+* 第一行告诉解释器：你正在使用一张大小为 A4 的**文章(article)**。你将来可能还会使用**报告(report)**、**书(book)** 等等。
 * 正文内容被包裹在 **\begin{document}** 和 **\end{document}** 中。这就是文件的核心，就像 *java* 和 *C++* 中的 `main()` 一样，没有它们，文件就无法正常的显示。
-* 在 begin 和 end 之间就是你要写的自己的内容(在样例中就是 `Hello World` )。
-* 百分号(%)是LaTeX的注释符号，之后的内容在运行时会被忽略。
+* 在 begin 和 end 之间就是你自己要写的内容（在样例中就是 `Hello World` ）。
+* **百分号**(%)是 LaTeX 的注释符号，之后的内容在运行时会被忽略。
 
 #### :zap: 注意 :zap:
 
-* 返回看 **\begin{document}** , **\end{document}** , **\documentclass[a4paper]{article}** ，你大概注意到了格式，它们被称为**排版命令(Typesetting Commands)**(通常在前面加上“\”)和**参数(arguments)**(放在一对花括号"{}"之间)。 LaTax 是由这些命令驱动的普通格式的文本。
-* 如果你按照该指南的步骤完成，一切都会很顺畅。但将来你可能会遇到一些错误，**不要惊慌**。错误报告写的非常明白且容易理解。如果你不能解决这些问题，谷歌等搜索工具会是你的好伙伴。
-* 一些字符**在 LaTeX 中被预定义了。你如果想得到正确的输出，需要在这些字符之前加上反斜杠(\\)。**
+* 返回看 **\begin{document}** , **\end{document}** , **\documentclass[a4paper]{article}** ，你大概注意到了格式，它们被称为**排版命令(Typesetting Commands)**(通常在前面加上“\”)和**参数(arguments)**(放在一对花括号"{}"之间)。 LaTex 是由这些命令驱动的普通格式的文本。
+* 如果你按照该指南的步骤完成，一切都会很顺畅。但将来你可能会遇到一些错误，**不要惊慌**，错误报告写的非常明白且容易理解。如果你不能解决这些问题，谷歌等搜索工具会是你的好伙伴。
+* 一些特殊字符**在 LaTeX 中被预定义了。如果你想得到正确的输出，需要在这些字符之前加上反斜杠(\\)。**
 
 ![](http://i.imgur.com/9d0bXHH.png)
 
@@ -109,7 +109,7 @@ Hello World !  % This is your content
 
 #### :white_check_mark: 第一种方法 :white_check_mark:
 
-第一种方法是包含["包(packages)"](#包是什么？)(你会在之后学到)。因为默认的编译器 pdfLaTeX 限制为256个字符并且有很多编码问题。例如：
+第一种方法是包含["包(packages)"](#包是什么？)(你会在之后学到)。因为默认的编译器 pdfLaTeX 限制为 256 个字符并且有很多编码问题。例如：
 
 ```tex
 \documentclass[a4paper]{article}
@@ -124,7 +124,7 @@ Xin chào thế giới. This is Hello World in Vietnamese.
 \end{document}
 ```
 
-这里我们是有了 `usepackage[T5]{fontenc}` 和 `usepackage[utf8]{inputenc}` 包。这种方法非常容易理解，用包将字体导入字体编码器并正确显示你的内容。如果你正在使用 TexMaker ，下图是代码显示的结果：
+这里我们使用了 `usepackage[T5]{fontenc}` 和 `usepackage[utf8]{inputenc}` 包。这种方法非常容易理解，用包将字体导入字体编码器并正确显示你的内容。如果你正在使用 TexMaker ，那么代码显示的结果将会如下图所示：
 
 ![](http://i.imgur.com/UQEewYi.png)
 
@@ -152,7 +152,7 @@ vs 没有导入包 :package: 的情况：
 ![](http://i.imgur.com/vAN1WUi.png)  
 
 #### :white_check_mark: 第二种方法 :white_check_mark:
-另一种方法是切换你的 TeX 编译器到[LuaLaTeX](#更多工具) (or [XeLaTeX](#更多工具))。使用 `fontspec` 和 `polyglossia`, 然后你就可以直接使用 Unicode :
+另一种方法是切换你的 TeX 编译器到 [LuaLaTeX](#更多工具) (or [XeLaTeX](#更多工具))。使用 `fontspec` 和 `polyglossia`, 然后你就可以直接使用 Unicode :
 
 ```tex
 \documentclass[a4paper]{article}
@@ -168,7 +168,7 @@ Xin chào thế giới. This is Hello World in Vietnamese.
 \end{document}
 ```
 
-默认字体(Latin Modern)不支持全部字符，但是你可以通过取消注释 `\setmainfont` 行，使用几乎系统上安装的所有字体。(TTF 和 OTF 字体完全支持)。
+默认字体(Latin Modern)不支持全部字符，但是你可以通过取消注释 `\setmainfont` 行，使用系统上安装的绝大多数字体（TTF 和 OTF 字体完全支持）。
 
 ## 列表
 
@@ -382,14 +382,14 @@ Lorem ipsum dolor sit amet \lstinline{print "Hello World"} , consectetur adipisc
 \end{document}
 
 ```
-从这个例子中，你能发现:
+从这个例子中，你会发现:
 
 1. 插入的代码块，从 `\begin{lstlisting}` 开始，以 `\end{lstlisting}` 结束。
 2. 你可以使用 `lstinputlisiting{name_of_file}` 来从同一目录(the same directory)下导入另一个文件的代码。
 3. 用 `[language=C++]` 来指定使用的语言。
-4. 想插入内联代码需要使用 `\lstinline`
+4. 想插入内联代码需要使用 `\lstinline`。
 5. 想应用自定义样式，需要使用 `\usepackage{color}` 然后用你自己的主题定义列表(请看下面的代码)。你可以使用自己的风格修改许多内容，但你需要阅读文档以获取正确的属性名称。
-6.  感兴趣？？查看[更多内容](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings)
+6.  感兴趣？？查看[更多内容](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings)。
 
 以下是 TexMaker 中的代码如何编译的:
 
@@ -414,7 +414,7 @@ Hello Latex, This is my second part.
 \end{document}
 ```
 
-这只是一个普通的 LaTeX 文件，让我们用 `\input` 关键字来将文件分成两个部分:
+这只是一个普通的 LaTeX 文件，让我们用 `\input` 关键字来将文件分成两个部分：
 
 ```tex
 % main.tex
@@ -435,7 +435,7 @@ Hello Latex, This is my first part.
 Hello Latex, This is my second part.
 ```
 
-现在，主文件看起来有些不同，当文件被更好地组织了。在 TexMaker 中的结果如下:
+现在，主文件看起来有些不同，当文件被更好地组织了。在 TexMaker 中的结果如下：
 
 [![multi_file.png](https://s14.postimg.org/deg0kqhu9/multi_file.png)](https://postimg.org/image/hnkqmwl3h/)
 
