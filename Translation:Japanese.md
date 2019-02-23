@@ -459,7 +459,7 @@ Hello Latex, This is my second part.
 
 ## 追加ツール
 
-#### Distributions
+#### 配布版
 
 * [MiKTeX](https://miktex.org/about) for Windows.
 * [TeX Live](https://www.tug.org/texlive/) for Linux and Unix-based.
@@ -468,13 +468,13 @@ Hello Latex, This is my second part.
 * [Overleaf](https://www.overleaf.com/) — an collaborative online editor.
 * [StackEdit](https://stackedit.io/) — In-browser markdown editor.
 
-#### LaTeX Editors
+#### LaTeX 編集ソフト
 
 * [TeXMaker](http://www.xm1math.net/texmaker/) Cross platform LaTeX editor.
 * [TeXStudio](http://www.texstudio.org/) An enhanced fork of TeXMaker with more features.
 * TeXShop and TeXworks (minimal editors)
 
-#### LaTeX Compilers
+#### LaTeX コンパイラー
 
 * たいていのエディターには、デフォルトのコンパイラーを変更するオプションがあります。ここにその例をしめします:
 
@@ -483,9 +483,9 @@ Hello Latex, This is my second part.
 ## HOORAY!!
 
 :tada: 最後までこのガイドを読んでくれてありがとうございます。ここでは、LaTeXの基礎を学んだだけです。 :hammer:  
-もっとLaTeX のことを学びたければ、[here](http://www.latex-project.org/help/documentation/)を見たり、ウエブで調べてください。
+もっとLaTeX のことを学びたければ、[ここ](http://www.latex-project.org/help/documentation/)を見たり、ウエブで調べてください。
 
-## License
+## ライセンス
 
  [![](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png)](http://www.wtfpl.net/)
 
