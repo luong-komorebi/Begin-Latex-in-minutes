@@ -1,4 +1,4 @@
-English ·
+[English](./readme.md) ·
 [中文](./Translation:Chinese.md) ·
 [Español](./Translation:Spanish.md) ·
 [Português](./Translation:Portuguese.md) ·
