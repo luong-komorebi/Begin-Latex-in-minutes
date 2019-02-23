@@ -48,7 +48,7 @@ LaTeXは「ラテフ」もしくは「レイテフ」と発音され、高品質
 * LaTeXは科学関係の文書編集で広く使われています。
 * LaTeXは数式表現において最善の選択枝です。
 
-> LaTeXは、 doesn't come without drawbacks, but習得する価値があります。
+> LaTeXは、完璧なものではありませんが、習得する価値があります。
 
 
 ## LaTeXの設定
@@ -489,11 +489,10 @@ Hello Latex, This is my second part.
 
  [![](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png)](http://www.wtfpl.net/)
 
-**DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE**
+**どうとでも勝手にしやがれクソッタレ・公衆利用許諾(契約)書**
 Copyright (C) 2016 Luong Vo
-Everyone is permitted to copy and distribute verbatim or modified copies of this license document, and changing it is allowed as long as the name is changed.
-TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION: You just DO WHAT THE FUCK YOU WANT TO.  
-
+誰でもこのライセンスを有する文章は、コピー、配布、編集が可能です。名前を変更さえすれば、ライセンス自体の改変も可能です。
+ライセンス規約の編集も可能です。どうぞご自由に。
 
 
 <div id='donation'/>  
