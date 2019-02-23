@@ -19,28 +19,28 @@ English ·
 
 ### 内容一覧
 * [LaTeXって何?](#LaTeXって何?)
-* [どうしてLaTeXを使うの?](#why-use-latex)
-* [LaTeX設定](#set-up-for-latex)
-* [はじめてのLaTeXファイル](#first-latex-file)
-* [さらに詳しく](#a-deeper-look)
-* [多言語での使用方法](#multilingual-usage)
-* [リスト表示](#lists)
-* [章と節](#paragraph-and-section)
-* [内容リストの作成方法](#making-a-table-of-contents)
-* [脚注](#footnotes)
-* [パッケージとは?](#what-is-a-package)
-* [表組み](#table)
-* [画像の表示](#adding-images)
-* [LaTeXへのコード挿入方法](#insert-code-into-latex)
-* [LaTeXでの複数ファイル分割方法](#Multiple-files-in-LaTeX)
-* [追加ツール](#additional-tools)
+* [どうしてLaTeXを使うの?](#どうしてLaTeXを使うの?)
+* [LaTeXの設定](#LaTeXの設定)
+* [はじめてのLaTeXファイル](#はじめてのLaTeXファイル)
+* [さらに詳しく](#さらに詳しく)
+* [多言語での使用方法](#多言語での使用方法)
+* [リスト表示](#リスト表示)
+* [章と節](#章と節)
+* [内容リストの作成方法](#内容リストの作成方法)
+* [脚注](#脚注)
+* [パッケージとは?](#パッケージとは?)
+* [表組み](#表組み)
+* [画像の表示](#画像の表示)
+* [LaTeXへのコード挿入方法](#LaTeXへのコード挿入方法)
+* [LaTeXでの複数ファイル分割方法](#LaTeXでの複数ファイル分割方法)
+* [追加ツール](#追加ツール)
 
 ## LaTeXって何?
 
 LaTeXは「ラテフ」もしくは「レイテフ」と発音され、高品質な文書編纂システムです。中規模から大規模の技術書や科学文書で多く用いられているだけでなく、あらゆる出版に適応可能なものです。
 
 
-## Why use LaTeX?
+## どうしてLaTeXを使うの?
 * LaTeXは無料でマルチプラットフォームです。
 * LaTeXはテキスト形式（あらゆるテキストエディターで開くことができます）で、ＰＤＦに変換できます。
 * LaTeXは、文書本体と、形式の指定を分けています。形式指定を一度すれば、文書本体に集中することができます。
@@ -51,7 +51,7 @@ LaTeXは「ラテフ」もしくは「レイテフ」と発音され、高品質
 > LaTeXは、 doesn't come without drawbacks, but習得する価値があります。
 
 
-## Set up for LaTeX
+## LaTeXの設定
 
 設定は以下のとおりです。
 
@@ -62,12 +62,12 @@ LaTeXは「ラテフ」もしくは「レイテフ」と発音され、高品質
 3. *PDFビューワー* (オプション)
 どんなＰＤＦビューワーでも対応可能です。出力結果を見るために使います。
 
-さらに、 [compiler](#additional-tools)を選ぶ必要があります。デフォルトのコンパイラーはpdfLaTeX,です。Unicode や　TTF/OTF フォントを使うシステムでは、LuaLaTeXを使ってください。
+さらに、 [compiler](#追加ツール)を選ぶ必要があります。デフォルトのコンパイラーはpdfLaTeX,です。Unicode や　TTF/OTF フォントを使うシステムでは、LuaLaTeXを使ってください。
 もしくは、オンラインシステム（例えば [ShareLaTeX](https://www.sharelatex.com/)）を使ってください。
-もっと他の選択枝は[Additional Tools](#additional-tools)を参照ください。
+もっと他の選択枝は[追加ツール](#追加ツール)を参照ください。
 
 
-## First LaTeX file
+## はじめてのLaTeXファイル
 
 では、伝統的な **Hello World** を **LaTeX**で試してみましょう。
 もし、 **TexMaker**を使っていれば、まず、`.tex`を拡張しとするファイルを新規作成してください。そして、次のコードを"Hello World!"と出力する次のコードを入力し、"quick build"を実行してください。他のLaTeXエディターでも同じようなことをしてください。
@@ -87,7 +87,7 @@ TexMakerではこのようになります。:
 
 
 
-## A deeper look
+## さらに詳しく
 
 
 :eyes:先ほど作成した初めてのLaTeX ファイルを簡単に見てみましょう:
@@ -105,7 +105,7 @@ TexMakerではこのようになります。:
 ![](http://i.imgur.com/9d0bXHH.png)   
 
 
-## Multilingual usage
+## 多言語での使用方法
 
 
 **ある言語では、うまくいかないかもしれません。TeX を他の言語でつかってみることも、選択肢の一つです。**  
@@ -156,7 +156,7 @@ vs パッケージを用いない方法:package::
 ![](http://i.imgur.com/vAN1WUi.png)  
 
 #### :white_check_mark: ２番目の方法 :white_check_mark:
-他の方法は TeX コンパイラーを [LuaLaTeX](#additional-tools) (もしくは [XeLaTeX](#additional-tools))に変更することです。 Using `fontspec` and `polyglossia`, Unicode will work out of the box:
+他の方法は TeX コンパイラーを [LuaLaTeX](#追加ツール) (もしくは [XeLaTeX](#追加ツール))に変更することです。 Using `fontspec` and `polyglossia`, Unicode will work out of the box:
 
 ```tex
 \documentclass[a4paper]{article}
@@ -174,7 +174,7 @@ Xin chào thế giới. This is Hello World in Vietnamese.
 
 デフォルトのフォントは (Latin Modern) 全ての文字に対応していません。しかし、`\setmainfont` 行をコメントアウトせずに使用すれば、システムにインストールされているすべてのフォントを使うことができます。 (TTF や OTF フォントが完全にサポートされています。)
 
-## Lists
+## リスト表示
 
 :straight_ruler: 文章がきちんと整理されていることはとても大切なことです。したがって、あなたが書きたいことをリストに並べてみましょう。
 一般的なリストには、**番号なし**と**番号あり**の二つのリストがあります。 どちらのタイプもLaTeX文章では、簡単に扱うことができます:  
@@ -200,14 +200,14 @@ Xin chào thế giới. This is Hello World in Vietnamese.
 ![](http://i.imgur.com/jzN4RWm.png)
 
 
-## Paragraph and section
+## 章と節
 
 :blue_book: 章は `\section` で始め、節は `\paragraph`で始めます。
 :orange_book: 小章を`\subsection` で、小節は `\subparagraph`を加えることで設定できます。
 
 ![](http://i.imgur.com/qKbZYnG.png)
 
-## Making a table of contents
+## 内容リストの作成方法
 
 :metal: 章や小章を `\tableofcontents`で開くことはとても有意義です。
 
@@ -219,7 +219,7 @@ Xin chào thế giới. This is Hello World in Vietnamese.
 
 
 
-## Footnotes
+## 脚注
 
 脚注を付けるために、footnote、label、ref　を使えば簡単に設定できます。例えば:
 ```tex
@@ -234,7 +234,7 @@ I'm referring to myself \ref{myfootnote}.
 :bangbang: **ヒント**: 改行したいときは、`\newline` を使ってください。
 
 
-## What is a package?
+## パッケージとは?
 
 LaTeX はデフォルトでたくさんの機能を提供しますが、ある特定のことをするために、パッケージと呼ばれるものを利用する必要があります。LaTeXでパッケージを導入するためには、`\usepackage` と設定するだけです。:package:
 
@@ -250,7 +250,7 @@ LaTeX はデフォルトでたくさんの機能を提供しますが、ある�
 :construction: あなたが欲しいと思うパッケージは、Googleで検索してください。例えば、amsmath は数学において広く使われていますし、数学用の拡張機能はたくさんあります。また、circuitikz は回路デザインで使われていいます。この汎用的なガイドでは、それらすべてをカバーすることは不可能です。
 
 
-## Table
+## 表組み
 
 実践的な例 :thought_balloon::
 
@@ -287,7 +287,7 @@ LaTeX はデフォルトでたくさんの機能を提供しますが、ある�
 
 
 
-## Adding images
+## 画像の表示
 
 LaTeXファイルに画像を追加するには、figure環境とgraphicxパッケージが必要です。 `\usepackage{graphicx}` と入力して、
 
@@ -319,7 +319,7 @@ LaTeXファイルに画像を追加するには、figure環境とgraphicxパッ�
 
 
 
-## Insert code into LaTeX
+## LaTeXへのコード挿入方法
 
 #### :white_check_mark: 最初の方法 :white_check_mark:
 
@@ -409,7 +409,7 @@ Lorem ipsum dolor sit amet \lstinline{print "Hello World"} , consectetur adipisc
 ![](http://i.imgur.com/XwwDJNo.png)
 
 
-## Multiple files in LaTeX  
+## LaTeXでの複数ファイル分割方法  
 
 Latexを使っていく上で、文書が長くなりすぎて扱いにくくなるときがあります。そのような場合、ファイルを分割できれば、扱いが簡単になります。
 
@@ -457,7 +457,7 @@ Hello Latex, This is my second part.
 
 :bangbang: **ヒント**: 読みやすく、明確で、修正しやすくするために、系統だて、順序だて、論理的にファイルを分割することを高く推奨されています。後で混乱しないように、理由もなく分けることは避けましょう。  
 
-## Additional Tools
+## 追加ツール
 
 #### Distributions
 
