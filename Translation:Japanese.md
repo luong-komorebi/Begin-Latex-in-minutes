@@ -15,7 +15,7 @@
 
 (Japanese translator's acknowledgement: I tried to translate this guide as the original meaning of the author as much as I could. If you think the translation is inappropriate, please feel free to modify it or add missing stuff you think would make this guide better. If you like this guide, please share to more people.)
 
-**初めに:** *この文書に書いていることは、私が大学での経験や目を通したいくつかの資料に基づくものです。私は、プロフェッショナルな仕事をしているわけでも、専門家でもなく、大いなる情熱を持つ学生です。問題セクションでは、誰でも議論に参加することを歓迎しますし、修正や加えるべきことがあれば、プルリクエストをすることができます。 もし、私のプロジェクトに価値があると思えば、ぜひ寄付[donation](#donation)をお願いします。*
+**初めに:** *この文書に書いていることは、私が大学での経験や目を通したいくつかの資料に基づくものです。私は、プロフェッショナルな仕事をしているわけでも、専門家でもなく、大いなる情熱を持つ学生です。問題セクションでは、誰でも議論に参加することを歓迎しますし、修正や加えるべきことがあれば、プルリクエストをすることができます。 もし、私のプロジェクトに価値があると思えば、ぜひ[寄付](#donation)をお願いします。*
 
 ### 内容一覧
 * [LaTeXって何?](#LaTeXって何?)
@@ -500,4 +500,4 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION: You just DO WHA
 
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5ZG5Z47L2ZGYC)
 
-A beer in your country can buy a meal in mine.
+あなたの国での一杯のビールのお金で、私の国では、一度の食事ができます。
