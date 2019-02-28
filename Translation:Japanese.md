@@ -24,8 +24,8 @@
 * [はじめてのLaTeXファイル](#はじめてのLaTeXファイル)
 * [さらに詳しく](#さらに詳しく)
 * [多言語での使用方法](#多言語での使用方法)
-* [リスト表示](#リスト表示)
-* [章と節](#章と節)
+* [箇条書き](#箇条書き)
+* [段落と節](#段落と節)
 * [内容リストの作成方法](#内容リストの作成方法)
 * [脚注](#脚注)
 * [パッケージとは?](#パッケージとは?)
@@ -151,12 +151,12 @@ vs パッケージを用いない方法:package::
 \end{document}
 ```
 
-お寿司 :sushi: や :bento:を食べるより簡単です:
+ :sushi: や :bento:を食べるより簡単です:
 
 ![](http://i.imgur.com/vAN1WUi.png)  
 
-#### :white_check_mark: ２番目の方法 :white_check_mark:
-他の方法は TeX コンパイラーを [LuaLaTeX](#追加ツール) (もしくは [XeLaTeX](#追加ツール))に変更することです。 Using `fontspec` and `polyglossia`, Unicode will work out of the box:
+#### :white_check_mark: 第二の方法 :white_check_mark:
+他の方法は TeX コンパイラーを [LuaLaTeX](#追加ツール) (もしくは [XeLaTeX](#追加ツール))に変更することです。`fontspec` や `polyglossia`を使えば、ユニコードでもうまく表示できます:
 
 ```tex
 \documentclass[a4paper]{article}
@@ -174,20 +174,20 @@ Xin chào thế giới. This is Hello World in Vietnamese.
 
 デフォルトのフォントは (Latin Modern) 全ての文字に対応していません。しかし、`\setmainfont` 行をコメントアウトせずに使用すれば、システムにインストールされているすべてのフォントを使うことができます。 (TTF や OTF フォントが完全にサポートされています。)
 
-## リスト表示
+## 箇条書き
 
-:straight_ruler: 文章がきちんと整理されていることはとても大切なことです。したがって、あなたが書きたいことをリストに並べてみましょう。
-一般的なリストには、**番号なし**と**番号あり**の二つのリストがあります。 どちらのタイプもLaTeX文章では、簡単に扱うことができます:  
-* 番号なしリスト   
-番号なしリストでは、 **"itemize"**するだけです。 (平準的な注意向け)
+:straight_ruler: 文章がきちんと整理されていることはとても大切なことです。したがって、あなたが書きたいことを箇条書きに並べてみましょう。
+一般的なリストには、**記号付き**と**番号付き**の二つの箇条書きがあります。 どちらのタイプもLaTeX文章では、簡単に扱うことができます:  
+* 記号付き箇条書き
+記号付き箇条書きでは、 **"itemize"**するだけです。 (平準的な注意向け)
 ```tex
 \begin{itemize}
 \item Item.
 \item Another Item.
 \end{itemize}
 ```  
-* 番号ありリスト  
-番号ありリストでは、 **"enumerate"** する必要があります。 (pun intended)  
+* 番号付き箇条書き  
+番号付き箇条書きでは、 **"enumerate"** する必要があります。 (pun intended)  
 ```tex
 \begin{enumerate}
 \item First Item.
@@ -200,16 +200,16 @@ Xin chào thế giới. This is Hello World in Vietnamese.
 ![](http://i.imgur.com/jzN4RWm.png)
 
 
-## 章と節
+## 段落と節
 
-:blue_book: 章は `\section` で始め、節は `\paragraph`で始めます。
-:orange_book: 小章を`\subsection` で、小節は `\subparagraph`を加えることで設定できます。
+:blue_book: 節は `\section` で始め、段落は `\paragraph`で始めます。
+:orange_book: 小節を`\subsection` で、小段落は `\subparagraph`を加えることで設定できます。
 
 ![](http://i.imgur.com/qKbZYnG.png)
 
-## 内容リストの作成方法
+## 内容を表にする方法
 
-:metal: 章や小章を `\tableofcontents`で開くことはとても有意義です。
+:metal: 節や小節を `\tableofcontents`で開くことはとても有意義です。
 
 例:
 
