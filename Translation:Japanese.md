@@ -489,7 +489,7 @@ Hello Latex, This is my second part.
 
  [![](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png)](http://www.wtfpl.net/)
 
-**どうとでも勝手にしやがれクソッタレ・公衆利用許諾(契約)書**
+**DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE**
 Copyright (C) 2016 Luong Vo
 誰でもこのライセンスを有する文章は、コピー、配布、編集が可能です。名前を変更さえすれば、ライセンス自体の改変も可能です。
 ライセンス規約の編集も可能です。どうぞご自由に。
