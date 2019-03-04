@@ -91,14 +91,14 @@ TexMakerではこのようになります。:
 
 
 :eyes:先ほど作成した初めてのLaTeX ファイルを簡単に見てみましょう:
-* 第１行目は、インタープリターに、これは**article**形式で、Ａ４用紙のサイズだと指定しています。他にも**report**、**book**形式があります。
-* 文書全体は、 **\begin{document}** と **\end{document}**で囲まれています。ここが、文書の心臓部になります。*java* や *C++*の `main()` にあたる部分です。これがなければ、何も表示されません。
+* 第１行目は、インタープリターに、これは**article** 形式で、Ａ４用紙のサイズだと指定しています。他にも **report** 、**book** 形式があります。
+* 文書全体は、 **\begin{document}** と **\end{document}** で囲まれています。ここが、文書の心臓部になります。*java* や *C++* の `main()` にあたる部分です。これがなければ、何も表示されません。
 * begin と end の間の部分( この例では `Hello World` ) が記述したい部分になります。
-* **percent sign** (%) はコメント分です。LaTeXでは無視されます。
+* **percent sign** (%) はコメント文です。LaTeXでは無視されます。
 
 #### :zap: 注目！ :zap:
 
-* もう一度、 **\begin{document}**, **\end{document}**, **\documentclass[a4paper]{article}**を確認してください。ある共通パターンに気付くと思います。これらは、**Typesetting Commands** ( 通常 “\”が用いられます。 ) と **arguments** ( “{}”の中に置かれます。 )。 LaTeXは通常のテキストファイルに過ぎませんが、これによって、強力な組版を実現しています。
+* もう一度、 **\begin{document}** , **\end{document}** , **\documentclass[a4paper]{article}** を確認してください。ある共通パターンに気付くと思います。これらは、**Typesetting Commands** ( 通常 “\”が用いられます。 ) と **arguments** ( “{}”の中に置かれます。 )。 LaTeXは通常のテキストファイルに過ぎませんが、これによって、強力な組版を実現しています。
 * このガイドに従っている間は、スムーズにすべてを進めることができます。しかし、将来問題が発生したときも、混乱する必要はありません。人間にも読めるエラーリポートが出力されます。もし、解決できないときも、Googleを使って検索してください。最良の友人となるでしょう。 
 * いくつかの文字は **predefined LaTeXにおいて、特別な意味を持つものとして指定されています。もし、そのような文字を出力したいときは、バックスラッシュ(\\)を出力した文字の前に置いてください。**  
 
@@ -177,9 +177,9 @@ Xin chào thế giới. This is Hello World in Vietnamese.
 ## 箇条書き
 
 :straight_ruler: 文章がきちんと整理されていることはとても大切なことです。したがって、あなたが書きたいことを箇条書きに並べてみましょう。
-一般的なリストには、**記号付き**と**番号付き**の二つの箇条書きがあります。 どちらのタイプもLaTeX文章では、簡単に扱うことができます:  
+一般的なリストには、**記号付き** と**番号付き** の二つの箇条書きがあります。 どちらのタイプもLaTeX文章では、簡単に扱うことができます:  
 * 記号付き箇条書き
-記号付き箇条書きでは、 **"itemize"**するだけです。 (平準的な注意向け)
+記号付き箇条書きでは、 **"itemize"** するだけです。 (平準的な注意向け)
 ```tex
 \begin{itemize}
 \item Item.
@@ -227,7 +227,7 @@ Hi let me introduce myself\footnote{\label{myfootnote}Hello footnote}.
 ... (later on)
 I'm referring to myself \ref{myfootnote}.
 ```
-:point_down: :point_down: Can you see it ?  :point_down: :point_down:
+:point_down: :point_down: これは分かりますか？  :point_down: :point_down:
 
 ![](http://i.imgur.com/BSYPX4C.png)
 
@@ -353,13 +353,13 @@ int main()
 
 ![](http://i.imgur.com/FJfj8Er.png)
 
-**{verbatim}**ラッパーを用いることで、シンタックスがどのように整形されるか心配せずに、コードを挿入することができます。いかに、out of the boxにクリアーで本格的に表示できるかを示します。:
+**{verbatim}** ラッパーを用いることで、シンタックスがどのように整形されるか心配せずに、コードを挿入することができます。いかに、独創的で美しくで本格的に表示できるかを示します。:
 
 ![](http://i.imgur.com/tpercup.png)
 
 #### :white_check_mark: :white_check_mark: 第２の方法 :white_check_mark: :white_check_mark:
 
-この方法では、より多くの選択肢があります。同一行**inline**に表示したり、形式をカスタムしたり**custom styles** 、特定の言語用**specific language** に設定したり、同じディレクトリ内にある別ファイルから、コードや形式をインポートすることもかのうです。**import code** **from** another **file**。この方法を使うには、**{verbatim}**を使わず、**listings**という名前の:package: を使ってください。
+この方法では、より多くの選択肢があります。同一行**inline**に表示したり、形式をカスタムしたり**custom styles** 、特定の言語用**specific language** に設定したり、同じディレクトリ内にある別ファイルから、コードや形式をインポートすることもかのうです。**import code** **from** another **file**。この方法を使うには、**{verbatim}** を使わず、**listings** という名前の:package: を使ってください。
 
 次の例を見てください。:
 ```tex
@@ -402,7 +402,7 @@ Lorem ipsum dolor sit amet \lstinline{print "Hello World"} , consectetur adipisc
 3. 言語を指定するためには、 `[language=C++]`を使います。
 4. 文中に挿入するためには `\lstinline`を使います。
 5. カスタマイズした形式をとるには、`\usepackage{color}` を使い、独自の形式を定義し、自分のテーマに沿ったリストを使います。（下記のコードを参考にしてください）。自分で好きなように設定ができますが、正しいプロパティの名前を調べて使う必要があります。
-6. Interested ?? More [here](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings).
+6. もっと興味があれば？？  [ここ](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings).
 
 ここに、TexMakerで上記のものをコンパイルする方法を示します。:
 
@@ -489,7 +489,7 @@ Hello Latex, This is my second part.
 
  [![](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png)](http://www.wtfpl.net/)
 
-**どうとでも勝手にしやがれクソッタレ・公衆利用許諾(契約)書**
+**DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE**
 Copyright (C) 2016 Luong Vo
 誰でもこのライセンスを有する文章は、コピー、配布、編集が可能です。名前を変更さえすれば、ライセンス自体の改変も可能です。
 ライセンス規約の編集も可能です。どうぞご自由に。
