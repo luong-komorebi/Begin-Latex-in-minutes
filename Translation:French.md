@@ -4,7 +4,8 @@
 [Português](./Translation:Portuguese.md) ·
 Français ·
 [Русский](./Translation:Russian.md) ·
-[Deutsch](./Translation:German.md)
+[Deutsch](./Translation:German.md) ·
+[日本語](./Translation:Japanese.md)
 
 ---
 
