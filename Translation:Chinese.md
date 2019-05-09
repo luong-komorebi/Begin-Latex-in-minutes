@@ -448,7 +448,6 @@ Hello Latex, This is my second part.
 * [TeX Live](https://www.tug.org/texlive/) 适用于所有平台（包括 Windows、Linux 和基于 Unix 的系统）。
 * [MiKTeX](https://miktex.org/about) 适用于 Windows。
 * [MacTeX](https://tug.org/mactex/) 适用于 macOS。
-* [ShareLaTeX](https://www.sharelatex.com/) — 一个在线编辑器。
 * [Overleaf](https://www.overleaf.com/) — 一个在线合作的编辑器。
 * [StackEdit](https://stackedit.io/) - 在浏览器中的 markdown 编辑器。
 
@@ -456,7 +455,7 @@ Hello Latex, This is my second part.
 
 * [TeXMaker](http://www.xm1math.net/texmaker/) 跨平台的 LaTeX 编辑器。
 * [TeXStudio](http://www.texstudio.org/) 增强 TeXMaker 的更多功能( An enhanced fork of TeXMaker with more features)。
-* TeXShop and TeXworks (最简编辑器)
+* TeXShop and TeXworks (最简编辑器, TeX Live 自带)
 
 #### LaTeX 编译器
 
