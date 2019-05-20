@@ -1,11 +1,11 @@
 [English](./readme.md) ·
 中文 ·
-[Español](./Translation:Spanish.md) ·
-[Português](./Translation:Portuguese.md) ·
-[Français](./Translation:French.md) ·
-[Русский](./Translation:Russian.md) ·
-[Deutsch](./Translation:German.md) ·
-[日本語](./Translation:Japanese.md)
+[Español](./Translation-Spanish.md) ·
+[Português](./Translation-Portuguese.md) ·
+[Français](./Translation-French.md) ·
+[Русский](./Translation-Russian.md) ·
+[Deutsch](./Translation-German.md) ·
+[日本語](./Translation-Japanese.md)
 
 ---
 
