@@ -100,3 +100,76 @@ Il risultato dovrebbe apparire così in TexMaker:
 * Alcuni caratteri sono **designati a comandi speciali in LaTeX. Potrebbe essere necessario utilizzare un backslash (\\) per poterli visualizzare.**
 
 ![](http://i.imgur.com/9d0bXHH.png)
+
+## Supporto multilingue in LaTeX
+
+**Per utilizzare TeX con alcuni linguaggi sono necessario alcuni passaggi**
+
+#### :white_check_mark: Primo metodo :white_check_mark:
+
+Dato che pdfLaTeX, il compilatore di default, è limitato all'uso di 256 caratteri ciò può comportare alcuni problemi nelle fasi di creazione del PDF. Il primo metodo per aggirare questa limitazione consiste nell'uso di ["pacchetti"](#cosa-sono-i-pacchetti) (affronteremo l'argomento più avanti):
+
+```tex
+\documentclass[a4paper]{article}
+
+\usepackage[T5]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+Xin chào thế giới. This is Hello World in Vietnamese.
+
+\end{document}
+```
+
+Nell'esempio fornito utilizziamo i pacchetti `usepackage[T5]{fontenc}` e `usepackage[utf8]{inputenc}`; questi forniscono al compilatore l'abilità di codificare i caratteri corretti in modo che questi possano essere visualizzati nel PDF. In TexMaker il codice precedente produce il seguente risultato: 
+
+![](http://i.imgur.com/UQEewYi.png)
+
+mentre questo è ciò che si otterrebbe non si usassero i pacchetti appena illustrati :package::
+
+![](http://i.imgur.com/xvzrQX2.png)
+
+:umbrella: Lavorando con cartteri Cinesi-Giapponesi-Koreani può essere difficoltoso. In questi casi può tornare utile l'uso dei pacchetti `usepackage{CJKutf8}` unito a `\begin{CJK}{UTF8}` e `\end{CJK}`. Ecco un esempio con il Giapponese :jp::
+
+```tex
+\documentclass[a4paper]{article}
+\usepackage{CJKutf8}
+
+\begin{document}
+
+\begin{CJK}{UTF8}{min}
+この記事を読んでいただきありがとうございます。
+%Thank you for reading this article.
+\end{CJK}
+
+\end{document}
+```
+
+Facile come mangiarsi un bel :sushi::
+
+![](http://i.imgur.com/vAN1WUi.png)
+
+#### :white_check_mark: Secondo metodo :white_check_mark:
+
+Un altro modo per affrontare il problema consiste nel cambiare il proprio compilatore in [LuaLaTeX](#strumenti-aggiuntivi) (o [XeLaTeX](#strumenti-aggiuntivi)). Utilizzando i pacchetti `fontspec` e `polyglossia` la codifica Unicode funzionerà senza la necessità di ulteriori azioni da parte nostra:
+
+```tex
+\documentclass[a4paper]{article}
+
+\usepackage{fontspec}
+\usepackage{polyglossia}
+%\setmainfont[]{DejaVu Serif}
+
+\begin{document}
+
+Xin chào thế giới. This is Hello World in Vietnamese.
+
+\end{document}
+```
+
+Il font di default (Latin Modern) non supporta tutti i caratteri. È possibile definire un font installato nel nostro computer decommentando la linea di codice contenete la stringa `\setmainfont` e inserendo come argomento tra parentesi graffe il font che si desidera utilizzare (in formato TTF o OTF).
+
+## Liste
+
+    wip 
