@@ -18,7 +18,7 @@ Italiano
 
 ### Sommario
 
-* [Che cos'è LaTeX?](#che-cos'è-latex)
+* [Che cos'è LaTeX?](#che-cosè-latex)
 * [Perchè usare LaTeX?](#perchè-usare-latex)
 * [Installare LaTeX](#installare-latex)
 * [Il primo documento LaTeX](#il-primo-documento-latex)
