@@ -129,9 +129,10 @@ Here we use the packages `usepackage[T5]{fontenc}` and `usepackage[utf8]{inputen
 
 vs without the packages :package::  
 
-![](http://i.imgur.com/xvzrQX2.png)  
+![](http://i.imgur.com/xvzrQX2.png)
 
 :umbrella: A tricky situation is dealing with Chinese-Japanese-Korean. Here, `usepackage{CJKutf8}` with `\begin{CJK}{UTF8}` and `\end{CJK}` comes in very handy. Here's Japanese :jp::
+
 ```tex
 \documentclass[a4paper]{article}
 \usepackage{CJKutf8}
@@ -148,9 +149,10 @@ vs without the packages :package::
 
 As easy as eating :sushi: and :bento::
 
-![](http://i.imgur.com/vAN1WUi.png)  
+![](http://i.imgur.com/vAN1WUi.png)
 
 #### :white_check_mark: Second method :white_check_mark:
+
 Another method is achievable if you switch your TeX compiler to [LuaLaTeX](#additional-tools) (or [XeLaTeX](#additional-tools)). Using `fontspec` and `polyglossia`, Unicode will work out of the box:
 
 ```tex
@@ -168,7 +170,6 @@ Xin chào thế giới. This is Hello World in Vietnamese.
 ```
 
 The default font (Latin Modern) does not support all characters. You can, however, use almost any font installed on your system by uncommenting the `\setmainfont` line. (TTF and OTF fonts are fully supported).
-
 
 ## Lists
 
