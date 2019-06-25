@@ -83,7 +83,6 @@ Hello World !  % This is your content
 ```
 
 It should look like this in TexMaker:
-![](http://i.imgur.com/ZuD5N6U.png)
 
 ## A deeper look
 
@@ -99,7 +98,7 @@ It should look like this in TexMaker:
 * While you are following this guide, everything will work smoothly. However, in the future, should there be any problems, **don't panic**. The error reports are human-friendly and readable. If you can't resolve them, a search tool like Google may be your best friend.  
 * Some characters are **predefined with special meanings in LaTeX. You may want to use backslashes (\\) in front of these characters for proper output.**  
 
-![](http://i.imgur.com/9d0bXHH.png)   
+![](http://i.imgur.com/9d0bXHH.png)
 
 ## Multilingual usage
 
