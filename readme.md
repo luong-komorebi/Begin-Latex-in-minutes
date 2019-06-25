@@ -84,6 +84,7 @@ Hello World !  % This is your content
 ```
 
 It should look like this in TexMaker:
+![](http://i.imgur.com/ZuD5N6U.png)
 
 ## A deeper look
 
