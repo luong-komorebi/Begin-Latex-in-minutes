@@ -5,7 +5,8 @@ English ·
 [Français](./Translation-French.md) ·
 [Русский](./Translation-Russian.md) ·
 [Deutsch](./Translation-German.md) ·
-[日本語](./Translation-Japanese.md)
+[日本語](./Translation-Japanese.md) ·
+[Italiano](./Translation-Italian.md)
 
 ---
 
@@ -99,7 +100,7 @@ It should look like this in TexMaker:
 * While you are following this guide, everything will work smoothly. However, in the future, should there be any problems, **don't panic**. The error reports are human-friendly and readable. If you can't resolve them, a search tool like Google may be your best friend.  
 * Some characters are **predefined with special meanings in LaTeX. You may want to use backslashes (\\) in front of these characters for proper output.**  
 
-![](http://i.imgur.com/9d0bXHH.png)   
+![](http://i.imgur.com/9d0bXHH.png)
 
 ## Multilingual usage
 
@@ -128,9 +129,10 @@ Here we use the packages `usepackage[T5]{fontenc}` and `usepackage[utf8]{inputen
 
 vs without the packages :package::  
 
-![](http://i.imgur.com/xvzrQX2.png)  
+![](http://i.imgur.com/xvzrQX2.png)
 
 :umbrella: A tricky situation is dealing with Chinese-Japanese-Korean. Here, `usepackage{CJKutf8}` with `\begin{CJK}{UTF8}` and `\end{CJK}` comes in very handy. Here's Japanese :jp::
+
 ```tex
 \documentclass[a4paper]{article}
 \usepackage{CJKutf8}
@@ -147,9 +149,10 @@ vs without the packages :package::
 
 As easy as eating :sushi: and :bento::
 
-![](http://i.imgur.com/vAN1WUi.png)  
+![](http://i.imgur.com/vAN1WUi.png)
 
 #### :white_check_mark: Second method :white_check_mark:
+
 Another method is achievable if you switch your TeX compiler to [LuaLaTeX](#additional-tools) (or [XeLaTeX](#additional-tools)). Using `fontspec` and `polyglossia`, Unicode will work out of the box:
 
 ```tex
@@ -167,7 +170,6 @@ Xin chào thế giới. This is Hello World in Vietnamese.
 ```
 
 The default font (Latin Modern) does not support all characters. You can, however, use almost any font installed on your system by uncommenting the `\setmainfont` line. (TTF and OTF fonts are fully supported).
-
 
 ## Lists
 
