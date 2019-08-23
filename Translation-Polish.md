@@ -496,4 +496,4 @@ A beer in your country can buy a meal in mine.
 
 ## Adnotacja od autora tłumaczenia
 
-Autorem tłumaczenia jest Artur Komorowski (aokomorowski@gmail.com). Jeśli widzisz w tekście błędy - proszę, popraw je. Jeśli uznasz, że LaTeX zmienił Twoje życie - podziękuj autorowi.
+Autorem tłumaczenia jest Artur Komorowski (@aokomorowski). Jeśli widzisz w tekście błędy - proszę, popraw je. Jeśli uznasz, że LaTeX zmienił Twoje życie - podziękuj autorowi.
