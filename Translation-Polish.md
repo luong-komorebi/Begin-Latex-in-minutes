@@ -203,7 +203,7 @@ Oto jak prezentują się oba rodzaje list.
 
 ![](http://i.imgur.com/jzN4RWm.png)
 
-## Akapity i rozdziały
+## Ustępy i rozdziały
 
 :blue_book: Rozdział rozpoczynamy komendą `\section`, a ustępy za pomocą `\paragraph`.
 :orange_book: Możesz tworzyć również podrozdziały `\subsection` oraz podustępy `\subparagraph`
