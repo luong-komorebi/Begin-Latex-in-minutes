@@ -6,6 +6,7 @@ Español ·
 [Русский](./Translation-Russian.md) ·
 [Deutsch](./Translation-German.md) ·
 [日本語](./Translation-Japanese.md)
+[Polski](./Translation-Polish.md)
 
 ---
 
@@ -15,43 +16,39 @@ Español ·
 
 (Spanish translator's acknowledgement: I tried to translate this guide as the original meaning of the author as much as i could. If you think the translation is inappropriate, please feel free to modify it or add missing stuff you think would make this guide better. If you like this guide, please share to more people.)
 
-
-**Aviso:** *Todo lo descrito abajo es desde mi experiencia en la universidad y después de leer varios materiales. No soy ni un profesional ni un experto, sino un estudiante que tiene gran pasión por el lenguaje. Cualquiera puede abrir una discusión en la sección de issues, o una solicitud de pull en caso de que algo deba ser modificado o agregado. Si valoras mi trabajo, una [donación](#donación) sería muy apreciada. ¡Gracias!*
-
-
-
+**Aviso:** _Todo lo descrito abajo es desde mi experiencia en la universidad y después de leer varios materiales. No soy ni un profesional ni un experto, sino un estudiante que tiene gran pasión por el lenguaje. Cualquiera puede abrir una discusión en la sección de issues, o una solicitud de pull en caso de que algo deba ser modificado o agregado. Si valoras mi trabajo, una [donación](#donación) sería muy apreciada. ¡Gracias!_
 
 ### Table of Contents
-* [¿Qué es LaTeX?](#qué-es-latex)
-* [¿Por qué usar LaTeX?](#por-qué-usar-latex)
-* [Configurar LaTeX](#configurar-latex)
-* [Primer archivo LaTeX](#primer-arhivo-latex)
-* [Un vistazo más profundo](#un-vistazo-más-profundo)
-* [Uso multilenguaje](#uso-multilenguaje)
-* [Listas](#listas)
-* [Párrafos y secciones](#párrafos-y-secciones)
-* [Haciendo una tabla de contenidos](#haciendo-una-tabla-de-contenidos)
-* [Notas al pie](#notas-al-pie)
-* [¿Qué es un paquete?](#qué-es-un-paquete)
-* [Tablas](#tablas)
-* [Añadiendo imágenes](#añadiendo-imágenes)
-* [Insertar código en LaTeX](#insertar-código-en-latex)
-* [Múltiples archivos en LaTeX](#múltiples-archivos-en-LaTeX)
-* [Herramientas adicionales](#herramientas-adicionales)
+
+- [¿Qué es LaTeX?](#qué-es-latex)
+- [¿Por qué usar LaTeX?](#por-qué-usar-latex)
+- [Configurar LaTeX](#configurar-latex)
+- [Primer archivo LaTeX](#primer-arhivo-latex)
+- [Un vistazo más profundo](#un-vistazo-más-profundo)
+- [Uso multilenguaje](#uso-multilenguaje)
+- [Listas](#listas)
+- [Párrafos y secciones](#párrafos-y-secciones)
+- [Haciendo una tabla de contenidos](#haciendo-una-tabla-de-contenidos)
+- [Notas al pie](#notas-al-pie)
+- [¿Qué es un paquete?](#qué-es-un-paquete)
+- [Tablas](#tablas)
+- [Añadiendo imágenes](#añadiendo-imágenes)
+- [Insertar código en LaTeX](#insertar-código-en-latex)
+- [Múltiples archivos en LaTeX](#múltiples-archivos-en-LaTeX)
+- [Herramientas adicionales](#herramientas-adicionales)
 
 ## ¿Qué es LaTeX?
 
 LaTeX, que es pronunciado «Lah-tech» o «Lay-tech» (para rimar con «blech»), es un sistema de preparación de documentos para tipografía de alta calidad. Es mayormente usado para documentos técnicos o científicos, mediano o grandes, pero puede ser usado para cualquier tipo de publicación.
 
-
 ## ¿Por qué usar LaTeX?
 
-* LaTeX es gratis, multiplataforma.
-* LaTeX es solo un documento de texto (el cual puede ser abierto por cualquier editor de texto) listo para convertirse a PDF.
-* LaTeX separa contenido del estio. Diseña el estilo una vez, después concéntrate en el contenido.
-* El flujo de trabajo es más rápido a comparación de MS Word.
-* LaTeX es ampliamente usado para temas científicos.
-* LaTeX es simlpemente la mejor opción cuando se trata de escribir expresiones matemáticas.
+- LaTeX es gratis, multiplataforma.
+- LaTeX es solo un documento de texto (el cual puede ser abierto por cualquier editor de texto) listo para convertirse a PDF.
+- LaTeX separa contenido del estio. Diseña el estilo una vez, después concéntrate en el contenido.
+- El flujo de trabajo es más rápido a comparación de MS Word.
+- LaTeX es ampliamente usado para temas científicos.
+- LaTeX es simlpemente la mejor opción cuando se trata de escribir expresiones matemáticas.
 
 > LaTeX no viene sin inconvenientes, pero vale la pena totalmente aprenderlo.
 
@@ -59,17 +56,16 @@ LaTeX, que es pronunciado «Lah-tech» o «Lay-tech» (para rimar con «blech»)
 
 Necesitarás lo siguiente:
 
-
-1. *Una distribución de LaTeX.*
-Estouy usando [MiKTeX](https://miktex.org/about) para Windows.
-2. *Un editor de LaTeX.*
-Estoy usando [TeXMaker](http://www.xm1math.net/texmaker/) para facilitar la edición, sin embargo cualquier editor de texto puede modificar un archivo  LaTeX.
-3. *Un visor de PDF.* (opcional)
-Cualquier visor de PDF servirá. Esto es para que puedas ver el resultado.
+1. _Una distribución de LaTeX._
+   Estouy usando [MiKTeX](https://miktex.org/about) para Windows.
+2. _Un editor de LaTeX._
+   Estoy usando [TeXMaker](http://www.xm1math.net/texmaker/) para facilitar la edición, sin embargo cualquier editor de texto puede modificar un archivo LaTeX.
+3. _Un visor de PDF._ (opcional)
+   Cualquier visor de PDF servirá. Esto es para que puedas ver el resultado.
 
 Además, necesitas elegir un [compilador](#herramientas-adicionales). El compilador por defecto en la mayoría de editores es pdfLaTeX, pero si necesitas soporte (sin agragar más líneas de código) para Unicode o fuentes TTF/OTF desde tu sistema, usa XeLaTeX o LuaLatex.
 
-O puedes elegir simplemente una solución online como [ShareLaTeX](https://www.sharelatex.com/).  
+O puedes elegir simplemente una solución online como [ShareLaTeX](https://www.sharelatex.com/).
 
 Por favor mira en [Herramientas adicionales](#herramientas-adicionales) para una amplia variedad de opciones.
 
@@ -95,22 +91,22 @@ Así es como debería verse en TexMaker:
 
 :eyes: Un vistazo más profundo a tu primer archivo LaTeX muestra que:
 
-* La primera línea le dice al *intérprete* que estás trabajando en un **artículo** de tamaño *A4*. Otros tipos de documentos con los que puedes estar trabajando son **reporte** (report), **libro** (book)..., etc.
-* Un documento está rodeado por **\begin{document}** y **\end{document}** . Piensa en esto como el núcleo del documento, cómo el `main()` en *java* o *C++*..., sin él el documento no puede ser producido.
-* La parte entre **\begin{document}** y **\end{document}** (que en este caso es `Hello World`) es simplemente tu propio contenido.
-* Un **signo de porcentaje** (`$`) denota un comentario, que LaTeX ignorará.
+- La primera línea le dice al _intérprete_ que estás trabajando en un **artículo** de tamaño _A4_. Otros tipos de documentos con los que puedes estar trabajando son **reporte** (report), **libro** (book)..., etc.
+- Un documento está rodeado por **\begin{document}** y **\end{document}** . Piensa en esto como el núcleo del documento, cómo el `main()` en _java_ o _C++_..., sin él el documento no puede ser producido.
+- La parte entre **\begin{document}** y **\end{document}** (que en este caso es `Hello World`) es simplemente tu propio contenido.
+- Un **signo de porcentaje** (`$`) denota un comentario, que LaTeX ignorará.
 
 #### :zap: Atención :zap:
 
-* Fijándonos en **\begin{document}** , **\end{document}** , **\documentclass[a4paper]{article}** , podrás notar el patrón ahora. Estos son llamados **Comandos de tipografía**, que normalmente son precedidos por "`\`" y necesitan **argumentos** (colocados dentro de "`{}`"). LaTeX es normalmente texto, pero en esos argumentos radica su poder.
-* Mientras estás siguiendo esta guía, todo deberá salir bien.Sin embargo, en el futuro encontrarás algunos problemas, **no entres en pánico**. Los reportes de error pueden ser leídos por humanos. Si no puedes resolverlos intuitivamente, una herramienta de búsqueda como Google será tu mejor amiga.
-* Algunos caracteres están **predefinidos con significado especial en LaTeX. Deberás usar dobles diagonales ("`\\`") antes de ellos para una apropiada salida.**  
+- Fijándonos en **\begin{document}** , **\end{document}** , **\documentclass[a4paper]{article}** , podrás notar el patrón ahora. Estos son llamados **Comandos de tipografía**, que normalmente son precedidos por "`\`" y necesitan **argumentos** (colocados dentro de "`{}`"). LaTeX es normalmente texto, pero en esos argumentos radica su poder.
+- Mientras estás siguiendo esta guía, todo deberá salir bien.Sin embargo, en el futuro encontrarás algunos problemas, **no entres en pánico**. Los reportes de error pueden ser leídos por humanos. Si no puedes resolverlos intuitivamente, una herramienta de búsqueda como Google será tu mejor amiga.
+- Algunos caracteres están **predefinidos con significado especial en LaTeX. Deberás usar dobles diagonales ("`\\`") antes de ellos para una apropiada salida.**
 
-![](http://i.imgur.com/9d0bXHH.png)   
+![](http://i.imgur.com/9d0bXHH.png)
 
 ## Uso multilenguaje
 
-**Algunos lenguajes o idiomas no funcionarán de inmediato (por ejemplo, el español y sus acentos, o la `ñ`). Para usar TeX con otros lenguajes tienes algunas opciones.**  
+**Algunos lenguajes o idiomas no funcionarán de inmediato (por ejemplo, el español y sus acentos, o la `ñ`). Para usar TeX con otros lenguajes tienes algunas opciones.**
 
 #### :white_check_mark: Primer método :white_check_mark:
 
@@ -133,11 +129,12 @@ Aquí usamos los paquetes `usepackage[T5]{fontenc}` y `usepackage[utf8]{inputenc
 
 ![](http://i.imgur.com/UQEewYi.png)
 
-vs sin los paquetes (nota que los caracteres especiales se omiten) :package::  
+vs sin los paquetes (nota que los caracteres especiales se omiten) :package::
 
-![](http://i.imgur.com/xvzrQX2.png)  
+![](http://i.imgur.com/xvzrQX2.png)
 
 :umbrella: Una situación complicada es manejar chino-japonés-coreano. Aquí, `usepackage{CJKutf8}` con `\begin{CJK}{UTF8}` y `\end{CJK}` son bastante úties. Aqui está la forma de escribir japonés :jp: :
+
 ```tex
 \documentclass[a4paper]{article}
 \usepackage{CJKutf8}
@@ -154,9 +151,10 @@ vs sin los paquetes (nota que los caracteres especiales se omiten) :package::
 
 Tan fácil como comer :sushi: y :bento: :
 
-![](http://i.imgur.com/vAN1WUi.png)  
+![](http://i.imgur.com/vAN1WUi.png)
 
 #### :white_check_mark: Segundo método :white_check_mark:
+
 Otro método es alcanzable si cambias tu compilador TeX de pdfLaTeX a [LuaLaTeX](#herramientas-adicionales) (or [XeLaTeX](#herramientas-adicionales)). Usando `fontspec` y `polyglossia`, Unicode funcionará de maravilla:
 
 ```tex
@@ -172,23 +170,27 @@ Xin chào thế giới. This is Hello World in Vietnamese.
 
 \end{document}
 ```
-La fuente por defecto (Latin Modern) no soporta todos los caracteres. Puedes, sin embargo, usar cualquier fuente que tengas instalada en tu sistema descomentando la línea `\setmainfont`. Las fuentes TTF y OTF están soportadas por completo.
 
+La fuente por defecto (Latin Modern) no soporta todos los caracteres. Puedes, sin embargo, usar cualquier fuente que tengas instalada en tu sistema descomentando la línea `\setmainfont`. Las fuentes TTF y OTF están soportadas por completo.
 
 ## Listas
 
 :straight_ruler: Es muy importnte que organices bien tu documento. Asi que, empezaremos por poner tus elementos en listas.
-Dos tipos comunes de listas son **no ordered** y **ordenadas** list. Cada una puede ser manejada con facilidad en LaTeX:  
-* Listas no ordenadas
-Listas no ordenadas sólo necesitan **"itemize"**.
+Dos tipos comunes de listas son **no ordered** y **ordenadas** list. Cada una puede ser manejada con facilidad en LaTeX:
+
+- Listas no ordenadas
+  Listas no ordenadas sólo necesitan **"itemize"**.
+
 ```tex
 \begin{itemize}
 \item Item. %un elemento
 \item Another Item. %otro elemento
 \end{itemize}
-```  
-* Listas ordenadas
-Las listas ordenadas necesitan **"enumerate"**.
+```
+
+- Listas ordenadas
+  Las listas ordenadas necesitan **"enumerate"**.
+
 ```tex
 \begin{enumerate}
 \item First Item. %primer elemento
@@ -209,7 +211,7 @@ Así es como los dos tipos de listas se ven en la salida:
 
 ## Haciendo una tabla de contenidos
 
-:metal: Es útil para abrir secciones y subsecciones sin tener que desplazarse hasta ellas. El comando es  `\tableofcontents`
+:metal: Es útil para abrir secciones y subsecciones sin tener que desplazarse hasta ellas. El comando es `\tableofcontents`
 
 Ejemplo:
 
@@ -221,12 +223,14 @@ Ejemplo:
 
 Es extremadamente fácil usar footnote+label+ref para hacer todas las notas al pie que puedas imaginar.
 Por ejemplo:
+
 ```tex
 Hi let me introduce myself\footnote{\label{myfootnote}Hello footnote}.
 ... (later on)
 I'm referring to myself \ref{myfootnote}.
 ```
-:point_down: :point_down: ¿Lo ves?  :point_down: :point_down:
+
+:point_down: :point_down: ¿Lo ves? :point_down: :point_down:
 
 ![](http://i.imgur.com/BSYPX4C.png)
 
@@ -236,10 +240,9 @@ I'm referring to myself \ref{myfootnote}.
 
 LaTeX ofrece muchas funciones por defecto, sin embargo en algunas situaciones puede ser útil usar los llamados paquetes. Para importar un paquete en LaTeX, simplemente agrega `\usepackage{` :package:`}`
 
-
 Aquí está un ejemplo de como usar dos paquetes para escribir expresiones matemáticas:
 
-![](http://i.imgur.com/050nrfh.png)  
+![](http://i.imgur.com/050nrfh.png)
 
 Más épico aún es como se muestran los circuitos:
 
@@ -270,14 +273,14 @@ Un ejemplo paráctico :thought_balloon: :
 
 Veamos detenidamente :eyes: :
 
-* Para las tablas , necesitamos un ambiente `\begin{table}` `código para el contenido de la tabla` `\end{table}` .
-* Aprenderás sobre `h!` después, en la sección de imágenes. Va con `\centering` para mantener la tabla al centro de la página.
-* `caption` es para describir, `label` es para agregar etiquetas. Verás más en la sección de imágenes.
-* `tabular` es la parte más importante. Un ambiente de tabla siempre necesita un `tabular` dentro.
+- Para las tablas , necesitamos un ambiente `\begin{table}` `código para el contenido de la tabla` `\end{table}` .
+- Aprenderás sobre `h!` después, en la sección de imágenes. Va con `\centering` para mantener la tabla al centro de la página.
+- `caption` es para describir, `label` es para agregar etiquetas. Verás más en la sección de imágenes.
+- `tabular` es la parte más importante. Un ambiente de tabla siempre necesita un `tabular` dentro.
   - La parte `{l|c||r}` es donde formateamos el contenido dentro de la tabla. Podemos ver:
-    * `l` o `c` o `r` significa que el contenido dentro de cada celda será alineado a la izquierda, al centro o a la derecha respectivamente.
-    * `|` or `||` es el formato de las lineas (márgenes) verticales entre las columnas.
-  - 1 & 2 & 3 => `1 2 3`  son los contenidos de cada celda. El ampersand `&` es usado para separar el contenido de cada celda en una fila.
+    - `l` o `c` o `r` significa que el contenido dentro de cada celda será alineado a la izquierda, al centro o a la derecha respectivamente.
+    - `|` or `||` es el formato de las lineas (márgenes) verticales entre las columnas.
+  - 1 & 2 & 3 => `1 2 3` son los contenidos de cada celda. El ampersand `&` es usado para separar el contenido de cada celda en una fila.
   - Un `\hline` agrega una línea horizontal entre filas.
 
 :bangbang: **Tips** Puedes usar un paquete :package: llamado booktabs `\usepackage{booktabs}` para crear tablas visualmente más atractivas.
@@ -302,11 +305,11 @@ Para añadir una imagen a un archivi LaTeX, necesitas usar un ambiente `figure` 
 
 :passport_control: Los valores aceptados son :
 
-* h (here) - la misma ubicación
-* t (top) - parte superior de la página
-* b (bottom) - parte inferior de la página
-* p (page) - en una ṕágina extra
-* ! (override) - forzará una ubicación especificada
+- h (here) - la misma ubicación
+- t (top) - parte superior de la página
+- b (bottom) - parte inferior de la página
+- p (page) - en una ṕágina extra
+- ! (override) - forzará una ubicación especificada
 
 Así es como se ve la imagen :
 
@@ -354,6 +357,7 @@ Como puedes ver, con **{verbatim}** puedes insertar fácilmente código sin preo
 Este método te da más opciones, incluyendo insertar código **inline**, hacer **estilos propios** de código, elegir un **lenguaje en específico**, **importar código** **desde** otro **archivo** en el mismo directorio.... Con este método no usas **verbatim**, sino que incluyes un paquete llamado `listings`.
 
 Considera el siguiente ejemplo:
+
 ```tex
 \documentclass[a4paper]{article}
 
@@ -387,6 +391,7 @@ Lorem ipsum dolor sit amet \lstinline{print "Hello World"} , consectetur adipisc
 \end{document}
 
 ```
+
 Aquí podemos observar:
 
 1. Para insertar un bloque de código, empezamos con `\begin{lstlisting}` y terminamos con `\end{lstlisting}`
@@ -421,7 +426,6 @@ Hello Latex, This is my second part.
 
 Es un archivo LaTeX normal. Ahora, dividiremos el contenido en dos partes usando el comando `\input` keyword:
 
-
 ```tex
 % main.tex
 \documentclass[a4paper]{article}
@@ -434,7 +438,6 @@ Hello Latex, This is my first part.
 
 \end{document}
 ```
-
 
 ```tex
 % second_file.tex
@@ -451,22 +454,22 @@ Ahora el archivo principal se ve diferente, pero mejor documentado y más legibl
 
 #### Distribuciones
 
-* [MiKTeX](https://miktex.org/about) para Windows.
-* [TeX Live](https://www.tug.org/texlive/) para Linux y basadas en Unix.
-* [MacTeX](https://tug.org/mactex/) para macOS.
-* [ShareLaTeX](https://www.sharelatex.com/) — un editor online.
-* [Overleaf](https://www.overleaf.com/) — un editor online colaborativo.
-* [StackEdit](https://stackedit.io/) - Editor de markdown en tu navegador.
+- [MiKTeX](https://miktex.org/about) para Windows.
+- [TeX Live](https://www.tug.org/texlive/) para Linux y basadas en Unix.
+- [MacTeX](https://tug.org/mactex/) para macOS.
+- [ShareLaTeX](https://www.sharelatex.com/) — un editor online.
+- [Overleaf](https://www.overleaf.com/) — un editor online colaborativo.
+- [StackEdit](https://stackedit.io/) - Editor de markdown en tu navegador.
 
 #### LaTeX Editors
 
-* [TeXMaker](http://www.xm1math.net/texmaker/) Editor LaTeX multiplataforma.
-* [TeXStudio](http://www.texstudio.org/) Un fork de TexMaker supercargado con más características.
-* TeXShop y TeXworks (editores mínimos)
+- [TeXMaker](http://www.xm1math.net/texmaker/) Editor LaTeX multiplataforma.
+- [TeXStudio](http://www.texstudio.org/) Un fork de TexMaker supercargado con más características.
+- TeXShop y TeXworks (editores mínimos)
 
 #### LaTeX Compilers
 
-* La mayoría de editores te darán la opción de cambiar el compialdor por defecto, aquí hay un ejemplo:
+- La mayoría de editores te darán la opción de cambiar el compialdor por defecto, aquí hay un ejemplo:
 
 ![](http://i.imgur.com/FbNUiL7.png)
 
@@ -477,15 +480,14 @@ Si tienes interés por aprender, más sobre LaTeX se puede encontrar [acá](http
 
 ## Licencia
 
- [![](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png)](http://www.wtfpl.net/)
+[![](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png)](http://www.wtfpl.net/)
 
 **LICENCIA PÚBLICA PARA QUE HAGA LO QUE LE DÉ LA GANA**  
 Derechos de autor (C) 2016 Luong Vo  
 Se permite la copia y distribución de forma literal o copias modificadas de este documento de licencia, y su modificación están permitidas siempre que el se cambie el nombre. (Changing it is allowed as long as the name is changed).  
 TÉRMINOS Y CONDICIONES PARA LA COPIA, DISTRIBUCIÓN & MODIFICACIÓN: Eso sí, HAGA LO QUE LE DÉ LA GANA.
 
-
-<div id='donación'/>  
+<div id='donación'/>
 
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5ZG5Z47L2ZGYC)
 

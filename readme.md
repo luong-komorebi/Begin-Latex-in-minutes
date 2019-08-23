@@ -5,7 +5,8 @@ English ·
 [Français](./Translation-French.md) ·
 [Русский](./Translation-Russian.md) ·
 [Deutsch](./Translation-German.md) ·
-[日本語](./Translation-Japanese.md)
+[日本語](./Translation-Japanese.md) .
+[Polski](./Translation-Polish.md)
 
 ---
 
@@ -13,25 +14,26 @@ English ·
 
 ![](https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg)
 
-**Acknowledgement:** *Everything written below is from my own experience in college and after reading various materials. I am neither a professional nor expert, but a student who has great passion for the language. Anyone can open a discussion in the issue section, or a pull request in case something should be modified or added. If you consider my work valuable, a [donation](#donation) is much appreciated.*
+**Acknowledgement:** _Everything written below is from my own experience in college and after reading various materials. I am neither a professional nor expert, but a student who has great passion for the language. Anyone can open a discussion in the issue section, or a pull request in case something should be modified or added. If you consider my work valuable, a [donation](#donation) is much appreciated._
 
 ### Table of Contents
-* [What is LaTeX?](#what-is-latex)
-* [Why use LaTeX?](#why-use-latex)
-* [Set up for LaTeX](#set-up-for-latex)
-* [First LaTeX file](#first-latex-file)
-* [A deeper look](#a-deeper-look)
-* [Multilingual usage](#multilingual-usage)
-* [Lists](#lists)
-* [Paragraph and section](#paragraph-and-section)
-* [Making a table of contents](#making-a-table-of-contents)
-* [Footnotes](#footnotes)
-* [What is a package?](#what-is-a-package)
-* [Table](#table)
-* [Adding images](#adding-images)
-* [Insert code into LaTeX](#insert-code-into-latex)
-* [Multiple files in LaTeX](#Multiple-files-in-LaTeX)
-* [Additional Tools](#additional-tools)
+
+- [What is LaTeX?](#what-is-latex)
+- [Why use LaTeX?](#why-use-latex)
+- [Set up for LaTeX](#set-up-for-latex)
+- [First LaTeX file](#first-latex-file)
+- [A deeper look](#a-deeper-look)
+- [Multilingual usage](#multilingual-usage)
+- [Lists](#lists)
+- [Paragraph and section](#paragraph-and-section)
+- [Making a table of contents](#making-a-table-of-contents)
+- [Footnotes](#footnotes)
+- [What is a package?](#what-is-a-package)
+- [Table](#table)
+- [Adding images](#adding-images)
+- [Insert code into LaTeX](#insert-code-into-latex)
+- [Multiple files in LaTeX](#Multiple-files-in-LaTeX)
+- [Additional Tools](#additional-tools)
 
 ## What is LaTeX?
 
@@ -39,12 +41,12 @@ LaTeX, which is pronounced «Lah-tech» or «Lay-tech» (to rhyme with «blech»
 
 ## Why use LaTeX?
 
-* LaTeX is free, multiplatform.
-* LaTeX is just a text document (which can be opened by any text editor), readily converted to PDF.
-* LaTeX separates content and style. Style once, then focus on content.
-* The workflow is faster compared to MS Word.
-* LaTeX is widely used for scientific topics.
-* LaTeX is simply the best option when it comes to typesetting math expressions.
+- LaTeX is free, multiplatform.
+- LaTeX is just a text document (which can be opened by any text editor), readily converted to PDF.
+- LaTeX separates content and style. Style once, then focus on content.
+- The workflow is faster compared to MS Word.
+- LaTeX is widely used for scientific topics.
+- LaTeX is simply the best option when it comes to typesetting math expressions.
 
 > LaTeX doesn't come without drawbacks, but is still worth learning.
 
@@ -52,13 +54,12 @@ LaTeX, which is pronounced «Lah-tech» or «Lay-tech» (to rhyme with «blech»
 
 You will need the following things:
 
-
-1. *LaTeX Distribution.*
-I am using [MiKTeX](https://miktex.org/about) for Windows.
-2. *LaTeX Editor.*
-I am using [TeXMaker](http://www.xm1math.net/texmaker/) for easy editing, although any text editor can create or change a LaTeX file.
-3. *PDF viewer.* (optional)
-Any PDF viewer out there is fine. This is for viewing your result.
+1. _LaTeX Distribution._
+   I am using [MiKTeX](https://miktex.org/about) for Windows.
+2. _LaTeX Editor._
+   I am using [TeXMaker](http://www.xm1math.net/texmaker/) for easy editing, although any text editor can create or change a LaTeX file.
+3. _PDF viewer._ (optional)
+   Any PDF viewer out there is fine. This is for viewing your result.
 
 In addition, you need to choose a [compiler](#additional-tools). The default compiler of most
 editors is pdfLaTeX, but if you need support for Unicode or TTF/OTF fonts from
@@ -88,26 +89,27 @@ It should look like this in TexMaker:
 ## A deeper look
 
 :eyes: A deeper look into your first LaTeX file easily shows that:
-* The first line tells the Interpreter that you are working on an **article** with the size of the a4. Other types of document you might be working with in the future are **report**, **book**... and so on.
-* A document is wrapped by the **\begin{document}** and **\end{document}**. Think of this as the heart of the document, as the `main()` in *java* or *C++*... without which the document can't be rendered.
-* The part between begin and end ( which, in this case, is `Hello World` ) is simply your own content.
-* A **percent sign** (%) denotes your comment, which LaTeX will ignore.
+
+- The first line tells the Interpreter that you are working on an **article** with the size of the a4. Other types of document you might be working with in the future are **report**, **book**... and so on.
+- A document is wrapped by the **\begin{document}** and **\end{document}**. Think of this as the heart of the document, as the `main()` in _java_ or _C++_... without which the document can't be rendered.
+- The part between begin and end ( which, in this case, is `Hello World` ) is simply your own content.
+- A **percent sign** (%) denotes your comment, which LaTeX will ignore.
 
 #### :zap: Attention :zap:
 
-* Looking back at **\begin{document}**, **\end{document}**, **\documentclass[a4paper]{article}**. You may notice the pattern now. These are called **Typesetting Commands** ( which are usually preceded by “\” ) and **arguments** ( placed inside curly braces “{}” ). LaTeX are basically normal texts, but powered by these commands.
-* While you are following this guide, everything will work smoothly. However, in the future, should there be any problems, **don't panic**. The error reports are human-friendly and readable. If you can't resolve them, a search tool like Google may be your best friend.  
-* Some characters are **predefined with special meanings in LaTeX. You may want to use backslashes (\\) in front of these characters for proper output.**  
+- Looking back at **\begin{document}**, **\end{document}**, **\documentclass[a4paper]{article}**. You may notice the pattern now. These are called **Typesetting Commands** ( which are usually preceded by “\” ) and **arguments** ( placed inside curly braces “{}” ). LaTeX are basically normal texts, but powered by these commands.
+- While you are following this guide, everything will work smoothly. However, in the future, should there be any problems, **don't panic**. The error reports are human-friendly and readable. If you can't resolve them, a search tool like Google may be your best friend.
+- Some characters are **predefined with special meanings in LaTeX. You may want to use backslashes (\\) in front of these characters for proper output.**
 
-![](http://i.imgur.com/9d0bXHH.png)   
+![](http://i.imgur.com/9d0bXHH.png)
 
 ## Multilingual usage
 
-**Some languages won't work right out of the box. To use TeX with other languages, you have some options.**  
+**Some languages won't work right out of the box. To use TeX with other languages, you have some options.**
 
 #### :white_check_mark: First method :white_check_mark:
 
-The first method is including ["packages"](#what-is-a-package) (You will learn about it later) because pdfLaTeX, the default compiler, is limited to 256 characters and various encoding issues. For example:  
+The first method is including ["packages"](#what-is-a-package) (You will learn about it later) because pdfLaTeX, the default compiler, is limited to 256 characters and various encoding issues. For example:
 
 ```tex
 \documentclass[a4paper]{article}
@@ -126,11 +128,12 @@ Here we use the packages `usepackage[T5]{fontenc}` and `usepackage[utf8]{inputen
 
 ![](http://i.imgur.com/UQEewYi.png)
 
-vs without the packages :package::  
+vs without the packages :package::
 
-![](http://i.imgur.com/xvzrQX2.png)  
+![](http://i.imgur.com/xvzrQX2.png)
 
 :umbrella: A tricky situation is dealing with Chinese-Japanese-Korean. Here, `usepackage{CJKutf8}` with `\begin{CJK}{UTF8}` and `\end{CJK}` comes in very handy. Here's Japanese :jp::
+
 ```tex
 \documentclass[a4paper]{article}
 \usepackage{CJKutf8}
@@ -147,9 +150,10 @@ vs without the packages :package::
 
 As easy as eating :sushi: and :bento::
 
-![](http://i.imgur.com/vAN1WUi.png)  
+![](http://i.imgur.com/vAN1WUi.png)
 
 #### :white_check_mark: Second method :white_check_mark:
+
 Another method is achievable if you switch your TeX compiler to [LuaLaTeX](#additional-tools) (or [XeLaTeX](#additional-tools)). Using `fontspec` and `polyglossia`, Unicode will work out of the box:
 
 ```tex
@@ -168,21 +172,24 @@ Xin chào thế giới. This is Hello World in Vietnamese.
 
 The default font (Latin Modern) does not support all characters. You can, however, use almost any font installed on your system by uncommenting the `\setmainfont` line. (TTF and OTF fonts are fully supported).
 
-
 ## Lists
 
 :straight_ruler: It is very important to organize your document well. Thus, let's start by putting your items into a list.  
-Two common types of lists are **unordered** and **ordered** list. Each of them can be handled with ease in LaTeX document:  
-* Unordered List  
-Unordered list only needs **"itemize"**. (pun intended)
+Two common types of lists are **unordered** and **ordered** list. Each of them can be handled with ease in LaTeX document:
+
+- Unordered List  
+  Unordered list only needs **"itemize"**. (pun intended)
+
 ```tex
 \begin{itemize}
 \item Item.
 \item Another Item.
 \end{itemize}
-```  
-* Ordered List  
-Ordered list, however, need us to **"enumerate"** them. (pun intended)  
+```
+
+- Ordered List  
+  Ordered list, however, need us to **"enumerate"** them. (pun intended)
+
 ```tex
 \begin{enumerate}
 \item First Item.
@@ -214,12 +221,14 @@ Example:
 ## Footnotes
 
 It's as easy as pie to use footnote+label+ref to make all kinds of footnotes you want. For example:
+
 ```tex
 Hi let me introduce myself\footnote{\label{myfootnote}Hello footnote}.
 ... (later on)
 I'm referring to myself \ref{myfootnote}.
 ```
-:point_down: :point_down: Can you see it ?  :point_down: :point_down:
+
+:point_down: :point_down: Can you see it ? :point_down: :point_down:
 
 ![](http://i.imgur.com/BSYPX4C.png)
 
@@ -231,7 +240,7 @@ LaTeX offers a lot of functions by default, but in some situations it can come i
 
 Here is an example of using two packages for displaying math:
 
-![](http://i.imgur.com/050nrfh.png)  
+![](http://i.imgur.com/050nrfh.png)
 
 Even more epic is how circuits are displayed:
 
@@ -262,13 +271,13 @@ A practical example :thought_balloon::
 
 Now let's take a closer look :eyes::
 
-* For tables, first we need a table environment, which is why we have `\begin{table}` and `\end{table}`.
-* You will learn about h! later in the image section. It goes with `\centering` to keep the table at the center of the page.
-* Caption is for describing. Label is for tagging. You will see these more in image section.
-* Tabular is the most important part. A table environment always needs a tabular environment inside.
+- For tables, first we need a table environment, which is why we have `\begin{table}` and `\end{table}`.
+- You will learn about h! later in the image section. It goes with `\centering` to keep the table at the center of the page.
+- Caption is for describing. Label is for tagging. You will see these more in image section.
+- Tabular is the most important part. A table environment always needs a tabular environment inside.
   - the part `{l|c||r}` is where we format the content inside the table. Here we can see:
-    * l or c or r means that the content inside each cell will be left-aligned or center-aligned or right-aligned, respectively.
-    * the vertical slash | or || is actually the format of the vertical lines/borders inside the table's columns.
+    - l or c or r means that the content inside each cell will be left-aligned or center-aligned or right-aligned, respectively.
+    - the vertical slash | or || is actually the format of the vertical lines/borders inside the table's columns.
   - 1 & 2 & 3 => 1 2 3 are the contents of each cells. the ampersand & is used to separate the content of each cell in a row.
   - a `\hline` actually adds a horizontal line to separate each row.
 
@@ -294,11 +303,11 @@ To add an image to the LaTeX file, you need to use figure environment and the gr
 
 :passport_control: Legit values are:
 
-* h (here) — same location
-* t (top) — top of page
-* b (bottom) — bottom of page
-* p (page) — on an extra page
-* ! (override) — will force the specified location
+- h (here) — same location
+- t (top) — top of page
+- b (bottom) — bottom of page
+- p (page) — on an extra page
+- ! (override) — will force the specified location
 
 Here's how the image is rendered:
 
@@ -347,6 +356,7 @@ As you can see, with the **{verbatim}** wrapper you can easily insert code witho
 This method gives you more options, including insert code **inline**, make **custom styles** code, choose a **specific language** for code, **import code** **from** another **file** within the same directory.... With this method, you dont use **{verbatim}**, but include a package :package: named **listings**.
 
 Consider the following example:
+
 ```tex
 \documentclass[a4paper]{article}
 
@@ -380,6 +390,7 @@ Lorem ipsum dolor sit amet \lstinline{print "Hello World"} , consectetur adipisc
 \end{document}
 
 ```
+
 From this, you can see:
 
 1. To insert a code block, start with `\begin{lstlisting}` and end with `\end{lstlisting}`
@@ -393,7 +404,7 @@ Here is how the code above compiles in TexMaker:
 
 ![](http://i.imgur.com/XwwDJNo.png)
 
-## Multiple files in LaTeX  
+## Multiple files in LaTeX
 
 When we use LaTeX, we may face a problem that a document is too long to be handle. Therefore, we should divide the file so that its contents can be easily handled.
 
@@ -414,7 +425,6 @@ Hello Latex, This is my second part.
 
 It's just a normal LaTeX file. Now, let's divide the document into two parts using the `\input` keyword:
 
-
 ```tex
 % main.tex
 \documentclass[a4paper]{article}
@@ -428,7 +438,6 @@ Hello Latex, This is my first part.
 \end{document}
 ```
 
-
 ```tex
 % second_file.tex
 Hello Latex, This is my second part.
@@ -438,28 +447,28 @@ Now the main file looks different, but better documented. Here is the result in 
 
 ![](https://camo.githubusercontent.com/e4d46edfad527c4c9be54cf8f1725c2fc52039d6/68747470733a2f2f7331342e706f7374696d672e6f72672f646567306b716875392f6d756c74695f66696c652e706e67)
 
-:bangbang: **Tips**: For readability, clarity and maintenance purpose, it is highly suggested that you divide your Main file systematically, hierarchically and scientifically. Don't divide without reasons or you may get a mess later.  
+:bangbang: **Tips**: For readability, clarity and maintenance purpose, it is highly suggested that you divide your Main file systematically, hierarchically and scientifically. Don't divide without reasons or you may get a mess later.
 
 ## Additional Tools
 
 #### Distributions
 
-* [MiKTeX](https://miktex.org/about) for Windows.
-* [TeX Live](https://www.tug.org/texlive/) for Linux and Unix-based.
-* [MacTeX](https://tug.org/mactex/) for macOS.
-* [ShareLaTeX](https://www.sharelatex.com/) — an online editor.
-* [Overleaf](https://www.overleaf.com/) — an collaborative online editor.
-* [StackEdit](https://stackedit.io/) — In-browser markdown editor.
+- [MiKTeX](https://miktex.org/about) for Windows.
+- [TeX Live](https://www.tug.org/texlive/) for Linux and Unix-based.
+- [MacTeX](https://tug.org/mactex/) for macOS.
+- [ShareLaTeX](https://www.sharelatex.com/) — an online editor.
+- [Overleaf](https://www.overleaf.com/) — an collaborative online editor.
+- [StackEdit](https://stackedit.io/) — In-browser markdown editor.
 
 #### LaTeX Editors
 
-* [TeXMaker](http://www.xm1math.net/texmaker/) Cross platform LaTeX editor.
-* [TeXStudio](http://www.texstudio.org/) An enhanced fork of TeXMaker with more features.
-* TeXShop and TeXworks (minimal editors)
+- [TeXMaker](http://www.xm1math.net/texmaker/) Cross platform LaTeX editor.
+- [TeXStudio](http://www.texstudio.org/) An enhanced fork of TeXMaker with more features.
+- TeXShop and TeXworks (minimal editors)
 
 #### LaTeX Compilers
 
-* Most editors will have an option for you to change the default compiler. Here's an example:
+- Most editors will have an option for you to change the default compiler. Here's an example:
 
 ![](http://i.imgur.com/FbNUiL7.png)
 
@@ -470,16 +479,14 @@ If you are greatly interested, more on LaTeX can be found [here](http://www.late
 
 ## License
 
- [![](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png)](http://www.wtfpl.net/)
+[![](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png)](http://www.wtfpl.net/)
 
 **DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE**
 Copyright (C) 2016 Luong Vo
 Everyone is permitted to copy and distribute verbatim or modified copies of this license document, and changing it is allowed as long as the name is changed.
-TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION: You just DO WHAT THE FUCK YOU WANT TO.  
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION: You just DO WHAT THE FUCK YOU WANT TO.
 
-
-
-<div id='donation'/>  
+<div id='donation'/>
 
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5ZG5Z47L2ZGYC)
 

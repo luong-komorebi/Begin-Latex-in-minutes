@@ -6,6 +6,7 @@
 [Русский](./Translation-Russian.md) ·
 Deutsch ·
 [日本語](./Translation-Japanese.md)
+[Polski](./Translation-Polish.md)
 
 ---
 
