@@ -25,7 +25,7 @@ Polski
 - [Rzut oka na szczegóły](#Rzut-oka-na-szczegóły)
 - [Wiele języków w jednym dokumencie](#Wiele-języków-w-jednym-dokumencie)
 - [Listy i wypunktowania](#listy-i-wypunktowania)
-- [Akapity i rozdziały](#Ustępy-i-rozdziały)
+- [Ustępy i rozdziały](#Ustępy-i-rozdziały)
 - [Tworzenie spisu treści](#tworzenie-spisu-treści)
 - [Przypisy](#przypisy)
 - [Co to jest pakiet?](#co-to-jest-pakiet)

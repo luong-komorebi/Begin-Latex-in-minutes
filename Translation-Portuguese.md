@@ -5,7 +5,7 @@ Português ·
 [Français](./Translation-French.md) ·
 [Русский](./Translation-Russian.md) ·
 [Deutsch](./Translation-German.md) ·
-[日本語](./Translation-Japanese.md)
+[日本語](./Translation-Japanese.md) ·
 [Polski](./Translation-Polish.md)
 
 ---
