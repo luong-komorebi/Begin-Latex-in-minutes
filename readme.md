@@ -443,9 +443,8 @@ Hello Latex, This is my first part.
 Hello Latex, This is my second part.
 ```
 
-Now the main file looks different, but better documented. Here is the result in TexMaker:
-
-![](https://camo.githubusercontent.com/e4d46edfad527c4c9be54cf8f1725c2fc52039d6/68747470733a2f2f7331342e706f7374696d672e6f72672f646567306b716875392f6d756c74695f66696c652e706e67)
+Now the main file looks different, but better documented. Here is the result in TeXShop on Mac:
+![image](https://user-images.githubusercontent.com/15828926/100050360-d079cc00-2e4b-11eb-8cb5-7e4fc2fd97f1.png)
 
 :bangbang: **Tips**: For readability, clarity and maintenance purpose, it is highly suggested that you divide your Main file systematically, hierarchically and scientifically. Don't divide without reasons or you may get a mess later.
 
